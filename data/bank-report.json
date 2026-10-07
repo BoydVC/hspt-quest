@@ -1,0 +1,168 @@
+{
+ "built_at": "2026-10-07T17:36:43-04:00",
+ "source_root": "/workspace/hspt",
+ "sheets": [
+  {
+   "day": 1,
+   "date": "2026-09-18",
+   "source": "worksheets/hspt-day1.html",
+   "questions": 9,
+   "date_inferred": true
+  },
+  {
+   "day": 2,
+   "date": "2026-09-19",
+   "source": "worksheets/hspt-day2.html",
+   "questions": 11
+  },
+  {
+   "day": 3,
+   "date": "2026-09-20",
+   "source": "worksheets/hspt-day3.html",
+   "questions": 11
+  },
+  {
+   "day": 4,
+   "date": "2026-09-21",
+   "source": "worksheets/hspt-day4.html",
+   "questions": 11
+  },
+  {
+   "day": 5,
+   "date": "2026-09-22",
+   "source": "worksheets/hspt-day5.html",
+   "questions": 11
+  },
+  {
+   "day": 6,
+   "date": "2026-09-23",
+   "source": "worksheets/hspt-day6.html",
+   "questions": 11
+  },
+  {
+   "day": 7,
+   "date": "2026-09-24",
+   "source": "worksheets/hspt-day7.html",
+   "questions": 11
+  },
+  {
+   "day": 8,
+   "date": "2026-09-25",
+   "source": "worksheets/hspt-day8.html",
+   "questions": 11
+  },
+  {
+   "day": 9,
+   "date": "2026-09-26",
+   "source": "worksheets/hspt-day9.html",
+   "questions": 11
+  },
+  {
+   "day": 10,
+   "date": "2026-09-27",
+   "source": "hspt-day10.html",
+   "questions": 11
+  },
+  {
+   "day": 11,
+   "date": "2026-09-28",
+   "source": "hspt-day11.html",
+   "questions": 11
+  },
+  {
+   "day": 12,
+   "date": "2026-09-29",
+   "source": "hspt-day12.html",
+   "questions": 11
+  },
+  {
+   "day": 13,
+   "date": "2026-09-30",
+   "source": "hspt-day13.html",
+   "questions": 11
+  },
+  {
+   "day": 14,
+   "date": "2026-10-01",
+   "source": "hspt-day14.html",
+   "questions": 11
+  },
+  {
+   "day": 15,
+   "date": "2026-10-02",
+   "source": "hspt-day15.html",
+   "questions": 11
+  },
+  {
+   "day": 16,
+   "date": "2026-10-03",
+   "source": "hspt-day16.html",
+   "questions": 11
+  },
+  {
+   "day": 17,
+   "date": "2026-10-04",
+   "source": "hspt-day17.html",
+   "questions": 11
+  },
+  {
+   "day": 18,
+   "date": "2026-10-05",
+   "source": "hspt-day18.html",
+   "questions": 12
+  },
+  {
+   "day": 19,
+   "date": "2026-10-06",
+   "source": "hspt-day19.html",
+   "questions": 12
+  },
+  {
+   "day": 20,
+   "date": "2026-10-07",
+   "source": "hspt-day20.html",
+   "questions": 12
+  }
+ ],
+ "parsed_total": 221,
+ "unique_total": 215,
+ "by_area": {
+  "Verbal": 40,
+  "Quantitative": 56,
+  "Reading": 39,
+  "Mathematics": 37,
+  "Language": 43
+ },
+ "by_type": {
+  "mc": 138,
+  "input": 76,
+  "self": 1
+ },
+ "duplicates": [
+  {
+   "id": "d03q09",
+   "same_as": "d01q07"
+  },
+  {
+   "id": "d04q09",
+   "same_as": "d02q08"
+  },
+  {
+   "id": "d15q03",
+   "same_as": "d13q03"
+  },
+  {
+   "id": "d15q04",
+   "same_as": "d13q04"
+  },
+  {
+   "id": "d15q08",
+   "same_as": "d05q08"
+  },
+  {
+   "id": "d17q03",
+   "same_as": "d08q03"
+  }
+ ],
+ "skipped": []
+}
