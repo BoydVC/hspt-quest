@@ -147,7 +147,7 @@
     var hero = '<div class="card hero"><div class="ring"><svg width="118" height="118" viewBox="0 0 118 118"><circle cx="59" cy="59" r="50" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10"/>' +
       '<circle cx="59" cy="59" r="50" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + (C * frac) + " " + C + '"/><defs><linearGradient id="g"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs></svg>' +
       '<div class="in"><div class="n">' + lv.level + '</div><div class="t">level</div></div></div>' +
-      '<div style="flex:1;min-width:0;z-index:1"><div class="hello">Hey Char 👋</div><span class="title-chip">⭐ ' + esc(lv.title) + '</span>' +
+      '<div style="flex:1;min-width:0;z-index:1"><div class="hello">Hey Alex 👋</div><span class="title-chip">⭐ ' + esc(lv.title) + '</span>' +
       '<div class="xpbar"><i style="width:' + Math.round(100 * frac) + '%"></i></div><div class="sub">' + (lv.next - S.xp) + " XP to Level " + (lv.level + 1) + " · 🔥 " + st.n + "-day streak" + (st.today ? " ✓" : "") + "</div></div>" +
       (n >= 0 ? '<div class="count"><div class="n">' + n + '</div><div class="t">days to <br>HSPT</div></div>' : "") + "</div>";
     var modes = '<div class="modes">' +
@@ -320,7 +320,7 @@
     AREAS.forEach(function (a) { var m = mastery(a); by[a] = {answered: 0, correct: 0, mastery_pct: m.pct, solid: m.solid, questions: m.total}; });
     Object.keys(S.q).forEach(function (id) { var q = byId(id); if (!q) return; by[q.area].answered += S.q[id].seen; by[q.area].correct += S.q[id].right; });
     var lv = levelOf(S.xp), tot = 0, cor = 0; AREAS.forEach(function (a) { tot += by[a].answered; cor += by[a].correct; });
-    return {app: "HSPT Quest", format: 1, student: "Charlotte", exported_at: new Date().toISOString(), test_day: B.test_day,
+    return {app: "HSPT Quest", format: 1, student: "Alex", exported_at: new Date().toISOString(), test_day: B.test_day,
       bank: {built_at: B.built_at, questions: B.questions.length, sheets: B.sheets.length},
       summary: {xp: S.xp, level: lv.level, title: lv.title, streak_days: streak().n, best_streak: S.bestStreak, answered: tot, correct: cor,
                 accuracy_pct: tot ? Math.round(100 * cor / tot) : null, by_area: by, replay_waiting: inReplay().length, daily_quests_done: Object.keys(S.questDone).sort()},

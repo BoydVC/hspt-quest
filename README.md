@@ -1,6 +1,6 @@
 # HSPT Quest 🧭
 
-A game-style practice app for Charlotte's HSPT (Nov 17, 2026, at SJE). It is built **only** from Path's 20 practice sheets.
+A game-style practice app for Alex's HSPT (Nov 17, 2026, at Northside Academy). It is built **only** from Path's 20 practice sheets.
 Everything runs on this machine. Progress lives in the browser's `localStorage`, and nothing is sent anywhere.
 
 - **Live app:** http://127.0.0.1:4444 (start with `./run.sh`, stop with `./stop.sh`; log at `data/server.log`)
@@ -23,7 +23,7 @@ Everything runs on this machine. Progress lives in the browser's `localStorage`,
 - **Types:**
   - 138 multiple choice.
   - 76 typed answers, where the key is a number, so the app grades a typed answer instead of inventing choices.
-  - 1 "check yourself" item: d01q09, *"Fix (or say fine): Neither of the girls are ready."* The key is a sentence, so Char reveals Path's answer and marks it herself.
+  - 1 "check yourself" item: d01q09, *"Fix (or say fine): Neither of the girls are ready."* The key is a sentence, so Alex reveals Path's answer and marks it herself.
 - **Answer key rules:** a question gets into the bank only if its answer is actually in that sheet's answer key.
   - A lettered key must name a real choice, and the key's text must match that choice. Otherwise the question is skipped and logged in `bank-report.json → skipped`. Nothing is ever guessed.
   - **Skipped: 0.** One question was accepted on a partial match: d19q10, where the key quotes "between you and me", which appears in only one choice (b). It is flagged in the bank as `key_match: "partial"`.
@@ -66,7 +66,7 @@ Everything runs on this machine. Progress lives in the browser's `localStorage`,
 Home → **Export my progress** downloads `hspt-quest-progress-YYYY-MM-DD.json`:
 
 ```
-{ app: "HSPT Quest", format: 1, student: "Charlotte", exported_at, test_day,
+{ app: "HSPT Quest", format: 1, student: "Alex", exported_at, test_day,
   bank: {built_at, questions, sheets},
   summary: {xp, level, title, streak_days, best_streak, answered, correct, accuracy_pct,
             by_area: {Verbal: {answered, correct, mastery_pct, solid, questions}, ...},
@@ -110,7 +110,7 @@ tests/e2e.mjs, play.mjs, cdp.mjs, screens.mjs  headless Chrome drivers (node --e
 6. **Screenshots:** they exist at the right sizes.
 7. **Read-only:** all files under `/workspace/hspt` are unchanged (sha256 + mtime).
 
-Screenshots and tests run in throwaway browser profiles. Their demo progress comes from those scripted plays and is not Char's.
+Screenshots and tests run in throwaway browser profiles. Their demo progress comes from those scripted plays and is not Alex's.
 
 
 ---

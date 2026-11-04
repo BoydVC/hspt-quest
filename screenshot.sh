@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Re-take screenshots (1280x800 + 390x844) in a throwaway headless-Chrome profile.
-# Demo progress is created by actually playing sessions in that temp profile; Char's real progress is never touched.
+# Demo progress is created by actually playing sessions in that temp profile; Alex's real progress is never touched.
 set -euo pipefail
 cd "$(dirname "$0")"
 ./run.sh >/dev/null
