@@ -163,3 +163,11 @@ test("estimate page shows practice disclaimer after a mock", async ({ page }) =>
   await expect(page.locator(".est-label")).toContainText("Practice estimate");
   await expect(page.locator(".fmt.est tr.tot")).toContainText("298");
 });
+
+test("estimate empty state points students to the mock", async ({ page }) => {
+  await fresh(page);
+  await page.goto(U("2026-11-05") + "&seed=empty#estimate");
+  await expect(page.locator(".card h3")).toContainText("Practice score estimate");
+  await expect(page.getByRole("link", { name: "Go to mock exam" })).toBeVisible();
+  await expect(page.locator("[data-estimate]")).toHaveCount(0);
+});
