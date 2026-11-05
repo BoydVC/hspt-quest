@@ -69,7 +69,11 @@ SYN = [("ample","plentiful","narrow","tired","sudden"),("candid","frank","sweet"
 ("ponder","consider","ignore","shout","shiver"),("rigid","stiff","bendable","moist","cheerful"),
 ("jovial","merry","sullen","sleepy","stern"),("gaunt","thin","plump","tall","pale"),
 ("mend","repair","break","sell","dye"),("perilous","dangerous","safe","tedious","polite"),
-("cease","stop","continue","grow","listen"),("authentic","genuine","fake","ancient","shiny")]
+("cease","stop","continue","grow","listen"),("authentic","genuine","fake","ancient","shiny"),
+("immense","huge","tiny","bitter","silent"),("gleaming","shining","dull","rough","empty"),
+("hasty","rushed","careful","gentle","loud"),("soothe","calm","anger","measure","scatter"),
+("dwell","live","visit","fly","erase"),("scarce","rare","common","heavy","sweet"),
+("brisk","lively","slow","warm","dark"),("solemn","serious","funny","quick","soft")]
 for w, s, *d in SYN:
     add("Verbal","synonyms",f"<b>{w.upper()}</b> most nearly means",s,d,f"“{w}” means {s}. None of the other choices shares that meaning.",2)
 ANT = [("generous","stingy","kind","wealthy","giving"),("expand","shrink","stretch","grow","widen"),
@@ -267,7 +271,7 @@ for i in range(16):
 # ---------------- MATHEMATICS ----------------
 def M(skill, st, ans, e, d=2, wrong=None):
     add("Mathematics", skill, st, fmt(ans), wrong or numwrong(ans), e, d)
-for i in range(10):
+for i in range(14):
     a, b, c, d = R.randint(1, 5), R.choice([2,3,4,5,6,8]), R.randint(1, 5), R.choice([2,3,4,5,6,8])
     if a >= b: a = b - 1
     if c >= d: c = d - 1
@@ -276,14 +280,14 @@ for i in range(10):
     w = [x for x in dict.fromkeys(w) if x != fmt(s)]
     while len(w) < 3: w.append(fmt(s + len(w) + 1))
     M("fractions", f"{a}/{b} + {c}/{d} =", s, f"Common denominator: {a}/{b} + {c}/{d} = {fmt(s)}. (Never add denominators.)", 2, w[:3])
-for i in range(10):
+for i in range(14):
     p, n = R.choice([10, 15, 20, 25, 30, 40, 60, 75]), R.choice([40, 60, 80, 120, 200, 240])
     v = F(p * n, 100)
     M("percents", f"What is {p}% of {n}?", v, f"{p}% = {p}/100; {p}/100 × {n} = {fmt(v)}.")
-for i in range(10):
+for i in range(14):
     x, a, b = R.randint(-6, 12), R.randint(2, 7), R.randint(-10, 15)
     M("algebra", f"Solve for x: {a}x {'+' if b>=0 else '−'} {abs(b)} = {a*x+b}", x, f"Subtract {b}: {a}x = {a*x}; divide by {a}: x = {x}.", 3)
-for i in range(10):
+for i in range(14):
     k = i % 4
     if k == 0:
         l, w = R.randint(3, 15), R.randint(2, 12); M("geometry", f"A rectangle is {l} cm long and {w} cm wide. What is its area in square centimeters?", l * w, f"Area = length × width = {l} × {w} = {l*w}.")
@@ -293,7 +297,7 @@ for i in range(10):
         b, h = R.choice([4, 6, 8, 10, 12]), R.randint(3, 11); M("geometry", f"A triangle has base {b} in and height {h} in. What is its area in square inches?", b * h // 2, f"Area = ½ × base × height = ½ × {b} × {h} = {b*h//2}.")
     else:
         r = R.randint(2, 9); M("geometry", f"A circle has radius {r}. What is its circumference, in terms of π?", f"{2*r}π", f"C = 2πr = 2 × π × {r} = {2*r}π.", 2, [f"{r*r}π", f"{r}π", f"{4*r}π"])
-for i in range(8):
+for i in range(12):
     n = sorted(R.sample(range(2, 40), 5))
     if i % 2 == 0:
         while sum(n) % 5: n[-1] += 1
@@ -310,7 +314,7 @@ CONV = [("feet are in {n} yards", 3, "1 yard = 3 feet"), ("inches are in {n} fee
         ("quarts are in {n} gallons", 4, "1 gallon = 4 quarts"), ("grams are in {n} kilograms", 1000, "1 kg = 1000 g")]
 for t, f, e in CONV:
     n = R.randint(2, 9); M("measurement", "How many " + t.format(n=n) + "?", n * f, f"{e}, so {n} × {f} = {n*f}.")
-for i in range(10):
+for i in range(14):
     k = i % 5
     if k == 0:
         p, d = R.choice([40, 60, 80, 120]), R.choice([10, 20, 25]); M("word problems", f"A jacket costs ${p}. It is on sale for {d}% off. What is the sale price in dollars?", F(p * (100 - d), 100), f"{d}% of {p} = {fmt(F(p*d,100))}; {p} − {fmt(F(p*d,100))} = {fmt(F(p*(100-d),100))}.")
@@ -324,7 +328,7 @@ for i in range(10):
         a = R.randint(70, 95); b = R.randint(70, 95); need = 3 * 85 - a - b
         if 0 < need <= 100: M("word problems", f"Ana scored {a} and {b} on two tests. What must she score on the third test to average 85?", need, f"Total needed = 3 × 85 = 255; 255 − {a} − {b} = {need}.", 3)
         else: M("word problems", f"Ana scored 80 and 86 on two tests. What must she score on the third test to average 85?", 89, "255 − 80 − 86 = 89.", 3)
-for i in range(8):
+for i in range(12):
     k = i % 4
     if k == 0: n = R.randint(2, 4); b = R.randint(2, 5); M("numbers & numeration", f"What is {b} to the power of {n}?", b ** n, f"{b}^{n} = {' × '.join([str(b)]*n)} = {b**n}.")
     elif k == 1: a = R.choice([12, 18, 24, 30, 36]); b = R.choice([8, 16, 20, 42]); import math; M("numbers & numeration", f"What is the greatest common factor of {a} and {b}?", math.gcd(a, b), f"The largest number dividing both {a} and {b} is {math.gcd(a,b)}.")
@@ -395,6 +399,27 @@ COMP = [("Choose the word that best completes the sentence: “It started to rai
 ("Choose the best way to combine: “Lena plays piano. Lena plays violin.”", "Lena plays piano and violin.", ["Lena plays piano, Lena plays violin.", "Lena plays piano she plays violin.", "Playing piano, violin is played by Lena."], "Combine the shared subject and verb."),
 ("Which sentence is in the passive voice?", "The window was broken by the ball.", ["The ball broke the window.", "Sam threw the ball.", "The window shattered loudly."], "The subject receives the action.")]
 for st, c, w, e in COMP: add("Language","composition",st,c,w,e,2)
+
+
+USAGE2 = [("The news is on at six.", ["The news are on at six.", "The news be on at six.", "The news were on at six every."], "“News” takes a singular verb."),
+("She is one of the students who work hard.", ["She is one of the students who works hard.", "She is one of the student who work hard.", "She is one of the students which work hard."], "“Who” refers to students (plural), so “work.”"),
+("Please give the forms to him and me.", ["Please give the forms to he and I.", "Please give the forms to him and I.", "Please give the forms to he and me."], "Object pronouns after a preposition."),
+("The number of applicants is rising.", ["The number of applicants are rising.", "A number of applicants is rising today only.", "The number of applicant is rising."], "“The number” is singular."),
+("Neither rain nor snow stops the mail.", ["Neither rain nor snow stop the mail.", "Neither rain or snow stops the mail.", "Neither rain nor snow stopping the mail."], "With neither/nor, the verb agrees with the nearer subject (“snow”)."),
+("We saw fewer cars than usual.", ["We saw less cars than usual.", "We saw lesser cars than usual.", "We seen fewer cars than usual."], "Use “fewer” for countable things."),
+]
+for c, w, e in USAGE2: add("Language","usage","Choose the sentence that is correct.",c,w,e,2)
+COMP2 = [("Choose the word that best completes the sentence: “First mix the dry ingredients; ____, add the eggs.”", "next", ["however", "instead", "although"], "A sequence word fits a step-by-step recipe."),
+("Which sentence is a fragment?", "After the final whistle.", ["The crowd cheered after the final whistle.", "When the whistle blew, fans stood up.", "The whistle ended the game."], "It has no independent clause."),
+("Which sentence uses a semicolon correctly?", "Bring a pencil; you will need one.", ["Bring a pencil; and an eraser.", "Bring; a pencil you will need one.", "Bring a pencil you will; need one."], "A semicolon joins two complete sentences."),
+("Which is the best concluding sentence for a paragraph about bike helmets?", "Wearing a helmet is a simple way to stay safer on every ride.", ["Helmets come in red.", "My uncle owns a bike.", "Roads can be long."], "It wraps up the main point."),
+("Choose the clearest sentence.", "The coach posted the lineup on the door.", ["The lineup, it was posted on the door by the coach.", "Posted on the door was what the coach did with the lineup.", "The coach, posting, the lineup on the door."], "Subject–verb–object, no clutter."),
+]
+for st, c, w, e in COMP2: add("Language","composition",st,c,w,e,2)
+PUNC2 = [("Choose the sentence with correct punctuation.", "Yes, I can help you with that.", ["Yes I can help you with that.", "Yes I, can help you with that.", "Yes, I can, help you with that."], "A comma follows a mild interjection like “Yes.”"),
+("Choose the sentence with correct punctuation.", "The recipe needs flour, sugar and butter — or margarine.", ["The recipe needs flour sugar, and butter — or margarine.", "The recipe needs, flour, sugar and butter — or margarine.", "The recipe needs flour, sugar, and, butter — or margarine."], "Commas separate list items; the dash sets off an alternative."),
+]
+for st, c, w, e in PUNC2: add("Language","punctuation",st,c,w,e,2)
 
 # ---------------- READING ----------------
 PASS = [
@@ -564,6 +589,6 @@ if __name__ == "__main__":
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     by = {}
     for it in items: by[it["section"]] = by.get(it["section"], 0) + 1
-    bank = {"version": 3, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v3 expanded)", "counts": by, "total": len(items), "items": items}
+    bank = {"version": 4, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v4 expanded)", "counts": by, "total": len(items), "items": items}
     json.dump(bank, open(OUT, "w"), indent=1, ensure_ascii=False)
     print(json.dumps(by), len(items))

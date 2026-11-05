@@ -32,6 +32,19 @@ for (const [tag, vp] of [["desktop", { width: 1440, height: 900 }], ["phone", { 
   await page.click("a[href='#mock']"); await shot(page, `${tag}-08-mock-intro`, fr(2));
   await page.click("[data-mock]"); for (let k = 0; k < 7; k++) await page.locator(".choice").first().click(); await shot(page, `${tag}-09-mock-running`, fr(2));
   await page.click("[data-quit]"); await shot(page, `${tag}-10-mock-break`, fr(1));
+  // Synthetic finished mock → score-estimate card (Alex only)
+  await page.evaluate(() => {
+    const parts = [
+      {section:"Verbal",correct:49,total:60,blank:1},
+      {section:"Quantitative",correct:38,total:52,blank:2},
+      {section:"Reading",correct:51,total:62,blank:0},
+      {section:"Mathematics",correct:50,total:64,blank:3},
+      {section:"Language",correct:47,total:60,blank:1}];
+    const est = Sched.estimateReport(parts);
+    const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+    document.getElementById("app").innerHTML = '<div class="card results"><h2>Mock done: ' + est.correct + " / " + est.total + '</h2><div class="estimate" data-estimate="1"><div class="est-label">' + esc(est.label) + '</div><table class="fmt est"><tr><th>Section</th><th>Raw right</th><th>Blank</th><th>%</th></tr>' + est.rows.map((p) => "<tr><td>" + p.section + "</td><td>" + p.correct + "/" + p.total + "</td><td>" + p.blank + "</td><td>" + p.pct + "%</td></tr>").join("") + '<tr class="tot"><td>Total</td><td>' + est.correct + "/" + est.total + "</td><td>" + est.blank + "</td><td>" + est.pct + "%</td></tr></table><p class=\"est-note\">" + esc(est.disclaimer) + "</p></div></div>";
+  });
+  await shot(page, `${tag}-12-mock-estimate`, fr(3));
   await page.goto(`${BASE}/sprint/?today=2026-11-08&r=${Math.random()}#sheet`); await shot(page, `${tag}-11-answer-sheet`, fr(2));
   await ctx.close();
 }

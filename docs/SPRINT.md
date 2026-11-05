@@ -43,9 +43,9 @@ Every day also includes the due spaced-review questions. Format and sources: [HS
 | Reading | 62 | main idea 5, detail 8, inference 8, vocabulary 28, tone 1, cause and effect 3, purpose 3, character 2, theme 1, mood 1, figurative language 1, plot 1 |
 | Mathematics | 78 | fractions 9, percents 10, algebra 10, geometry 9, statistics 8, probability 6, measurement 8, word problems 10, numbers & numeration 8 |
 | Language | 73 | punctuation 11, capitalization 6, spelling 24, usage 18, composition 14 |
-| **Total** | **490** | |
+| **Total** | **532** | |
 
-- **Original:** every word is written for this project, and the math and quantitative items are generated from templates with a fixed seed (1117). Nothing is copied from any published or copyrighted test. Reading uses 8 original passages (informational and literary, 5 questions each) plus 22 vocabulary-in-context items.
+- **Original:** every word is written for this project, and the math and quantitative items are generated from templates with a fixed seed (1117). Nothing is copied from any published or copyrighted test. Reading uses 18 original passages (informational and literary, 5 questions each) plus 22 vocabulary-in-context items.
 - Every item has a section, a skill tag, a difficulty, 3–4 choices (logic items use True / False / Uncertain like the real test), an answer index and an explanation.
 - Each section has at least as many items as the real section, so the full mock never repeats a question within a section.
 - **Validation** (`sprint/tests/validate_bank.py`, 4,376 checks): ids unique; key index in range; choices distinct; no duplicate items; 300+ total; every arithmetic key recomputed independently (percents, fractions, algebra, series, mean, median); every quantitative comparison answer re-derived and every distractor proven false; spelling keys checked against the correct spelling. Plus a spot-check read of random samples from every section.

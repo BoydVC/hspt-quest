@@ -67,7 +67,10 @@
   }
   function mockHistory() {
     var m = ST.sessions.filter(function (s) { return s.mode === "mock"; }).slice(-5).reverse();
-    return m.length ? '<h4>Past mocks</h4><ul class="hist">' + m.map(function (s) { return "<li>" + fmtDate(s.date) + ": " + s.parts.map(function (p) { return p.section.slice(0, 5) + " " + p.correct + "/" + p.total; }).join(" · ") + "</li>"; }).join("") + "</ul>" : "";
+    return m.length ? '<h4>Past mocks <small class="mut">(practice estimates only)</small></h4><ul class="hist">' + m.map(function (s) {
+      var est = S.estimateReport(s.parts);
+      return "<li><b>" + fmtDate(s.date) + "</b>: " + est.correct + "/" + est.total + " (" + est.pct + "%) · " + est.rows.map(function (p) { return p.section.slice(0, 5) + " " + p.correct + "/" + p.total; }).join(" · ") + "</li>";
+    }).join("") + "</ul>" : "";
   }
 
   function sheet() {

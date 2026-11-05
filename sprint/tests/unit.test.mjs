@@ -132,3 +132,10 @@ test("bank expansion: Quant and Reading outnumber a real section", () => {
   assert.ok(c.Reading >= 100, c.Reading);
   assert.ok(bank.length >= 480, bank.length);
 });
+
+test("Language and Mathematics keep full-section coverage", () => {
+  const c = {}; bank.forEach((q) => (c[q.section] = (c[q.section] || 0) + 1));
+  assert.ok(c.Language >= 60, c.Language);
+  assert.ok(c.Mathematics >= 64, c.Mathematics);
+  assert.ok(c.Verbal >= 60, c.Verbal);
+});
