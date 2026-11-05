@@ -45,6 +45,7 @@ for (const [tag, vp] of [["desktop", { width: 1440, height: 900 }], ["phone", { 
     document.getElementById("app").innerHTML = '<div class="card results"><h2>Mock done: ' + est.correct + " / " + est.total + '</h2><div class="estimate" data-estimate="1"><div class="est-label">' + esc(est.label) + '</div><table class="fmt est"><tr><th>Section</th><th>Raw right</th><th>Blank</th><th>%</th></tr>' + est.rows.map((p) => "<tr><td>" + p.section + "</td><td>" + p.correct + "/" + p.total + "</td><td>" + p.blank + "</td><td>" + p.pct + "%</td></tr>").join("") + '<tr class="tot"><td>Total</td><td>' + est.correct + "/" + est.total + "</td><td>" + est.blank + "</td><td>" + est.pct + "%</td></tr></table><p class=\"est-note\">" + esc(est.disclaimer) + "</p></div></div>";
   });
   await shot(page, `${tag}-12-mock-estimate`, fr(3));
+  await page.goto(`${BASE}/sprint/?today=2026-11-08&r=${Math.random()}#estimate`); await shot(page, `${tag}-13-estimate-page`, fr(2));
   await page.goto(`${BASE}/sprint/?today=2026-11-08&r=${Math.random()}#sheet`); await shot(page, `${tag}-11-answer-sheet`, fr(2));
   await ctx.close();
 }

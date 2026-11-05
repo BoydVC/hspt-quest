@@ -113,7 +113,7 @@ test("progress persists across reloads", async ({ page }) => {
 });
 test("phone layout has no horizontal scroll", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  for (const h of ["home", "plan", "dash", "mock", "sheet"]) {
+  for (const h of ["home", "plan", "dash", "mock", "estimate", "sheet"]) {
     await fresh(page); await page.goto(U("2026-11-05") + "#" + h);
     const over = await page.evaluate(() => document.documentElement.scrollWidth - innerWidth);
     expect(over, h).toBeLessThanOrEqual(1);
@@ -145,4 +145,21 @@ test("Reading practice set keeps a passage together on screen", async ({ page })
   await expect(page.locator(".choice").first()).toBeVisible();
   const p2 = await page.locator(".passage").count();
   expect(p2).toBeGreaterThanOrEqual(0);
+});
+
+test("estimate page shows practice disclaimer after a mock", async ({ page }) => {
+  await fresh(page);
+  await page.evaluate(() => {
+    const st = { v: 1, name: "Alex", q: {}, sessions: [{ mode: "mock", date: "2026-11-05", parts: [
+      { section: "Verbal", correct: 50, total: 60, blank: 0 },
+      { section: "Quantitative", correct: 40, total: 52, blank: 1 },
+      { section: "Reading", correct: 55, total: 62, blank: 0 },
+      { section: "Mathematics", correct: 48, total: 64, blank: 2 },
+      { section: "Language", correct: 45, total: 60, blank: 0 }] }], done: {} };
+    localStorage.setItem("hspt-sprint-v1", JSON.stringify(st));
+  });
+  await page.goto(U("2026-11-05") + "&seed=1#estimate");
+  await expect(page.locator("[data-estimate]")).toBeVisible();
+  await expect(page.locator(".est-label")).toContainText("Practice estimate");
+  await expect(page.locator(".fmt.est tr.tot")).toContainText("298");
 });

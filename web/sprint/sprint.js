@@ -13,7 +13,7 @@
   function bar(p, cls) { return '<div class="bar ' + (cls || "") + '"><i style="width:' + Math.round(p * 100) + '%"></i></div>'; }
   function view(html) { stopTimer(); $("#app").innerHTML = html; window.scrollTo(0, 0); }
   function nav(active) {
-    var t = [["home", "🏠 Today"], ["plan", "🗓️ Plan"], ["dash", "📊 Weak spots"], ["mock", "⏱️ Mock exam"], ["sheet", "🖨️ Answer sheet"]];
+    var t = [["home", "🏠 Today"], ["plan", "🗓️ Plan"], ["dash", "📊 Weak spots"], ["mock", "⏱️ Mock exam"], ["estimate", "📈 Estimate"], ["sheet", "🖨️ Answer sheet"]];
     return '<nav class="nav">' + t.map(function (x) { return '<a href="#' + x[0] + '" class="' + (x[0] === active ? "on" : "") + '">' + x[1] + "</a>"; }).join("") + "</nav>";
   }
   function head() {
@@ -147,10 +147,24 @@
       '<a class="btn" href="#dash">See weak spots</a> <a class="btn ghost" href="#home">Back to today</a></div>');
   }
 
+  function estimateView() {
+    var m = ST.sessions.filter(function (s) { return s.mode === "mock"; }).slice(-1)[0];
+    if (!m) {
+      return view(head() + nav("estimate") + '<div class="card"><h3>📈 Practice score estimate</h3><p>Finish a mock exam first. Your raw section scores will show up here with a clear note that they are <b>not</b> an official HSPT score.</p><a class="btn" href="#mock">Go to mock exam</a></div>' + foot());
+    }
+    var est = S.estimateReport(m.parts);
+    view(head() + nav("estimate") + '<div class="card results"><div class="noprint"><h3>📈 Practice score estimate</h3><p>From your mock on ' + fmtDate(m.date) + '. <button class="btn ghost sm" onclick="print()">🖨️ Print</button></p></div>' +
+      '<div class="estimate" data-estimate="1"><div class="est-label">' + esc(est.label) + '</div>' +
+      '<table class="fmt est"><tr><th>Section</th><th>Raw right</th><th>Blank</th><th>%</th></tr>' +
+      est.rows.map(function (p) { return "<tr><td>" + esc(p.section) + "</td><td>" + p.correct + "/" + p.total + "</td><td>" + p.blank + "</td><td>" + p.pct + "%</td></tr>"; }).join("") +
+      '<tr class="tot"><td>Total</td><td>' + est.correct + "/" + est.total + "</td><td>" + est.blank + "</td><td>" + est.pct + "%</td></tr></table>" +
+      '<p class="est-note">' + esc(est.disclaimer) + "</p></div>" +
+      '<p class="noprint">Use these raw numbers to pick drills — not as a prediction for Nov 17.</p><a class="btn noprint" href="#dash">Weak spots</a></div>' + foot());
+  }
   function route() {
     if (run && timerId) { stopTimer(); run = null; }
     var h = (location.hash || "#home").slice(1);
-    ({home: home, plan: planView, dash: dash, mock: mockIntro, sheet: sheet}[h] || home)();
+    ({home: home, plan: planView, dash: dash, mock: mockIntro, estimate: estimateView, sheet: sheet}[h] || home)();
   }
   document.addEventListener("click", function (e) {
     var b = e.target.closest("button, .wrow"); if (!b || b.disabled) return;
