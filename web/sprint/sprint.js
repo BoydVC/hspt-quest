@@ -133,8 +133,15 @@
     $("#nextsec").onclick = function () { startSet(nx.section, 0, {mode: "mock", items: nx.items, seconds: nx.seconds, label: nx.section, queue: queue.slice(1), parts: parts}); };
   }
   function mockResults(parts) {
-    var c = 0, t = 0; parts.forEach(function (p) { c += p.correct; t += p.total; });
-    view(head() + nav("mock") + '<div class="card results"><h2>Mock done: ' + c + " / " + t + '</h2><table class="fmt"><tr><th>Section</th><th>Right</th><th>%</th></tr>' + parts.map(function (p) { return "<tr><td>" + p.section + "</td><td>" + p.correct + "/" + p.total + "</td><td>" + Math.round(100 * p.correct / p.total) + "%</td></tr>"; }).join("") + '</table><p>Every miss is now in your spaced review.</p><a class="btn" href="#dash">See weak spots</a></div>');
+    var est = S.estimateReport(parts);
+    view(head() + nav("mock") + '<div class="card results"><h2>Mock done: ' + est.correct + " / " + est.total + '</h2>' +
+      '<div class="estimate" data-estimate="1"><div class="est-label">' + esc(est.label) + '</div>' +
+      '<table class="fmt est"><tr><th>Section</th><th>Raw right</th><th>Blank</th><th>%</th></tr>' +
+      est.rows.map(function (p) { return "<tr><td>" + esc(p.section) + "</td><td>" + p.correct + "/" + p.total + "</td><td>" + p.blank + "</td><td>" + p.pct + "%</td></tr>"; }).join("") +
+      '<tr class="tot"><td>Total</td><td>' + est.correct + "/" + est.total + "</td><td>" + est.blank + "</td><td>" + est.pct + "%</td></tr></table>" +
+      '<p class="est-note">' + esc(est.disclaimer) + "</p></div>" +
+      '<p>Every miss is now in your spaced review. Use raw section scores to decide what to drill — not as a prediction of Nov 17.</p>' +
+      '<a class="btn" href="#dash">See weak spots</a> <a class="btn ghost" href="#home">Back to today</a></div>');
   }
 
   function route() {

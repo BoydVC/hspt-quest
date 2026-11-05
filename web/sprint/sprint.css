@@ -29,3 +29,5 @@
 @media (max-width:600px){#app{padding:10px}.fmt td,.fmt th{padding:6px 6px}.wrow{grid-template-columns:1fr 60px auto}.wrow .bar{grid-column:1/-1;grid-row:2}.stem{font-size:18px}.card h2{font-size:22px}}
 @media print{body{background:#fff}.noprint{display:none}#app{max-width:none;padding:0}.sheet{padding:0}.ssec{break-inside:avoid-page}}
 .sec .bar{flex:none}
+
+.estimate{margin:12px 0;padding:14px;border-radius:14px;background:#0006;border:1px solid #ffc94a55}.est-label{font-weight:800;color:var(--acc);margin-bottom:8px;letter-spacing:.02em}.est-note{color:var(--mut);font-size:13px;margin:10px 0 0;max-width:42em}.fmt.est{max-width:560px}

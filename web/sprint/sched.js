@@ -75,19 +75,61 @@
     if (section === "Reading") out.sort(function (a, b) { return (a.passage || "~").localeCompare(b.passage || "~") || (a.id < b.id ? -1 : 1); });
     return out;
   }
+  // Reading mock: prefer whole passage groups, then vocab-in-context; never split a passage.
+  function pickReadingMock(pool, n, r) {
+    var passages = {}, order = [], vocab = [];
+    pool.forEach(function (q) {
+      if (!q.passage) { vocab.push(q); return; }
+      if (!passages[q.passage]) { passages[q.passage] = []; order.push(q.passage); }
+      passages[q.passage].push(q);
+    });
+    order = shuffle(order, r); vocab = shuffle(vocab, r);
+    var out = [], i;
+    for (i = 0; i < order.length; i++) {
+      var g = passages[order[i]];
+      if (out.length + g.length > n) continue;
+      out = out.concat(g);
+      if (out.length >= n) break;
+    }
+    for (i = 0; i < vocab.length && out.length < n; i++) out.push(vocab[i]);
+    // still short: take any remaining passage groups that fit
+    for (i = 0; i < order.length && out.length < n; i++) {
+      if (out.some(function (q) { return q.passage === order[i]; })) continue;
+      var g2 = passages[order[i]];
+      if (out.length + g2.length <= n) out = out.concat(g2);
+    }
+    out.sort(function (a, b) {
+      var pa = a.passage || "\uFFFF", pb = b.passage || "\uFFFF";
+      return pa.localeCompare(pb) || (a.id < b.id ? -1 : 1);
+    });
+    return out.slice(0, n);
+  }
   function buildMock(bank, sections, seed) {
     var r = rng(seed || 17);
     return (sections || SECTIONS.map(function (s) { return s.name; })).map(function (name) {
       var s = SEC[name], pool = bank.filter(function (q) { return q.section === name; });
-      var pick = name === "Reading" ? pool.slice(0, s.items) : shuffle(pool, r).slice(0, s.items);
+      var pick = name === "Reading" ? pickReadingMock(pool, s.items, r) : shuffle(pool, r).slice(0, s.items);
       return {section: name, seconds: s.minutes * 60, items: pick};
     });
   }
   function score(items, answers) { var c = 0; items.forEach(function (q) { if (answers[q.id] === q.answer) c++; }); return {correct: c, total: items.length, blank: items.filter(function (q) { return answers[q.id] == null; }).length}; }
+  // Practice estimate only — not an official STS scaled score. Raw rights per section + total.
+  function estimateReport(parts) {
+    var rows = (parts || []).map(function (p) {
+      return {section: p.section, correct: p.correct, total: p.total, blank: p.blank || 0, pct: p.total ? Math.round(100 * p.correct / p.total) : 0};
+    });
+    var c = 0, t = 0, b = 0; rows.forEach(function (r) { c += r.correct; t += r.total; b += r.blank; });
+    return {
+      label: "Practice estimate — not an official score",
+      disclaimer: "This is a raw practice estimate from this mock only. It is not an official HSPT score, percentile, or Cognitive Skills Quotient. Official scores come only from STS after the real exam.",
+      rows: rows,
+      correct: c, total: t, blank: b, pct: t ? Math.round(100 * c / t) : 0
+    };
+  }
   // Answer sheet numbering: sections run consecutively 1..298 like the real booklet.
   function sheetRanges() { var n = 1; return SECTIONS.map(function (s) { var r = {section: s.name, from: n, to: n + s.items - 1, choices: s.name === "Verbal" ? 4 : 4}; n += s.items; return r; }); }
 
   var api = {SECTIONS: SECTIONS, SEC: SEC, TEST_DAY: TEST_DAY, START: START, addDays: addDays, diffDays: diffDays, miniSet: miniSet, plan: plan, dayIndex: dayIndex, daysLeft: daysLeft,
-    review: review, due: due, weakness: weakness, sectionAcc: sectionAcc, weakestSections: weakestSections, pickSet: pickSet, buildMock: buildMock, score: score, sheetRanges: sheetRanges, rng: rng};
+    review: review, due: due, weakness: weakness, sectionAcc: sectionAcc, weakestSections: weakestSections, pickSet: pickSet, buildMock: buildMock, pickReadingMock: pickReadingMock, score: score, estimateReport: estimateReport, sheetRanges: sheetRanges, rng: rng};
   if (typeof module !== "undefined" && module.exports) module.exports = api; else root.Sched = api;
 })(this);
