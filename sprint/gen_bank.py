@@ -432,6 +432,20 @@ PUNC2 = [("Choose the sentence with correct punctuation.", "Yes, I can help you 
 ]
 for st, c, w, e in PUNC2: add("Language","punctuation",st,c,w,e,2)
 
+
+USAGE3 = [("The jury has reached a verdict.", ["The jury have reached a verdict in this one case alone.", "The jury has reach a verdict.", "The jury are reached a verdict."], "Treat “jury” as singular when it acts as one unit."),
+("He is taller than I am.", ["He is taller than me am.", "He is more taller than I am.", "He is taller than myself am."], "Complete the comparison: “than I am.”"),
+("Either the coaches or the captain is speaking.", ["Either the coaches or the captain are speaking.", "Either the coaches or the captain be speaking.", "Either the coach or the captains is speaking today only."], "With either/or, the verb agrees with the nearer subject (“captain”)."),
+("The scissors are on the table.", ["The scissors is on the table.", "The scissors be on the table.", "The scissor are on the table."], "“Scissors” takes a plural verb."),
+]
+for c, w, e in USAGE3: add("Language","usage","Choose the sentence that is correct.",c,w,e,2)
+COMP3 = [("Which sentence has a dangling modifier?", "Running down the hall, the bell rang.", ["Running down the hall, Mia heard the bell.", "Mia heard the bell while running down the hall.", "As Mia ran down the hall, the bell rang."], "“Running…” must describe Mia, not the bell."),
+("Choose the best transition: “The trail was icy. ____, we walked carefully.”", "Therefore", ["For example", "In contrast", "Meanwhile without cause"], "Careful walking is the result of icy conditions."),
+("Which sentence is parallel?", "She likes hiking, swimming and biking.", ["She likes hiking, to swim and biking.", "She likes to hike, swimming and bike.", "She likes hike, swim and to bike."], "All three objects use the same -ing form."),
+("Which is the best revision of “The reason is because it rained.”?", "The reason is that it rained.", ["The reason is because that it rained.", "The reason being is because it rained.", "Because the reason is it rained."], "Avoid “the reason is because”; use “that.”"),
+]
+for st, c, w, e in COMP3: add("Language","composition",st,c,w,e,2)
+
 # ---------------- READING ----------------
 PASS = [
 ("The Lighthouse Keeper's Log", """For forty years the lighthouse on Gull Point was tended by hand. Each evening the keeper climbed ninety-two steps, trimmed the wick and wound the clockwork that turned the great lens. In storms she stayed awake all night, because a stopped lens could mean a ship on the rocks. When the light was automated in 1962, the keeper's log ended with a single line: "Light burning bright. Gone ashore." Today, visitors can climb the same steps and read that log, now kept behind glass in the keeper's cottage.""",
@@ -583,6 +597,20 @@ PASS = [
   ("inference","Blazes are kept simple so that","tired hikers can still read them quickly",["they look fancy in photos","animals can eat the paint","snow covers them better"]),
   ("vocabulary","In the passage, <i>faded</i> most nearly means","worn / less bright",["brand new","waterproof","glowing"]),
   ("purpose","Why mention snow covering footprints?","to show another reason blazes matter when tracks disappear",["to discourage winter hiking forever","to explain how snow forms","to sell boots"])])
+
+,
+("Firefly Signals", """On warm evenings, fireflies flash in patterns that help them find mates. Each species has its own rhythm — some blink in sync along a whole riverbank, a sight that looks like the trees are breathing light. The glow comes from a chemical reaction in the abdomen, efficient enough that almost no heat is wasted. Light pollution from streetlamps can drown out the signals, so darker parks often host the brightest shows.""",
+ [("main idea","The passage mainly explains","how fireflies use light patterns to communicate and find mates",["how to catch insects","why parks close at night","how streetlamps are built"]),
+  ("detail","Where does a firefly's glow come from?","a chemical reaction in the abdomen",["reflected moonlight only","electric wires","tree sap"]),
+  ("cause and effect","Streetlamps can reduce firefly flashes because","their light drowns out the insects' signals",["they cool the air too much","they attract only moths","they remove trees"]),
+  ("inference","Darker parks often have brighter firefly shows because","there is less competing artificial light",["fireflies prefer loud music","streetlamps help them","trees block all rain"]),
+  ("vocabulary","In the passage, <i>efficient</i> most nearly means","not wasting energy",["very loud","slow","colorful"])]),
+("Bench Press Day", """Omar's first week in the weight room felt awkward. The bar wobbled; his spotter counted louder than the music. Coach Lin said strength is patient: add a little, rest, repeat. By the sixth week Omar's form looked boring — which Coach said was perfect. “Boring means safe,” she grinned, chalking his palms. Omar still was not the strongest kid there, but he could finish every set he started.""",
+ [("character","Omar changes from someone who","felt awkward to someone who finished sets with steady form",["quit sports to a champion overnight","ignored Coach Lin to argued daily","hated chalk to owned the gym"]),
+  ("detail","What does Coach Lin say about boring form?",'"Boring means safe."',["Boring means weak.","Boring means quit.","Boring means race."]),
+  ("theme","A theme of the story is that","steady, patient practice builds real strength",["only the strongest matter","music ruins workouts","spotters should be silent"]),
+  ("vocabulary","In the passage, <i>wobbled</i> most nearly means","shook unsteadily",["glowed","vanished","sang"]),
+  ("inference","Coach Lin chalks Omar's palms to","improve his grip for the lift",["punish him","decorate his hands","cool him down"])])
 ]
 for title, text, qs in PASS:
     psg = f"<b>{title}</b><br>{text}"
@@ -647,6 +675,6 @@ if __name__ == "__main__":
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     by = {}
     for it in items: by[it["section"]] = by.get(it["section"], 0) + 1
-    bank = {"version": 7, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v7 expanded)", "counts": by, "total": len(items), "items": items}
+    bank = {"version": 8, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v8 expanded)", "counts": by, "total": len(items), "items": items}
     json.dump(bank, open(OUT, "w"), indent=1, ensure_ascii=False)
     print(json.dumps(by), len(items))

@@ -1,15 +1,15 @@
 {
- "version": 7,
+ "version": 8,
  "test_day": "2026-11-17",
- "generated_by": "sprint/gen_bank.py (seed 1117, v7 expanded)",
+ "generated_by": "sprint/gen_bank.py (seed 1117, v8 expanded)",
  "counts": {
   "Verbal": 117,
   "Quantitative": 115,
   "Mathematics": 111,
-  "Language": 94,
-  "Reading": 172
+  "Language": 102,
+  "Reading": 182
  },
- "total": 609,
+ "total": 627,
  "items": [
   {
    "section": "Verbal",
@@ -6553,14 +6553,134 @@
    "id": "L094"
   },
   {
+   "section": "Language",
+   "skill": "usage",
+   "stem": "Choose the sentence that is correct.",
+   "choices": [
+    "The jury has reached a verdict.",
+    "The jury are reached a verdict.",
+    "The jury have reached a verdict in this one case alone.",
+    "The jury has reach a verdict."
+   ],
+   "answer": 0,
+   "explanation": "Treat “jury” as singular when it acts as one unit.",
+   "difficulty": 2,
+   "id": "L095"
+  },
+  {
+   "section": "Language",
+   "skill": "usage",
+   "stem": "Choose the sentence that is correct.",
+   "choices": [
+    "He is taller than me am.",
+    "He is taller than myself am.",
+    "He is taller than I am.",
+    "He is more taller than I am."
+   ],
+   "answer": 2,
+   "explanation": "Complete the comparison: “than I am.”",
+   "difficulty": 2,
+   "id": "L096"
+  },
+  {
+   "section": "Language",
+   "skill": "usage",
+   "stem": "Choose the sentence that is correct.",
+   "choices": [
+    "Either the coaches or the captain is speaking.",
+    "Either the coach or the captains is speaking today only.",
+    "Either the coaches or the captain be speaking.",
+    "Either the coaches or the captain are speaking."
+   ],
+   "answer": 0,
+   "explanation": "With either/or, the verb agrees with the nearer subject (“captain”).",
+   "difficulty": 2,
+   "id": "L097"
+  },
+  {
+   "section": "Language",
+   "skill": "usage",
+   "stem": "Choose the sentence that is correct.",
+   "choices": [
+    "The scissors is on the table.",
+    "The scissors be on the table.",
+    "The scissor are on the table.",
+    "The scissors are on the table."
+   ],
+   "answer": 3,
+   "explanation": "“Scissors” takes a plural verb.",
+   "difficulty": 2,
+   "id": "L098"
+  },
+  {
+   "section": "Language",
+   "skill": "composition",
+   "stem": "Which sentence has a dangling modifier?",
+   "choices": [
+    "Mia heard the bell while running down the hall.",
+    "Running down the hall, Mia heard the bell.",
+    "Running down the hall, the bell rang.",
+    "As Mia ran down the hall, the bell rang."
+   ],
+   "answer": 2,
+   "explanation": "“Running…” must describe Mia, not the bell.",
+   "difficulty": 2,
+   "id": "L099"
+  },
+  {
+   "section": "Language",
+   "skill": "composition",
+   "stem": "Choose the best transition: “The trail was icy. ____, we walked carefully.”",
+   "choices": [
+    "In contrast",
+    "For example",
+    "Therefore",
+    "Meanwhile without cause"
+   ],
+   "answer": 2,
+   "explanation": "Careful walking is the result of icy conditions.",
+   "difficulty": 2,
+   "id": "L100"
+  },
+  {
+   "section": "Language",
+   "skill": "composition",
+   "stem": "Which sentence is parallel?",
+   "choices": [
+    "She likes hiking, to swim and biking.",
+    "She likes hike, swim and to bike.",
+    "She likes to hike, swimming and bike.",
+    "She likes hiking, swimming and biking."
+   ],
+   "answer": 3,
+   "explanation": "All three objects use the same -ing form.",
+   "difficulty": 2,
+   "id": "L101"
+  },
+  {
+   "section": "Language",
+   "skill": "composition",
+   "stem": "Which is the best revision of “The reason is because it rained.”?",
+   "choices": [
+    "The reason being is because it rained.",
+    "The reason is because that it rained.",
+    "Because the reason is it rained.",
+    "The reason is that it rained."
+   ],
+   "answer": 3,
+   "explanation": "Avoid “the reason is because”; use “that.”",
+   "difficulty": 2,
+   "id": "L102"
+  },
+  {
    "section": "Reading",
    "skill": "main idea",
    "stem": "What is the passage mainly about?",
    "choices": [
     "how the Gull Point lighthouse was kept running and what remains of that work",
+    "why ships wreck in storms",
     "the history of clockwork",
-    "how lenses are made",
-    "why ships wreck in storms"
+    "how lenses are made"
    ],
    "answer": 0,
    "explanation": "The passage supports this answer: how the Gull Point lighthouse was kept running and what remains of that work.",
@@ -6574,11 +6694,11 @@
    "stem": "How many steps did the keeper climb?",
    "choices": [
     "forty",
-    "nineteen",
     "ninety-two",
+    "nineteen",
     "sixty-two"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The passage supports this answer: ninety-two.",
    "difficulty": 2,
    "passage": "<b>The Lighthouse Keeper's Log</b><br>For forty years the lighthouse on Gull Point was tended by hand. Each evening the keeper climbed ninety-two steps, trimmed the wick and wound the clockwork that turned the great lens. In storms she stayed awake all night, because a stopped lens could mean a ship on the rocks. When the light was automated in 1962, the keeper's log ended with a single line: \"Light burning bright. Gone ashore.\" Today, visitors can climb the same steps and read that log, now kept behind glass in the keeper's cottage.",
@@ -6589,12 +6709,12 @@
    "skill": "inference",
    "stem": "Why did the keeper stay awake during storms?",
    "choices": [
+    "She was afraid of thunder.",
     "Ships were in greater danger and the light had to keep turning.",
-    "The cottage had no beds.",
     "Visitors arrived at night.",
-    "She was afraid of thunder."
+    "The cottage had no beds."
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: Ships were in greater danger and the light had to keep turning.",
    "difficulty": 2,
    "passage": "<b>The Lighthouse Keeper's Log</b><br>For forty years the lighthouse on Gull Point was tended by hand. Each evening the keeper climbed ninety-two steps, trimmed the wick and wound the clockwork that turned the great lens. In storms she stayed awake all night, because a stopped lens could mean a ship on the rocks. When the light was automated in 1962, the keeper's log ended with a single line: \"Light burning bright. Gone ashore.\" Today, visitors can climb the same steps and read that log, now kept behind glass in the keeper's cottage.",
@@ -6605,12 +6725,12 @@
    "skill": "vocabulary",
    "stem": "In this passage, <i>tended</i> most nearly means",
    "choices": [
-    "leaned",
     "stretched",
     "offered",
-    "cared for"
+    "cared for",
+    "leaned"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: cared for.",
    "difficulty": 2,
    "passage": "<b>The Lighthouse Keeper's Log</b><br>For forty years the lighthouse on Gull Point was tended by hand. Each evening the keeper climbed ninety-two steps, trimmed the wick and wound the clockwork that turned the great lens. In storms she stayed awake all night, because a stopped lens could mean a ship on the rocks. When the light was automated in 1962, the keeper's log ended with a single line: \"Light burning bright. Gone ashore.\" Today, visitors can climb the same steps and read that log, now kept behind glass in the keeper's cottage.",
@@ -6621,12 +6741,12 @@
    "skill": "tone",
    "stem": "The keeper's last line suggests she felt",
    "choices": [
-    "confused about the light",
-    "angry at the change",
     "calm and satisfied that her work was done",
+    "angry at the change",
+    "confused about the light",
     "afraid of the sea"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: calm and satisfied that her work was done.",
    "difficulty": 2,
    "passage": "<b>The Lighthouse Keeper's Log</b><br>For forty years the lighthouse on Gull Point was tended by hand. Each evening the keeper climbed ninety-two steps, trimmed the wick and wound the clockwork that turned the great lens. In storms she stayed awake all night, because a stopped lens could mean a ship on the rocks. When the light was automated in 1962, the keeper's log ended with a single line: \"Light burning bright. Gone ashore.\" Today, visitors can climb the same steps and read that log, now kept behind glass in the keeper's cottage.",
@@ -6637,12 +6757,12 @@
    "skill": "main idea",
    "stem": "The author's main point is that",
    "choices": [
+    "moss needs sunlight",
     "streams are good guides",
     "moss grows only on the north side",
-    "moss is not a reliable way to find north",
-    "moss needs sunlight"
+    "moss is not a reliable way to find north"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: moss is not a reliable way to find north.",
    "difficulty": 2,
    "passage": "<b>Moss Map</b><br>Hikers once said that moss grows on the north side of trees, so it can serve as a compass. Scientists who study forests say this is only partly true. Moss needs shade and moisture. In the Northern Hemisphere, the north side of a tree often gets less sun, so moss may grow there. But in a deep, damp forest, moss can cover every side of a trunk. A tree near a stream may have the most moss on whatever side faces the water. A wise hiker carries a real compass.",
@@ -6653,9 +6773,9 @@
    "skill": "detail",
    "stem": "What two things does moss need?",
    "choices": [
-    "sun and wind",
     "heat and light",
     "soil and sand",
+    "sun and wind",
     "shade and moisture"
    ],
    "answer": 3,
@@ -6670,11 +6790,11 @@
    "stem": "Why might moss grow on the north side of a tree?",
    "choices": [
     "Birds rest there.",
-    "That side faces the wind.",
     "The bark is thicker there.",
-    "That side often gets less sun."
+    "That side often gets less sun.",
+    "That side faces the wind."
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: That side often gets less sun.",
    "difficulty": 2,
    "passage": "<b>Moss Map</b><br>Hikers once said that moss grows on the north side of trees, so it can serve as a compass. Scientists who study forests say this is only partly true. Moss needs shade and moisture. In the Northern Hemisphere, the north side of a tree often gets less sun, so moss may grow there. But in a deep, damp forest, moss can cover every side of a trunk. A tree near a stream may have the most moss on whatever side faces the water. A wise hiker carries a real compass.",
@@ -6685,12 +6805,12 @@
    "skill": "purpose",
    "stem": "Why does the author mention a tree near a stream?",
    "choices": [
-    "to give an example where moss grows on another side",
     "to explain where water comes from",
+    "to give an example where moss grows on another side",
     "to warn about floods",
     "to describe a good campsite"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: to give an example where moss grows on another side.",
    "difficulty": 2,
    "passage": "<b>Moss Map</b><br>Hikers once said that moss grows on the north side of trees, so it can serve as a compass. Scientists who study forests say this is only partly true. Moss needs shade and moisture. In the Northern Hemisphere, the north side of a tree often gets less sun, so moss may grow there. But in a deep, damp forest, moss can cover every side of a trunk. A tree near a stream may have the most moss on whatever side faces the water. A wise hiker carries a real compass.",
@@ -6717,10 +6837,10 @@
    "skill": "character",
    "stem": "Which word best describes Tamsin?",
    "choices": [
-    "lazy",
+    "fearful",
     "determined",
     "boastful",
-    "fearful"
+    "lazy"
    ],
    "answer": 1,
    "explanation": "The passage supports this answer: determined.",
@@ -6733,12 +6853,12 @@
    "skill": "vocabulary",
    "stem": "As used in the passage, <i>coaxed</i> means",
    "choices": [
+    "gently encouraged",
     "bought cheaply",
     "hid carefully",
-    "gently encouraged",
     "forced quickly"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: gently encouraged.",
    "difficulty": 2,
    "passage": "<b>Tamsin's Garden Plot</b><br>Tamsin had never grown anything but a bean in a paper cup. When the community garden offered free plots, she signed up and was handed a square of hard, pale dirt. The first week she pulled weeds until her palms blistered. The second week she mixed in compost from the shared bin. By June, her neighbor Mr. Okafor was leaning over the fence to ask how she had coaxed such tall sunflowers from \"that hopeless corner.\" Tamsin just grinned and handed him a bag of seeds.",
@@ -6749,12 +6869,12 @@
    "skill": "detail",
    "stem": "What did Tamsin add to the soil in the second week?",
    "choices": [
+    "water from a stream",
     "compost",
     "sand",
-    "sunflower seeds",
-    "water from a stream"
+    "sunflower seeds"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: compost.",
    "difficulty": 2,
    "passage": "<b>Tamsin's Garden Plot</b><br>Tamsin had never grown anything but a bean in a paper cup. When the community garden offered free plots, she signed up and was handed a square of hard, pale dirt. The first week she pulled weeds until her palms blistered. The second week she mixed in compost from the shared bin. By June, her neighbor Mr. Okafor was leaning over the fence to ask how she had coaxed such tall sunflowers from \"that hopeless corner.\" Tamsin just grinned and handed him a bag of seeds.",
@@ -6765,9 +6885,9 @@
    "skill": "inference",
    "stem": "Mr. Okafor's comment shows that he",
    "choices": [
-    "wanted Tamsin to leave",
     "dislikes sunflowers",
     "owned the plot before",
+    "wanted Tamsin to leave",
     "thought the plot would be hard to grow anything in"
    ],
    "answer": 3,
@@ -6781,12 +6901,12 @@
    "skill": "theme",
    "stem": "Which is a theme of the story?",
    "choices": [
-    "Beans grow best in cups.",
-    "Neighbors should mind their own business.",
+    "Hard work can turn something unpromising into a success.",
     "Gardens are too much trouble.",
-    "Hard work can turn something unpromising into a success."
+    "Beans grow best in cups.",
+    "Neighbors should mind their own business."
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The passage supports this answer: Hard work can turn something unpromising into a success.",
    "difficulty": 2,
    "passage": "<b>Tamsin's Garden Plot</b><br>Tamsin had never grown anything but a bean in a paper cup. When the community garden offered free plots, she signed up and was handed a square of hard, pale dirt. The first week she pulled weeds until her palms blistered. The second week she mixed in compost from the shared bin. By June, her neighbor Mr. Okafor was leaning over the fence to ask how she had coaxed such tall sunflowers from \"that hopeless corner.\" Tamsin just grinned and handed him a bag of seeds.",
@@ -6797,12 +6917,12 @@
    "skill": "main idea",
    "stem": "Which title best fits the passage?",
    "choices": [
+    "The Life of a Silk Worm",
     "Deserts of the World",
     "How Glass Is Made",
-    "A Web of Trade and Ideas",
-    "The Life of a Silk Worm"
+    "A Web of Trade and Ideas"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: A Web of Trade and Ideas.",
    "difficulty": 2,
    "passage": "<b>The Silk Road</b><br>The Silk Road was not one road but a web of routes linking China to the Mediterranean. Few traders traveled the whole way. Instead, goods passed from merchant to merchant, city to city. Silk moved west; glassware, horses and silver moved east. Ideas traveled too: paper-making, new crops and religions spread along the same paths. Oasis cities such as Samarkand grew rich by offering water, markets and rest to caravans crossing the deserts.",
@@ -6814,11 +6934,11 @@
    "stem": "Which good moved west?",
    "choices": [
     "glassware",
-    "silk",
     "silver",
-    "horses"
+    "horses",
+    "silk"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: silk.",
    "difficulty": 2,
    "passage": "<b>The Silk Road</b><br>The Silk Road was not one road but a web of routes linking China to the Mediterranean. Few traders traveled the whole way. Instead, goods passed from merchant to merchant, city to city. Silk moved west; glassware, horses and silver moved east. Ideas traveled too: paper-making, new crops and religions spread along the same paths. Oasis cities such as Samarkand grew rich by offering water, markets and rest to caravans crossing the deserts.",
@@ -6829,12 +6949,12 @@
    "skill": "inference",
    "stem": "Why did few traders travel the whole way?",
    "choices": [
-    "The road was too smooth.",
-    "Goods were passed along in shorter trips between cities.",
+    "Silk was too light to carry.",
     "No one lived in Samarkand.",
-    "Silk was too light to carry."
+    "The road was too smooth.",
+    "Goods were passed along in shorter trips between cities."
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: Goods were passed along in shorter trips between cities.",
    "difficulty": 2,
    "passage": "<b>The Silk Road</b><br>The Silk Road was not one road but a web of routes linking China to the Mediterranean. Few traders traveled the whole way. Instead, goods passed from merchant to merchant, city to city. Silk moved west; glassware, horses and silver moved east. Ideas traveled too: paper-making, new crops and religions spread along the same paths. Oasis cities such as Samarkand grew rich by offering water, markets and rest to caravans crossing the deserts.",
@@ -6846,11 +6966,11 @@
    "stem": "In the passage, <i>web</i> most nearly means",
    "choices": [
     "spider",
+    "trap",
     "network",
-    "cloth",
-    "trap"
+    "cloth"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: network.",
    "difficulty": 2,
    "passage": "<b>The Silk Road</b><br>The Silk Road was not one road but a web of routes linking China to the Mediterranean. Few traders traveled the whole way. Instead, goods passed from merchant to merchant, city to city. Silk moved west; glassware, horses and silver moved east. Ideas traveled too: paper-making, new crops and religions spread along the same paths. Oasis cities such as Samarkand grew rich by offering water, markets and rest to caravans crossing the deserts.",
@@ -6861,12 +6981,12 @@
    "skill": "cause and effect",
    "stem": "Oasis cities grew rich because they",
    "choices": [
-    "served the caravans that passed through",
-    "made paper first",
+    "grew silk",
     "sold glassware to China",
-    "grew silk"
+    "served the caravans that passed through",
+    "made paper first"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "The passage supports this answer: served the caravans that passed through.",
    "difficulty": 2,
    "passage": "<b>The Silk Road</b><br>The Silk Road was not one road but a web of routes linking China to the Mediterranean. Few traders traveled the whole way. Instead, goods passed from merchant to merchant, city to city. Silk moved west; glassware, horses and silver moved east. Ideas traveled too: paper-making, new crops and religions spread along the same paths. Oasis cities such as Samarkand grew rich by offering water, markets and rest to caravans crossing the deserts.",
@@ -6877,12 +6997,12 @@
    "skill": "mood",
    "stem": "The mood of the passage is best described as",
    "choices": [
+    "tense and frightening",
     "sad and lonely",
     "quiet and peaceful",
-    "tense and frightening",
     "noisy and crowded"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: quiet and peaceful.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -6893,12 +7013,12 @@
    "skill": "figurative language",
    "stem": "“The smell of yeast slowly waking” is an example of",
    "choices": [
-    "rhyme",
-    "a simile",
     "exaggeration of numbers",
-    "personification"
+    "rhyme",
+    "personification",
+    "a simile"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: personification.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -6909,12 +7029,12 @@
    "skill": "detail",
    "stem": "When does the first bus pass?",
    "choices": [
-    "at six",
-    "at three",
     "at noon",
-    "at midnight"
+    "at three",
+    "at midnight",
+    "at six"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: at six.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -6925,12 +7045,12 @@
    "skill": "inference",
    "stem": "Why does Gabe like this hour best?",
    "choices": [
+    "It is calm, with no interruptions.",
     "He is paid more then.",
     "He can sleep at work.",
-    "Customers bring him coffee.",
-    "It is calm, with no interruptions."
+    "Customers bring him coffee."
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The passage supports this answer: It is calm, with no interruptions.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -6941,12 +7061,12 @@
    "skill": "vocabulary",
    "stem": "As used in the passage, <i>roaring</i> means",
    "choices": [
-    "laughing",
     "breaking",
-    "shouting",
-    "burning strongly"
+    "laughing",
+    "burning strongly",
+    "shouting"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: burning strongly.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -6957,9 +7077,9 @@
    "skill": "main idea",
    "stem": "The passage mainly explains",
    "choices": [
-    "why trees need water",
-    "how chlorophyll is sold",
     "how to plant a tree",
+    "how chlorophyll is sold",
+    "why trees need water",
     "why leaves turn different colors in autumn"
    ],
    "answer": 3,
@@ -6973,12 +7093,12 @@
    "skill": "detail",
    "stem": "What makes leaves green?",
    "choices": [
-    "yellow pigment",
-    "red pigment",
+    "cool nights",
     "chlorophyll",
-    "cool nights"
+    "yellow pigment",
+    "red pigment"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The passage supports this answer: chlorophyll.",
    "difficulty": 2,
    "passage": "<b>Why Leaves Change Color</b><br>Leaves are green because of chlorophyll, which helps trees turn sunlight into food. Other colors, yellow and orange, are in the leaf all summer, but the green hides them. As autumn days shorten, trees stop making chlorophyll. The green fades, and the hidden yellows show through. Reds are different: many trees make red pigments only in fall, especially after sunny days and cool nights. That is why a dry, bright autumn often brings the most brilliant reds.",
@@ -6990,11 +7110,11 @@
    "stem": "Yellow appears in fall because",
    "choices": [
     "trees make yellow only in fall",
+    "rain washes leaves",
     "leaves dry out",
-    "the green chlorophyll fades away",
-    "rain washes leaves"
+    "the green chlorophyll fades away"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: the green chlorophyll fades away.",
    "difficulty": 2,
    "passage": "<b>Why Leaves Change Color</b><br>Leaves are green because of chlorophyll, which helps trees turn sunlight into food. Other colors, yellow and orange, are in the leaf all summer, but the green hides them. As autumn days shorten, trees stop making chlorophyll. The green fades, and the hidden yellows show through. Reds are different: many trees make red pigments only in fall, especially after sunny days and cool nights. That is why a dry, bright autumn often brings the most brilliant reds.",
@@ -7005,12 +7125,12 @@
    "skill": "inference",
    "stem": "Which fall weather would likely bring the brightest reds?",
    "choices": [
+    "sunny days and cool nights",
     "cloudy, warm days",
     "snow in September",
-    "sunny days and cool nights",
     "heavy rain every day"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: sunny days and cool nights.",
    "difficulty": 2,
    "passage": "<b>Why Leaves Change Color</b><br>Leaves are green because of chlorophyll, which helps trees turn sunlight into food. Other colors, yellow and orange, are in the leaf all summer, but the green hides them. As autumn days shorten, trees stop making chlorophyll. The green fades, and the hidden yellows show through. Reds are different: many trees make red pigments only in fall, especially after sunny days and cool nights. That is why a dry, bright autumn often brings the most brilliant reds.",
@@ -7021,10 +7141,10 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>brilliant</i> most nearly means",
    "choices": [
-    "costly",
+    "smart",
     "dim",
     "vivid",
-    "smart"
+    "costly"
    ],
    "answer": 2,
    "explanation": "The passage supports this answer: vivid.",
@@ -7038,11 +7158,11 @@
    "stem": "Priya's choice shows that she is",
    "choices": [
     "shy",
+    "fair-minded",
     "stubborn",
-    "careless",
-    "fair-minded"
+    "careless"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: fair-minded.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -7053,12 +7173,12 @@
    "skill": "detail",
    "stem": "What benefit of the longer day did the article mention?",
    "choices": [
-    "time for music",
-    "more recess",
     "less homework",
-    "later start times"
+    "time for music",
+    "later start times",
+    "more recess"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: time for music.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -7071,10 +7191,10 @@
    "choices": [
     "to end the debate early",
     "because she changed teams",
-    "to show she had considered both sides",
-    "because she had lost her notes"
+    "because she had lost her notes",
+    "to show she had considered both sides"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: to show she had considered both sides.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -7085,12 +7205,12 @@
    "skill": "plot",
    "stem": "What is the turning point of the story?",
    "choices": [
-    "Priya fills her notebook.",
     "Priya wins a prize.",
     "The debate begins.",
-    "Priya reads an article that makes her doubt herself."
+    "Priya reads an article that makes her doubt herself.",
+    "Priya fills her notebook."
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: Priya reads an article that makes her doubt herself.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -7101,12 +7221,12 @@
    "skill": "purpose",
    "stem": "The author's purpose is mainly to",
    "choices": [
-    "teach debate rules",
     "show how a character responds to new information",
-    "describe a school district",
-    "argue for longer school days"
+    "teach debate rules",
+    "argue for longer school days",
+    "describe a school district"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "The passage supports this answer: show how a character responds to new information.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -7117,9 +7237,9 @@
    "skill": "main idea",
    "stem": "The passage mainly shows that octopuses",
    "choices": [
+    "have strong bones",
     "are dangerous to people",
     "live only in aquariums",
-    "have strong bones",
     "are clever and flexible problem-solvers"
    ],
    "answer": 3,
@@ -7133,12 +7253,12 @@
    "skill": "detail",
    "stem": "What is the only hard part that limits where an octopus can fit?",
    "choices": [
-    "its beak",
-    "its shell",
+    "its spine",
     "its tentacles",
-    "its spine"
+    "its shell",
+    "its beak"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: its beak.",
    "difficulty": 2,
    "passage": "<b>Octopus Escape Artists</b><br>Octopuses have no bones, so any opening larger than their beak is a doorway. Aquarium workers tell stories of octopuses that slipped out of tanks at night, crossed the floor, and raided a neighboring tank for snacks before returning home. Scientists think such feats show real problem-solving. In lab tests, octopuses have unscrewed jar lids to reach crabs inside, and some learned the task faster after watching another octopus do it.",
@@ -7149,12 +7269,12 @@
    "skill": "inference",
    "stem": "Learning faster after watching another octopus suggests they can",
    "choices": [
-    "read labels",
     "hear human speech",
-    "learn by observing",
-    "see in the dark only"
+    "see in the dark only",
+    "read labels",
+    "learn by observing"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: learn by observing.",
    "difficulty": 2,
    "passage": "<b>Octopus Escape Artists</b><br>Octopuses have no bones, so any opening larger than their beak is a doorway. Aquarium workers tell stories of octopuses that slipped out of tanks at night, crossed the floor, and raided a neighboring tank for snacks before returning home. Scientists think such feats show real problem-solving. In lab tests, octopuses have unscrewed jar lids to reach crabs inside, and some learned the task faster after watching another octopus do it.",
@@ -7166,11 +7286,11 @@
    "stem": "In the passage, <i>feats</i> most nearly means",
    "choices": [
     "mistakes",
-    "impressive acts",
     "parts of a foot",
+    "impressive acts",
     "meals"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: impressive acts.",
    "difficulty": 2,
    "passage": "<b>Octopus Escape Artists</b><br>Octopuses have no bones, so any opening larger than their beak is a doorway. Aquarium workers tell stories of octopuses that slipped out of tanks at night, crossed the floor, and raided a neighboring tank for snacks before returning home. Scientists think such feats show real problem-solving. In lab tests, octopuses have unscrewed jar lids to reach crabs inside, and some learned the task faster after watching another octopus do it.",
@@ -7181,12 +7301,12 @@
    "skill": "purpose",
    "stem": "Why does the author include the aquarium stories?",
    "choices": [
+    "to complain about aquarium workers",
     "to explain how tanks are built",
     "to give vivid examples of octopus escapes",
-    "to sell aquarium tickets",
-    "to complain about aquarium workers"
+    "to sell aquarium tickets"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: to give vivid examples of octopus escapes.",
    "difficulty": 2,
    "passage": "<b>Octopus Escape Artists</b><br>Octopuses have no bones, so any opening larger than their beak is a doorway. Aquarium workers tell stories of octopuses that slipped out of tanks at night, crossed the floor, and raided a neighboring tank for snacks before returning home. Scientists think such feats show real problem-solving. In lab tests, octopuses have unscrewed jar lids to reach crabs inside, and some learned the task faster after watching another octopus do it.",
@@ -7197,12 +7317,12 @@
    "skill": "main idea",
    "stem": "What is the passage mainly about?",
    "choices": [
+    "river otters and what their presence can tell us about a river",
     "the history of muddy banks",
-    "why frogs eat crayfish",
     "how to dig a den",
-    "river otters and what their presence can tell us about a river"
+    "why frogs eat crayfish"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The passage supports this answer: river otters and what their presence can tell us about a river.",
    "difficulty": 2,
    "passage": "<b>River Otters</b><br>River otters are playful mammals that live near clean freshwater. They dig dens in riverbanks and slip into the water to hunt fish, frogs and crayfish. Otters have dense fur that traps air, keeping them warm even in cold streams. People sometimes see them sliding down muddy banks on their bellies — not just for travel, but apparently for fun. Scientists who track otters say a healthy otter population is a good sign that a river is clean enough to support many other animals.",
@@ -7213,12 +7333,12 @@
    "skill": "detail",
    "stem": "What keeps otters warm in cold water?",
    "choices": [
-    "bright sunlight",
-    "a layer of mud",
     "dense fur that traps air",
-    "thick bones"
+    "thick bones",
+    "bright sunlight",
+    "a layer of mud"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: dense fur that traps air.",
    "difficulty": 2,
    "passage": "<b>River Otters</b><br>River otters are playful mammals that live near clean freshwater. They dig dens in riverbanks and slip into the water to hunt fish, frogs and crayfish. Otters have dense fur that traps air, keeping them warm even in cold streams. People sometimes see them sliding down muddy banks on their bellies — not just for travel, but apparently for fun. Scientists who track otters say a healthy otter population is a good sign that a river is clean enough to support many other animals.",
@@ -7229,12 +7349,12 @@
    "skill": "inference",
    "stem": "Why might scientists care about otter numbers?",
    "choices": [
-    "Otters suggest the river is healthy.",
-    "Otters ruin riverbanks.",
     "Otters scare away fish.",
-    "Otters only live in zoos."
+    "Otters only live in zoos.",
+    "Otters ruin riverbanks.",
+    "Otters suggest the river is healthy."
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: Otters suggest the river is healthy.",
    "difficulty": 2,
    "passage": "<b>River Otters</b><br>River otters are playful mammals that live near clean freshwater. They dig dens in riverbanks and slip into the water to hunt fish, frogs and crayfish. Otters have dense fur that traps air, keeping them warm even in cold streams. People sometimes see them sliding down muddy banks on their bellies — not just for travel, but apparently for fun. Scientists who track otters say a healthy otter population is a good sign that a river is clean enough to support many other animals.",
@@ -7245,12 +7365,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>track</i> most nearly means",
    "choices": [
-    "build a road",
     "race on a path",
-    "erase footprints",
-    "follow and study"
+    "follow and study",
+    "build a road",
+    "erase footprints"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: follow and study.",
    "difficulty": 2,
    "passage": "<b>River Otters</b><br>River otters are playful mammals that live near clean freshwater. They dig dens in riverbanks and slip into the water to hunt fish, frogs and crayfish. Otters have dense fur that traps air, keeping them warm even in cold streams. People sometimes see them sliding down muddy banks on their bellies — not just for travel, but apparently for fun. Scientists who track otters say a healthy otter population is a good sign that a river is clean enough to support many other animals.",
@@ -7261,12 +7381,12 @@
    "skill": "purpose",
    "stem": "Why does the author mention sliding on muddy banks?",
    "choices": [
+    "to show that otters play as well as hunt",
     "to explain how dens are dug",
-    "to describe a sport",
     "to warn hikers about mud",
-    "to show that otters play as well as hunt"
+    "to describe a sport"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The passage supports this answer: to show that otters play as well as hunt.",
    "difficulty": 2,
    "passage": "<b>River Otters</b><br>River otters are playful mammals that live near clean freshwater. They dig dens in riverbanks and slip into the water to hunt fish, frogs and crayfish. Otters have dense fur that traps air, keeping them warm even in cold streams. People sometimes see them sliding down muddy banks on their bellies — not just for travel, but apparently for fun. Scientists who track otters say a healthy otter population is a good sign that a river is clean enough to support many other animals.",
@@ -7279,10 +7399,10 @@
    "choices": [
     "lonely and cold",
     "angry and rushed",
-    "scary and dark",
-    "lively and warm"
+    "lively and warm",
+    "scary and dark"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: lively and warm.",
    "difficulty": 2,
    "passage": "<b>The Night Market</b><br>Every Saturday after sunset, lanterns bloom along Harbor Street and the night market opens. Steam rises from dumpling carts; a woman tunes a two-string fiddle while children chase soap bubbles between stalls. Mei helps her grandmother sell jars of pickled radish. She used to wish the market were quieter. Now she likes the noise. It means neighbors have come out of their apartments to share food and stories under the same string of lights.",
@@ -7293,12 +7413,12 @@
    "skill": "character",
    "stem": "How has Mei's feeling about the market changed?",
    "choices": [
-    "She prefers shopping online.",
-    "She wants to close the stall.",
+    "She no longer helps her grandmother.",
     "She has grown to enjoy the lively noise.",
-    "She no longer helps her grandmother."
+    "She prefers shopping online.",
+    "She wants to close the stall."
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The passage supports this answer: She has grown to enjoy the lively noise.",
    "difficulty": 2,
    "passage": "<b>The Night Market</b><br>Every Saturday after sunset, lanterns bloom along Harbor Street and the night market opens. Steam rises from dumpling carts; a woman tunes a two-string fiddle while children chase soap bubbles between stalls. Mei helps her grandmother sell jars of pickled radish. She used to wish the market were quieter. Now she likes the noise. It means neighbors have come out of their apartments to share food and stories under the same string of lights.",
@@ -7310,9 +7430,9 @@
    "stem": "What does Mei's family sell?",
    "choices": [
     "soap bubbles",
-    "dumplings",
+    "fiddles",
     "jars of pickled radish",
-    "fiddles"
+    "dumplings"
    ],
    "answer": 2,
    "explanation": "The passage supports this answer: jars of pickled radish.",
@@ -7325,12 +7445,12 @@
    "skill": "inference",
    "stem": "The last sentence suggests the market matters because it",
    "choices": [
-    "brings neighbors together",
-    "keeps children quiet",
     "makes a lot of money",
+    "keeps children quiet",
+    "brings neighbors together",
     "replaces daylight"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "The passage supports this answer: brings neighbors together.",
    "difficulty": 2,
    "passage": "<b>The Night Market</b><br>Every Saturday after sunset, lanterns bloom along Harbor Street and the night market opens. Steam rises from dumpling carts; a woman tunes a two-string fiddle while children chase soap bubbles between stalls. Mei helps her grandmother sell jars of pickled radish. She used to wish the market were quieter. Now she likes the noise. It means neighbors have come out of their apartments to share food and stories under the same string of lights.",
@@ -7341,12 +7461,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>bloom</i> most nearly means",
    "choices": [
-    "light up / open brightly",
     "wilt",
     "freeze",
+    "light up / open brightly",
     "explode"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "The passage supports this answer: light up / open brightly.",
    "difficulty": 2,
    "passage": "<b>The Night Market</b><br>Every Saturday after sunset, lanterns bloom along Harbor Street and the night market opens. Steam rises from dumpling carts; a woman tunes a two-string fiddle while children chase soap bubbles between stalls. Mei helps her grandmother sell jars of pickled radish. She used to wish the market were quieter. Now she likes the noise. It means neighbors have come out of their apartments to share food and stories under the same string of lights.",
@@ -7357,12 +7477,12 @@
    "skill": "main idea",
    "stem": "The passage is mainly about",
    "choices": [
-    "how to grow apple trees",
-    "a windowsill cleaning day",
     "why worms are scary",
-    "students learning how compost turns scraps into soil"
+    "students learning how compost turns scraps into soil",
+    "a windowsill cleaning day",
+    "how to grow apple trees"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: students learning how compost turns scraps into soil.",
    "difficulty": 2,
    "passage": "<b>Compost in a Cup</b><br>Ms. Patel asked each student to build a tiny compost pile in a clear cup: dry leaves, kitchen scraps, a spoon of soil and a little water. Within two weeks, worms and microbes had begun turning the scraps into dark, crumbly compost. \"Nothing really disappears,\" Ms. Patel said. \"It just changes form.\" The class used the finished compost to plant basil on the windowsill. Students who once tossed apple cores in the trash started saving them for the cups.",
@@ -7373,12 +7493,12 @@
    "skill": "detail",
    "stem": "What did the class plant with the finished compost?",
    "choices": [
+    "dry leaves",
     "apple trees",
-    "basil",
     "worms",
-    "dry leaves"
+    "basil"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: basil.",
    "difficulty": 2,
    "passage": "<b>Compost in a Cup</b><br>Ms. Patel asked each student to build a tiny compost pile in a clear cup: dry leaves, kitchen scraps, a spoon of soil and a little water. Within two weeks, worms and microbes had begun turning the scraps into dark, crumbly compost. \"Nothing really disappears,\" Ms. Patel said. \"It just changes form.\" The class used the finished compost to plant basil on the windowsill. Students who once tossed apple cores in the trash started saving them for the cups.",
@@ -7389,12 +7509,12 @@
    "skill": "cause and effect",
    "stem": "Students began saving apple cores because",
    "choices": [
-    "they wanted to add them to the compost cups",
-    "Ms. Patel banned trash",
+    "apples were expensive",
     "the trash cans were full",
-    "apples were expensive"
+    "they wanted to add them to the compost cups",
+    "Ms. Patel banned trash"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "The passage supports this answer: they wanted to add them to the compost cups.",
    "difficulty": 2,
    "passage": "<b>Compost in a Cup</b><br>Ms. Patel asked each student to build a tiny compost pile in a clear cup: dry leaves, kitchen scraps, a spoon of soil and a little water. Within two weeks, worms and microbes had begun turning the scraps into dark, crumbly compost. \"Nothing really disappears,\" Ms. Patel said. \"It just changes form.\" The class used the finished compost to plant basil on the windowsill. Students who once tossed apple cores in the trash started saving them for the cups.",
@@ -7405,12 +7525,12 @@
    "skill": "vocabulary",
    "stem": "As used here, <i>crumbly</i> means",
    "choices": [
-    "frozen",
-    "sticky like glue",
+    "shiny",
     "breaking into soft bits",
-    "shiny"
+    "sticky like glue",
+    "frozen"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The passage supports this answer: breaking into soft bits.",
    "difficulty": 2,
    "passage": "<b>Compost in a Cup</b><br>Ms. Patel asked each student to build a tiny compost pile in a clear cup: dry leaves, kitchen scraps, a spoon of soil and a little water. Within two weeks, worms and microbes had begun turning the scraps into dark, crumbly compost. \"Nothing really disappears,\" Ms. Patel said. \"It just changes form.\" The class used the finished compost to plant basil on the windowsill. Students who once tossed apple cores in the trash started saving them for the cups.",
@@ -7423,8 +7543,8 @@
    "choices": [
     "Worms ruin gardens.",
     "Small actions can change habits and help the earth.",
-    "Trash is unavoidable.",
-    "Science class is too messy."
+    "Science class is too messy.",
+    "Trash is unavoidable."
    ],
    "answer": 1,
    "explanation": "The passage supports this answer: Small actions can change habits and help the earth.",
@@ -7437,12 +7557,12 @@
    "skill": "main idea",
    "stem": "The author's main point is that",
    "choices": [
-    "satellites are useless",
-    "Captain Cook erased all maps",
     "early maps were imperfect but still useful building blocks",
-    "sailors never used compasses"
+    "satellites are useless",
+    "sailors never used compasses",
+    "Captain Cook erased all maps"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: early maps were imperfect but still useful building blocks.",
    "difficulty": 2,
    "passage": "<b>Maps Before Satellites</b><br>Before satellites, mapmakers drew coastlines from sailors' logs, compass readings and sketches made from ships. Errors were common: islands appeared twice, or a bay was drawn miles from its true place. Yet those early maps still helped explorers share knowledge. When Captain Cook charted the Pacific, later navigators corrected his lines instead of starting from a blank page. Modern satellite maps are far more precise, but they stand on centuries of careful, imperfect work.",
@@ -7453,12 +7573,12 @@
    "skill": "detail",
    "stem": "What did early mapmakers use?",
    "choices": [
-    "only satellites",
     "airport radar",
-    "sailors' logs, compass readings and sketches",
-    "paintings of dragons"
+    "only satellites",
+    "paintings of dragons",
+    "sailors' logs, compass readings and sketches"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: sailors' logs, compass readings and sketches.",
    "difficulty": 2,
    "passage": "<b>Maps Before Satellites</b><br>Before satellites, mapmakers drew coastlines from sailors' logs, compass readings and sketches made from ships. Errors were common: islands appeared twice, or a bay was drawn miles from its true place. Yet those early maps still helped explorers share knowledge. When Captain Cook charted the Pacific, later navigators corrected his lines instead of starting from a blank page. Modern satellite maps are far more precise, but they stand on centuries of careful, imperfect work.",
@@ -7469,12 +7589,12 @@
    "skill": "inference",
    "stem": "Why could later navigators improve Cook's charts?",
    "choices": [
-    "Cook forbade changes.",
-    "Islands never move.",
     "They had a starting map to correct rather than a blank page.",
+    "Islands never move.",
+    "Cook forbade changes.",
     "Satellites already existed."
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: They had a starting map to correct rather than a blank page.",
    "difficulty": 2,
    "passage": "<b>Maps Before Satellites</b><br>Before satellites, mapmakers drew coastlines from sailors' logs, compass readings and sketches made from ships. Errors were common: islands appeared twice, or a bay was drawn miles from its true place. Yet those early maps still helped explorers share knowledge. When Captain Cook charted the Pacific, later navigators corrected his lines instead of starting from a blank page. Modern satellite maps are far more precise, but they stand on centuries of careful, imperfect work.",
@@ -7485,12 +7605,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>precise</i> most nearly means",
    "choices": [
+    "colorful",
     "ancient",
-    "exact",
     "heavy",
-    "colorful"
+    "exact"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: exact.",
    "difficulty": 2,
    "passage": "<b>Maps Before Satellites</b><br>Before satellites, mapmakers drew coastlines from sailors' logs, compass readings and sketches made from ships. Errors were common: islands appeared twice, or a bay was drawn miles from its true place. Yet those early maps still helped explorers share knowledge. When Captain Cook charted the Pacific, later navigators corrected his lines instead of starting from a blank page. Modern satellite maps are far more precise, but they stand on centuries of careful, imperfect work.",
@@ -7501,12 +7621,12 @@
    "skill": "purpose",
    "stem": "Why mention islands appearing twice?",
    "choices": [
-    "to praise modern tourism",
     "to describe a magic trick",
     "to explain tides",
-    "to show how early maps could contain errors"
+    "to show how early maps could contain errors",
+    "to praise modern tourism"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: to show how early maps could contain errors.",
    "difficulty": 2,
    "passage": "<b>Maps Before Satellites</b><br>Before satellites, mapmakers drew coastlines from sailors' logs, compass readings and sketches made from ships. Errors were common: islands appeared twice, or a bay was drawn miles from its true place. Yet those early maps still helped explorers share knowledge. When Captain Cook charted the Pacific, later navigators corrected his lines instead of starting from a blank page. Modern satellite maps are far more precise, but they stand on centuries of careful, imperfect work.",
@@ -7518,11 +7638,11 @@
    "stem": "Samir changes from someone who",
    "choices": [
     "loved penalties to avoided practice",
+    "feared his sister to ignored her",
     "never played sports to a star striker",
-    "disliked being goalie to someone who accepted and trained for it",
-    "feared his sister to ignored her"
+    "disliked being goalie to someone who accepted and trained for it"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: disliked being goalie to someone who accepted and trained for it.",
    "difficulty": 2,
    "passage": "<b>Goalie Gloves</b><br>Samir hated being goalie until the Saturday he stopped a penalty kick with his fingertips. The ball stung, but the roar from his teammates drowned it out. After that, he started practicing dives on the grass behind his apartment. His sister timed him with a kitchen clock. By the playoffs he still got scored on — every goalie does — but he no longer watched the clock during games, wishing to switch positions.",
@@ -7533,12 +7653,12 @@
    "skill": "detail",
    "stem": "Who timed Samir's practice?",
    "choices": [
-    "his coach",
-    "his sister",
     "the referee",
-    "a teammate"
+    "his coach",
+    "a teammate",
+    "his sister"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: his sister.",
    "difficulty": 2,
    "passage": "<b>Goalie Gloves</b><br>Samir hated being goalie until the Saturday he stopped a penalty kick with his fingertips. The ball stung, but the roar from his teammates drowned it out. After that, he started practicing dives on the grass behind his apartment. His sister timed him with a kitchen clock. By the playoffs he still got scored on — every goalie does — but he no longer watched the clock during games, wishing to switch positions.",
@@ -7549,12 +7669,12 @@
    "skill": "inference",
    "stem": "Why did Samir stop watching the clock during games?",
    "choices": [
-    "Games got shorter.",
-    "He became more engaged in playing goalie.",
+    "His sister took the clock.",
     "The stadium banned clocks.",
-    "His sister took the clock."
+    "He became more engaged in playing goalie.",
+    "Games got shorter."
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: He became more engaged in playing goalie.",
    "difficulty": 2,
    "passage": "<b>Goalie Gloves</b><br>Samir hated being goalie until the Saturday he stopped a penalty kick with his fingertips. The ball stung, but the roar from his teammates drowned it out. After that, he started practicing dives on the grass behind his apartment. His sister timed him with a kitchen clock. By the playoffs he still got scored on — every goalie does — but he no longer watched the clock during games, wishing to switch positions.",
@@ -7565,12 +7685,12 @@
    "skill": "plot",
    "stem": "What is the turning point?",
    "choices": [
-    "He stops a penalty kick with his fingertips.",
+    "He switches to striker.",
     "He buys new gloves.",
     "The playoffs end.",
-    "He switches to striker."
+    "He stops a penalty kick with his fingertips."
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: He stops a penalty kick with his fingertips.",
    "difficulty": 2,
    "passage": "<b>Goalie Gloves</b><br>Samir hated being goalie until the Saturday he stopped a penalty kick with his fingertips. The ball stung, but the roar from his teammates drowned it out. After that, he started practicing dives on the grass behind his apartment. His sister timed him with a kitchen clock. By the playoffs he still got scored on — every goalie does — but he no longer watched the clock during games, wishing to switch positions.",
@@ -7582,8 +7702,8 @@
    "stem": "In the passage, <i>drowned it out</i> means",
    "choices": [
     "ended the game",
-    "made him swim",
     "turned off the lights",
+    "made him swim",
     "was so loud it covered the pain"
    ],
    "answer": 3,
@@ -7599,8 +7719,8 @@
    "choices": [
     "desert life responds quickly when rare rain arrives",
     "toads dislike water",
-    "deserts never get rain",
-    "cacti need daily watering"
+    "cacti need daily watering",
+    "deserts never get rain"
    ],
    "answer": 0,
    "explanation": "The passage supports this answer: desert life responds quickly when rare rain arrives.",
@@ -7613,12 +7733,12 @@
    "skill": "detail",
    "stem": "Where do toads come from after rain?",
    "choices": [
-    "the ocean",
     "tree branches",
-    "mountain snow",
-    "underground"
+    "the ocean",
+    "underground",
+    "mountain snow"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: underground.",
    "difficulty": 2,
    "passage": "<b>Desert Rain</b><br>Rain is rare in the Sonoran Desert, but when it comes, the land answers quickly. Seeds that waited months in dry soil sprout within days. Toads that slept underground dig out to lay eggs in short-lived pools. Cacti swell as they store water in their stems. Visitors who see the desert only in drought may think it is empty. A week after a storm, the same ground can blaze with wildflowers.",
@@ -7629,8 +7749,8 @@
    "skill": "cause and effect",
    "stem": "Wildflowers appear after a storm because",
    "choices": [
-    "visitors plant them",
     "cacti shed flowers daily",
+    "visitors plant them",
     "seeds sprout when they finally get water",
     "wind paints the ground"
    ],
@@ -7645,12 +7765,12 @@
    "skill": "inference",
    "stem": "Someone who visits only during drought might wrongly conclude that",
    "choices": [
-    "cacti cannot store water",
     "rain falls every week",
     "toads live in pools year-round",
-    "the desert has little life"
+    "the desert has little life",
+    "cacti cannot store water"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: the desert has little life.",
    "difficulty": 2,
    "passage": "<b>Desert Rain</b><br>Rain is rare in the Sonoran Desert, but when it comes, the land answers quickly. Seeds that waited months in dry soil sprout within days. Toads that slept underground dig out to lay eggs in short-lived pools. Cacti swell as they store water in their stems. Visitors who see the desert only in drought may think it is empty. A week after a storm, the same ground can blaze with wildflowers.",
@@ -7661,12 +7781,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>blaze</i> most nearly means",
    "choices": [
-    "freeze",
-    "catch fire dangerously",
+    "show bright color",
     "dry out",
-    "show bright color"
+    "catch fire dangerously",
+    "freeze"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The passage supports this answer: show bright color.",
    "difficulty": 2,
    "passage": "<b>Desert Rain</b><br>Rain is rare in the Sonoran Desert, but when it comes, the land answers quickly. Seeds that waited months in dry soil sprout within days. Toads that slept underground dig out to lay eggs in short-lived pools. Cacti swell as they store water in their stems. Visitors who see the desert only in drought may think it is empty. A week after a storm, the same ground can blaze with wildflowers.",
@@ -7677,12 +7797,12 @@
    "skill": "theme",
    "stem": "A theme of the story is that",
    "choices": [
+    "trust and sharing can create a caring community",
     "checklists solve everything",
     "books should be locked up",
-    "trust and sharing can create a caring community",
     "hospitals ban reading"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: trust and sharing can create a caring community.",
    "difficulty": 2,
    "passage": "<b>The Lending Shelf</b><br>At the back of Room 12 stood a crooked shelf labeled \"Take one, leave one.\" Students left novels, comics and puzzle books; others borrowed them overnight. No checklist tracked who took what. Ms. Cho said trust was the point. When a favorite graphic novel went missing for two weeks, the class worried. Then it reappeared with a sticky note: \"Sorry — finished it in the hospital. Thank you.\" The shelf stayed.",
@@ -7693,12 +7813,12 @@
    "skill": "detail",
    "stem": "What rule did the shelf use?",
    "choices": [
-    "Only comics allowed",
-    "Pay a dollar",
     "Ask Ms. Cho first",
-    "Take one, leave one"
+    "Take one, leave one",
+    "Pay a dollar",
+    "Only comics allowed"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: Take one, leave one.",
    "difficulty": 2,
    "passage": "<b>The Lending Shelf</b><br>At the back of Room 12 stood a crooked shelf labeled \"Take one, leave one.\" Students left novels, comics and puzzle books; others borrowed them overnight. No checklist tracked who took what. Ms. Cho said trust was the point. When a favorite graphic novel went missing for two weeks, the class worried. Then it reappeared with a sticky note: \"Sorry — finished it in the hospital. Thank you.\" The shelf stayed.",
@@ -7709,8 +7829,8 @@
    "skill": "inference",
    "stem": "The sticky note suggests the borrower",
    "choices": [
-    "was angry at the class",
     "disliked graphic novels",
+    "was angry at the class",
     "stole the book forever",
     "had a good reason and returned the book gratefully"
    ],
@@ -7726,8 +7846,8 @@
    "stem": "As used here, <i>crooked</i> means",
    "choices": [
     "not straight / slightly tilted",
-    "locked",
     "brand new",
+    "locked",
     "dishonest"
    ],
    "answer": 0,
@@ -7741,12 +7861,12 @@
    "skill": "purpose",
    "stem": "Why include the hospital note?",
    "choices": [
-    "to scold the class",
     "to advertise hospitals",
-    "to show the shelf helped someone through a hard time",
-    "to end the lending project"
+    "to end the lending project",
+    "to scold the class",
+    "to show the shelf helped someone through a hard time"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: to show the shelf helped someone through a hard time.",
    "difficulty": 2,
    "passage": "<b>The Lending Shelf</b><br>At the back of Room 12 stood a crooked shelf labeled \"Take one, leave one.\" Students left novels, comics and puzzle books; others borrowed them overnight. No checklist tracked who took what. Ms. Cho said trust was the point. When a favorite graphic novel went missing for two weeks, the class worried. Then it reappeared with a sticky note: \"Sorry — finished it in the hospital. Thank you.\" The shelf stayed.",
@@ -7757,12 +7877,12 @@
    "skill": "main idea",
    "stem": "The passage mainly explains",
    "choices": [
-    "how researchers eat honey",
     "how to keep a hive as a pet",
-    "how honeybee dances share the location of food",
-    "why the sun moves"
+    "how researchers eat honey",
+    "why the sun moves",
+    "how honeybee dances share the location of food"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: how honeybee dances share the location of food.",
    "difficulty": 2,
    "passage": "<b>Bee Math</b><br>Honeybees tell nestmates where food is by dancing. A round dance means food is nearby. A waggle dance means food is farther: the angle of the waggle shows direction relative to the sun, and the length of the waggle shows distance. Researchers who moved food dishes found bees adjusted their dances within minutes. The hive, in other words, shares a living map updated all day long.",
@@ -7774,11 +7894,11 @@
    "stem": "What does a longer waggle mean?",
    "choices": [
     "more bees nearby",
-    "sweeter nectar",
     "greater distance to the food",
+    "sweeter nectar",
     "danger from bears"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The passage supports this answer: greater distance to the food.",
    "difficulty": 2,
    "passage": "<b>Bee Math</b><br>Honeybees tell nestmates where food is by dancing. A round dance means food is nearby. A waggle dance means food is farther: the angle of the waggle shows direction relative to the sun, and the length of the waggle shows distance. Researchers who moved food dishes found bees adjusted their dances within minutes. The hive, in other words, shares a living map updated all day long.",
@@ -7790,9 +7910,9 @@
    "stem": "Bees change their dances quickly when",
    "choices": [
     "researchers move the food dishes",
+    "round dances are banned",
     "the hive is painted",
-    "the sun sets forever",
-    "round dances are banned"
+    "the sun sets forever"
    ],
    "answer": 0,
    "explanation": "The passage supports this answer: researchers move the food dishes.",
@@ -7805,12 +7925,12 @@
    "skill": "inference",
    "stem": "Calling the hive's knowledge a \"living map\" suggests it",
    "choices": [
+    "never changes",
     "is updated as conditions change",
     "only works at night",
-    "is drawn on paper",
-    "never changes"
+    "is drawn on paper"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: is updated as conditions change.",
    "difficulty": 2,
    "passage": "<b>Bee Math</b><br>Honeybees tell nestmates where food is by dancing. A round dance means food is nearby. A waggle dance means food is farther: the angle of the waggle shows direction relative to the sun, and the length of the waggle shows distance. Researchers who moved food dishes found bees adjusted their dances within minutes. The hive, in other words, shares a living map updated all day long.",
@@ -7821,12 +7941,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>relative to</i> means",
    "choices": [
-    "inside of",
-    "compared with / in relation to",
+    "instead of",
     "against the wishes of",
-    "instead of"
+    "inside of",
+    "compared with / in relation to"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: compared with / in relation to.",
    "difficulty": 2,
    "passage": "<b>Bee Math</b><br>Honeybees tell nestmates where food is by dancing. A round dance means food is nearby. A waggle dance means food is farther: the angle of the waggle shows direction relative to the sun, and the length of the waggle shows distance. Researchers who moved food dishes found bees adjusted their dances within minutes. The hive, in other words, shares a living map updated all day long.",
@@ -7837,9 +7957,9 @@
    "skill": "mood",
    "stem": "The mood is best described as",
    "choices": [
-    "scary and dangerous",
-    "boring and empty",
     "chaotic and loud",
+    "boring and empty",
+    "scary and dangerous",
     "quiet and thoughtful"
    ],
    "answer": 3,
@@ -7853,12 +7973,12 @@
    "skill": "detail",
    "stem": "What job does Jana do?",
    "choices": [
-    "shelve books in the evening",
     "wax the floors",
+    "write poems for the desk",
     "lock patrons in",
-    "write poems for the desk"
+    "shelve books in the evening"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: shelve books in the evening.",
    "difficulty": 2,
    "passage": "<b>Library After Hours</b><br>Most people think a library sleeps when the doors lock. Jana, who shelved books three evenings a week, knew otherwise. Motion lights clicked on as she wheeled the cart. The air still smelled of paper and floor wax. Sometimes she found a forgotten bookmark with a grocery list on one side and a poem on the other. She tucked those back where they belonged. \"Books wait,\" her supervisor liked to say. \"Readers come back.\"",
@@ -7870,11 +7990,11 @@
    "stem": "The supervisor's saying suggests a belief that",
    "choices": [
     "books should be thrown away",
-    "bookmarks are trash",
     "libraries should stay closed",
-    "people return to books over time"
+    "people return to books over time",
+    "bookmarks are trash"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: people return to books over time.",
    "difficulty": 2,
    "passage": "<b>Library After Hours</b><br>Most people think a library sleeps when the doors lock. Jana, who shelved books three evenings a week, knew otherwise. Motion lights clicked on as she wheeled the cart. The air still smelled of paper and floor wax. Sometimes she found a forgotten bookmark with a grocery list on one side and a poem on the other. She tucked those back where they belonged. \"Books wait,\" her supervisor liked to say. \"Readers come back.\"",
@@ -7885,9 +8005,9 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>forgotten</i> most nearly means",
    "choices": [
-    "brand new",
     "expensive",
     "forbidden",
+    "brand new",
     "left behind by accident"
    ],
    "answer": 3,
@@ -7901,12 +8021,12 @@
    "skill": "figurative language",
    "stem": "\"A library sleeps\" is an example of",
    "choices": [
+    "a timeline",
     "a rhyme scheme",
-    "personification",
     "a factual measurement",
-    "a timeline"
+    "personification"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: personification.",
    "difficulty": 2,
    "passage": "<b>Library After Hours</b><br>Most people think a library sleeps when the doors lock. Jana, who shelved books three evenings a week, knew otherwise. Motion lights clicked on as she wheeled the cart. The air still smelled of paper and floor wax. Sometimes she found a forgotten bookmark with a grocery list on one side and a poem on the other. She tucked those back where they belonged. \"Books wait,\" her supervisor liked to say. \"Readers come back.\"",
@@ -7917,12 +8037,12 @@
    "skill": "main idea",
    "stem": "The passage explains that",
    "choices": [
-    "steel bridges are built to flex safely and still need inspection",
-    "storms destroy all bridges",
+    "bridges should never move",
     "rust is decorative",
-    "bridges should never move"
+    "storms destroy all bridges",
+    "steel bridges are built to flex safely and still need inspection"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: steel bridges are built to flex safely and still need inspection.",
    "difficulty": 2,
    "passage": "<b>Steel Bridges</b><br>A steel bridge flexes. Engineers design tiny amounts of give into the span so wind and traffic do not crack it. Expansion joints leave gaps that close on hot days and open on cold ones. When people say a bridge \"hummed\" in a storm, they are hearing safe vibration, not failure. Inspectors still climb the beams each year looking for rust, because flexibility is not the same as neglect.",
@@ -7933,12 +8053,12 @@
    "skill": "detail",
    "stem": "What do expansion joints do?",
    "choices": [
+    "play music in storms",
     "hold paint",
     "allow gaps to change with temperature",
-    "block traffic",
-    "play music in storms"
+    "block traffic"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: allow gaps to change with temperature.",
    "difficulty": 2,
    "passage": "<b>Steel Bridges</b><br>A steel bridge flexes. Engineers design tiny amounts of give into the span so wind and traffic do not crack it. Expansion joints leave gaps that close on hot days and open on cold ones. When people say a bridge \"hummed\" in a storm, they are hearing safe vibration, not failure. Inspectors still climb the beams each year looking for rust, because flexibility is not the same as neglect.",
@@ -7949,12 +8069,12 @@
    "skill": "inference",
    "stem": "Inspectors climb the beams because",
    "choices": [
-    "steel never rusts",
-    "the bridge is about to open to skating",
     "humming means immediate collapse",
-    "flexibility does not remove the need to check for damage"
+    "flexibility does not remove the need to check for damage",
+    "the bridge is about to open to skating",
+    "steel never rusts"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: flexibility does not remove the need to check for damage.",
    "difficulty": 2,
    "passage": "<b>Steel Bridges</b><br>A steel bridge flexes. Engineers design tiny amounts of give into the span so wind and traffic do not crack it. Expansion joints leave gaps that close on hot days and open on cold ones. When people say a bridge \"hummed\" in a storm, they are hearing safe vibration, not failure. Inspectors still climb the beams each year looking for rust, because flexibility is not the same as neglect.",
@@ -7967,10 +8087,10 @@
    "choices": [
     "a donated gift",
     "loud noise",
-    "permission slip",
-    "flexibility / ability to bend a little"
+    "flexibility / ability to bend a little",
+    "permission slip"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: flexibility / ability to bend a little.",
    "difficulty": 2,
    "passage": "<b>Steel Bridges</b><br>A steel bridge flexes. Engineers design tiny amounts of give into the span so wind and traffic do not crack it. Expansion joints leave gaps that close on hot days and open on cold ones. When people say a bridge \"hummed\" in a storm, they are hearing safe vibration, not failure. Inspectors still climb the beams each year looking for rust, because flexibility is not the same as neglect.",
@@ -7982,8 +8102,8 @@
    "stem": "Gaps close on hot days because",
    "choices": [
     "wind pushes joints shut",
-    "inspectors tighten bolts daily",
     "traffic melts the steel",
+    "inspectors tighten bolts daily",
     "heat makes the steel expand"
    ],
    "answer": 3,
@@ -7997,10 +8117,10 @@
    "skill": "main idea",
    "stem": "What is the passage mainly about?",
    "choices": [
+    "building rocky shelves",
     "how to catch hermit crabs",
-    "why the ocean never moves",
     "tide pools as tough, crowded habitats that change with the tide",
-    "building rocky shelves"
+    "why the ocean never moves"
    ],
    "answer": 2,
    "explanation": "The passage supports this answer: tide pools as tough, crowded habitats that change with the tide.",
@@ -8013,9 +8133,9 @@
    "skill": "detail",
    "stem": "What do anemones use to catch food?",
    "choices": [
-    "counting tools",
-    "baking sun",
     "borrowed shells",
+    "baking sun",
+    "counting tools",
     "sticky tentacles"
    ],
    "answer": 3,
@@ -8029,12 +8149,12 @@
    "skill": "inference",
    "stem": "Calling life in a tide pool an \"obstacle course\" suggests animals there must",
    "choices": [
-    "live only at night",
     "avoid all water",
-    "race for medals",
-    "handle hard, changing conditions"
+    "handle hard, changing conditions",
+    "live only at night",
+    "race for medals"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: handle hard, changing conditions.",
    "difficulty": 2,
    "passage": "<b>Tide Pools</b><br>At low tide, rocky shelves along the coast become tide pools — shallow bowls of seawater left behind by the retreating ocean. Inside them, sea stars pry open mussels, hermit crabs swap shells and anemones wave sticky tentacles. A tide pool looks calm, but it is a packed neighborhood that must survive baking sun, then cold waves, twice a day. Scientists counting species in one pool are really counting survivors of a daily obstacle course.",
@@ -8045,12 +8165,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>retreating</i> most nearly means",
    "choices": [
-    "attacking",
-    "freezing",
     "glowing",
-    "going back / pulling away"
+    "going back / pulling away",
+    "freezing",
+    "attacking"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: going back / pulling away.",
    "difficulty": 2,
    "passage": "<b>Tide Pools</b><br>At low tide, rocky shelves along the coast become tide pools — shallow bowls of seawater left behind by the retreating ocean. Inside them, sea stars pry open mussels, hermit crabs swap shells and anemones wave sticky tentacles. A tide pool looks calm, but it is a packed neighborhood that must survive baking sun, then cold waves, twice a day. Scientists counting species in one pool are really counting survivors of a daily obstacle course.",
@@ -8061,12 +8181,12 @@
    "skill": "purpose",
    "stem": "Why mention baking sun and cold waves?",
    "choices": [
-    "to advertise a beach",
-    "to explain astronomy",
     "to show the harsh conditions tide-pool animals face",
-    "to scare swimmers away forever"
+    "to advertise a beach",
+    "to scare swimmers away forever",
+    "to explain astronomy"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: to show the harsh conditions tide-pool animals face.",
    "difficulty": 2,
    "passage": "<b>Tide Pools</b><br>At low tide, rocky shelves along the coast become tide pools — shallow bowls of seawater left behind by the retreating ocean. Inside them, sea stars pry open mussels, hermit crabs swap shells and anemones wave sticky tentacles. A tide pool looks calm, but it is a packed neighborhood that must survive baking sun, then cold waves, twice a day. Scientists counting species in one pool are really counting survivors of a daily obstacle course.",
@@ -8077,12 +8197,12 @@
    "skill": "theme",
    "stem": "A theme of the story is that",
    "choices": [
-    "libraries should ban clubs",
-    "effort and learning together matter more than a perfect demo",
+    "games are a waste of time",
     "only experts should code",
-    "games are a waste of time"
+    "effort and learning together matter more than a perfect demo",
+    "libraries should ban clubs"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: effort and learning together matter more than a perfect demo.",
    "difficulty": 2,
    "passage": "<b>Code Club</b><br>No one expected the after-school code club to fill the library. Then Samira posted a flyer that said \"Build a game in six weeks — no experience needed.\" Twenty students showed up. Some had never typed a loop. By week three, pairs were debugging each other's projects, and the librarian had to ask them to whisper. On demo day, a maze game froze twice — and the room still applauded, because everyone recognized the hours behind the glitch.",
@@ -8093,8 +8213,8 @@
    "skill": "detail",
    "stem": "What did Samira's flyer promise?",
    "choices": [
-    "Free pizza every day",
     "A prize for the loudest team",
+    "Free pizza every day",
     "Build a game in six weeks with no experience needed",
     "A trip to a tech company"
    ],
@@ -8110,11 +8230,11 @@
    "stem": "The applause after the freeze suggests the audience",
    "choices": [
     "hated maze games",
-    "wanted longer speeches",
+    "valued the work even when the game failed",
     "was glad the club would end",
-    "valued the work even when the game failed"
+    "wanted longer speeches"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: valued the work even when the game failed.",
    "difficulty": 2,
    "passage": "<b>Code Club</b><br>No one expected the after-school code club to fill the library. Then Samira posted a flyer that said \"Build a game in six weeks — no experience needed.\" Twenty students showed up. Some had never typed a loop. By week three, pairs were debugging each other's projects, and the librarian had to ask them to whisper. On demo day, a maze game froze twice — and the room still applauded, because everyone recognized the hours behind the glitch.",
@@ -8125,12 +8245,12 @@
    "skill": "character",
    "stem": "Samira is best described as",
    "choices": [
-    "afraid of groups",
     "someone who hates libraries",
-    "someone who invites beginners in",
-    "a strict judge of demos"
+    "a strict judge of demos",
+    "afraid of groups",
+    "someone who invites beginners in"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: someone who invites beginners in.",
    "difficulty": 2,
    "passage": "<b>Code Club</b><br>No one expected the after-school code club to fill the library. Then Samira posted a flyer that said \"Build a game in six weeks — no experience needed.\" Twenty students showed up. Some had never typed a loop. By week three, pairs were debugging each other's projects, and the librarian had to ask them to whisper. On demo day, a maze game froze twice — and the room still applauded, because everyone recognized the hours behind the glitch.",
@@ -8141,12 +8261,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>debugging</i> most nearly means",
    "choices": [
-    "decorating screens",
     "deleting friends",
+    "finding and fixing errors",
     "printing flyers",
-    "finding and fixing errors"
+    "decorating screens"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: finding and fixing errors.",
    "difficulty": 2,
    "passage": "<b>Code Club</b><br>No one expected the after-school code club to fill the library. Then Samira posted a flyer that said \"Build a game in six weeks — no experience needed.\" Twenty students showed up. Some had never typed a loop. By week three, pairs were debugging each other's projects, and the librarian had to ask them to whisper. On demo day, a maze game froze twice — and the room still applauded, because everyone recognized the hours behind the glitch.",
@@ -8157,12 +8277,12 @@
    "skill": "main idea",
    "stem": "The passage mainly explains",
    "choices": [
-    "why hikers need tents",
-    "how glaciers move and reshape the land",
     "how rivers freeze overnight",
-    "how to photograph ice"
+    "how to photograph ice",
+    "how glaciers move and reshape the land",
+    "why hikers need tents"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: how glaciers move and reshape the land.",
    "difficulty": 2,
    "passage": "<b>Glacier Pace</b><br>Glaciers look still in photographs, yet they move. Gravity pulls their ice downhill a few inches — or a few feet — each day. Rocks trapped in the ice scrape the valley floor, carving U-shaped valleys over thousands of years. When a glacier melts back, it leaves ridges of debris called moraines. Hikers who stand on a moraine are standing on a timeline written in stone and dirt.",
@@ -8174,11 +8294,11 @@
    "stem": "What are moraines?",
    "choices": [
     "ice cream flavors",
-    "ridges of debris left by a melting glacier",
     "daily weather reports",
-    "U-shaped clouds"
+    "U-shaped clouds",
+    "ridges of debris left by a melting glacier"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: ridges of debris left by a melting glacier.",
    "difficulty": 2,
    "passage": "<b>Glacier Pace</b><br>Glaciers look still in photographs, yet they move. Gravity pulls their ice downhill a few inches — or a few feet — each day. Rocks trapped in the ice scrape the valley floor, carving U-shaped valleys over thousands of years. When a glacier melts back, it leaves ridges of debris called moraines. Hikers who stand on a moraine are standing on a timeline written in stone and dirt.",
@@ -8189,12 +8309,12 @@
    "skill": "cause and effect",
    "stem": "Valleys become U-shaped because",
    "choices": [
-    "rocks in the ice scrape the floor over long periods",
-    "hikers dig them",
     "moraines block rain",
-    "photographs melt ice"
+    "hikers dig them",
+    "photographs melt ice",
+    "rocks in the ice scrape the floor over long periods"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: rocks in the ice scrape the floor over long periods.",
    "difficulty": 2,
    "passage": "<b>Glacier Pace</b><br>Glaciers look still in photographs, yet they move. Gravity pulls their ice downhill a few inches — or a few feet — each day. Rocks trapped in the ice scrape the valley floor, carving U-shaped valleys over thousands of years. When a glacier melts back, it leaves ridges of debris called moraines. Hikers who stand on a moraine are standing on a timeline written in stone and dirt.",
@@ -8205,12 +8325,12 @@
    "skill": "inference",
    "stem": "Calling a moraine a \"timeline\" suggests it",
    "choices": [
-    "predicts next week's weather",
-    "tells the hour of day",
     "records past glacier positions",
-    "is made of clocks"
+    "predicts next week's weather",
+    "is made of clocks",
+    "tells the hour of day"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: records past glacier positions.",
    "difficulty": 2,
    "passage": "<b>Glacier Pace</b><br>Glaciers look still in photographs, yet they move. Gravity pulls their ice downhill a few inches — or a few feet — each day. Rocks trapped in the ice scrape the valley floor, carving U-shaped valleys over thousands of years. When a glacier melts back, it leaves ridges of debris called moraines. Hikers who stand on a moraine are standing on a timeline written in stone and dirt.",
@@ -8221,12 +8341,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>debris</i> most nearly means",
    "choices": [
-    "tree sap",
     "clean ice only",
-    "scattered leftover material",
-    "fresh snow"
+    "tree sap",
+    "fresh snow",
+    "scattered leftover material"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The passage supports this answer: scattered leftover material.",
    "difficulty": 2,
    "passage": "<b>Glacier Pace</b><br>Glaciers look still in photographs, yet they move. Gravity pulls their ice downhill a few inches — or a few feet — each day. Rocks trapped in the ice scrape the valley floor, carving U-shaped valleys over thousands of years. When a glacier melts back, it leaves ridges of debris called moraines. Hikers who stand on a moraine are standing on a timeline written in stone and dirt.",
@@ -8238,11 +8358,11 @@
    "stem": "The passage is mainly about",
    "choices": [
     "how conductors are hired",
-    "why a quiet train car matters to the people who use it",
     "train schedules in the city",
-    "phone companies"
+    "phone companies",
+    "why a quiet train car matters to the people who use it"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: why a quiet train car matters to the people who use it.",
    "difficulty": 2,
    "passage": "<b>The Quiet Car</b><br>The 7:42 train had one car labeled QUIET. No phone calls, no speaker music, headphones only. Mira chose it so she could finish a chapter before school. A tourist once asked, loudly, why everyone looked so serious. The conductor pointed to the sign and smiled. Mira realized the quiet was not empty — it was full of people protecting a little space to think.",
@@ -8253,12 +8373,12 @@
    "skill": "detail",
    "stem": "What rule applies in the quiet car?",
    "choices": [
-    "No reading allowed",
+    "No phone calls or speaker music; headphones only",
     "Standing room only",
     "Free snacks",
-    "No phone calls or speaker music; headphones only"
+    "No reading allowed"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The passage supports this answer: No phone calls or speaker music; headphones only.",
    "difficulty": 2,
    "passage": "<b>The Quiet Car</b><br>The 7:42 train had one car labeled QUIET. No phone calls, no speaker music, headphones only. Mira chose it so she could finish a chapter before school. A tourist once asked, loudly, why everyone looked so serious. The conductor pointed to the sign and smiled. Mira realized the quiet was not empty — it was full of people protecting a little space to think.",
@@ -8269,12 +8389,12 @@
    "skill": "inference",
    "stem": "Mira chooses the quiet car because she",
    "choices": [
-    "misses her stop on purpose",
     "wants uninterrupted time to read",
+    "misses her stop on purpose",
     "works for the railroad",
     "likes talking to tourists"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "The passage supports this answer: wants uninterrupted time to read.",
    "difficulty": 2,
    "passage": "<b>The Quiet Car</b><br>The 7:42 train had one car labeled QUIET. No phone calls, no speaker music, headphones only. Mira chose it so she could finish a chapter before school. A tourist once asked, loudly, why everyone looked so serious. The conductor pointed to the sign and smiled. Mira realized the quiet was not empty — it was full of people protecting a little space to think.",
@@ -8285,12 +8405,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>protecting</i> most nearly means",
    "choices": [
-    "ignoring",
-    "destroying",
     "keeping safe / guarding",
-    "selling"
+    "destroying",
+    "selling",
+    "ignoring"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: keeping safe / guarding.",
    "difficulty": 2,
    "passage": "<b>The Quiet Car</b><br>The 7:42 train had one car labeled QUIET. No phone calls, no speaker music, headphones only. Mira chose it so she could finish a chapter before school. A tourist once asked, loudly, why everyone looked so serious. The conductor pointed to the sign and smiled. Mira realized the quiet was not empty — it was full of people protecting a little space to think.",
@@ -8302,11 +8422,11 @@
    "stem": "The tone of the ending is best described as",
    "choices": [
     "cold and technical",
-    "comic and wild",
     "angry and bitter",
-    "thoughtful and appreciative"
+    "thoughtful and appreciative",
+    "comic and wild"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: thoughtful and appreciative.",
    "difficulty": 2,
    "passage": "<b>The Quiet Car</b><br>The 7:42 train had one car labeled QUIET. No phone calls, no speaker music, headphones only. Mira chose it so she could finish a chapter before school. A tourist once asked, loudly, why everyone looked so serious. The conductor pointed to the sign and smiled. Mira realized the quiet was not empty — it was full of people protecting a little space to think.",
@@ -8317,12 +8437,12 @@
    "skill": "main idea",
    "stem": "The passage mainly explains",
    "choices": [
-    "how electricity is made",
     "how to build a kitchen stove",
     "why clouds are useful",
-    "how a solar oven uses sunlight to cook without fuel"
+    "how a solar oven uses sunlight to cook without fuel",
+    "how electricity is made"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: how a solar oven uses sunlight to cook without fuel.",
    "difficulty": 2,
    "passage": "<b>Solar Oven</b><br>A solar oven is a box that cooks food with sunlight instead of fuel. Dark walls absorb heat; a clear lid lets light in and traps warm air, the way a closed car heats up on a sunny day. Reflective flaps bounce extra light into the box. On a bright afternoon, a well-built solar oven can bake cookies or simmer beans. It will not work well under thick clouds, and it is slower than a kitchen stove — but it needs no electricity and makes no smoke.",
@@ -8333,12 +8453,12 @@
    "skill": "detail",
    "stem": "What do reflective flaps do?",
    "choices": [
-    "bounce extra light into the box",
-    "make smoke",
     "block all sunlight",
-    "cool the food"
+    "cool the food",
+    "bounce extra light into the box",
+    "make smoke"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "The passage supports this answer: bounce extra light into the box.",
    "difficulty": 2,
    "passage": "<b>Solar Oven</b><br>A solar oven is a box that cooks food with sunlight instead of fuel. Dark walls absorb heat; a clear lid lets light in and traps warm air, the way a closed car heats up on a sunny day. Reflective flaps bounce extra light into the box. On a bright afternoon, a well-built solar oven can bake cookies or simmer beans. It will not work well under thick clouds, and it is slower than a kitchen stove — but it needs no electricity and makes no smoke.",
@@ -8349,8 +8469,8 @@
    "skill": "cause and effect",
    "stem": "The clear lid helps because it",
    "choices": [
-    "reflects heat away",
     "creates clouds",
+    "reflects heat away",
     "uses electricity",
     "lets light in and traps warm air"
    ],
@@ -8365,12 +8485,12 @@
    "skill": "inference",
    "stem": "A cloudy day would likely make the oven",
    "choices": [
-    "need more smoke",
-    "work better than sun",
+    "cook more slowly or poorly",
     "use more electricity",
-    "cook more slowly or poorly"
+    "work better than sun",
+    "need more smoke"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The passage supports this answer: cook more slowly or poorly.",
    "difficulty": 2,
    "passage": "<b>Solar Oven</b><br>A solar oven is a box that cooks food with sunlight instead of fuel. Dark walls absorb heat; a clear lid lets light in and traps warm air, the way a closed car heats up on a sunny day. Reflective flaps bounce extra light into the box. On a bright afternoon, a well-built solar oven can bake cookies or simmer beans. It will not work well under thick clouds, and it is slower than a kitchen stove — but it needs no electricity and makes no smoke.",
@@ -8381,12 +8501,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>simmer</i> most nearly means",
    "choices": [
+    "freeze solid",
     "cook gently in hot liquid",
     "chop finely",
-    "serve cold",
-    "freeze solid"
+    "serve cold"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: cook gently in hot liquid.",
    "difficulty": 2,
    "passage": "<b>Solar Oven</b><br>A solar oven is a box that cooks food with sunlight instead of fuel. Dark walls absorb heat; a clear lid lets light in and traps warm air, the way a closed car heats up on a sunny day. Reflective flaps bounce extra light into the box. On a bright afternoon, a well-built solar oven can bake cookies or simmer beans. It will not work well under thick clouds, and it is slower than a kitchen stove — but it needs no electricity and makes no smoke.",
@@ -8397,12 +8517,12 @@
    "skill": "main idea",
    "stem": "The passage is mainly about",
    "choices": [
+    "how to climb mountains at night",
     "how trail blazes help hikers stay on the path",
     "why snow is beautiful",
-    "ranger job salaries",
-    "how to climb mountains at night"
+    "ranger job salaries"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: how trail blazes help hikers stay on the path.",
    "difficulty": 2,
    "passage": "<b>Trail Markers</b><br>On long hiking trails, small painted blazes on trees mark the path. A single blaze means continue straight; two stacked blazes often signal a turn. Hikers who learn the local marking system get lost less often, especially when snow covers the ground and footprints vanish. Rangers repaint faded blazes each spring. The marks are simple on purpose: they must be readable at a glance, even when someone is tired.",
@@ -8413,12 +8533,12 @@
    "skill": "detail",
    "stem": "When do rangers usually repaint blazes?",
    "choices": [
-    "each spring",
-    "each night",
     "only in winter",
-    "never"
+    "never",
+    "each spring",
+    "each night"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "The passage supports this answer: each spring.",
    "difficulty": 2,
    "passage": "<b>Trail Markers</b><br>On long hiking trails, small painted blazes on trees mark the path. A single blaze means continue straight; two stacked blazes often signal a turn. Hikers who learn the local marking system get lost less often, especially when snow covers the ground and footprints vanish. Rangers repaint faded blazes each spring. The marks are simple on purpose: they must be readable at a glance, even when someone is tired.",
@@ -8429,10 +8549,10 @@
    "skill": "inference",
    "stem": "Blazes are kept simple so that",
    "choices": [
+    "animals can eat the paint",
     "snow covers them better",
-    "they look fancy in photos",
     "tired hikers can still read them quickly",
-    "animals can eat the paint"
+    "they look fancy in photos"
    ],
    "answer": 2,
    "explanation": "The passage supports this answer: tired hikers can still read them quickly.",
@@ -8445,12 +8565,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>faded</i> most nearly means",
    "choices": [
-    "brand new",
     "waterproof",
     "worn / less bright",
-    "glowing"
+    "glowing",
+    "brand new"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The passage supports this answer: worn / less bright.",
    "difficulty": 2,
    "passage": "<b>Trail Markers</b><br>On long hiking trails, small painted blazes on trees mark the path. A single blaze means continue straight; two stacked blazes often signal a turn. Hikers who learn the local marking system get lost less often, especially when snow covers the ground and footprints vanish. Rangers repaint faded blazes each spring. The marks are simple on purpose: they must be readable at a glance, even when someone is tired.",
@@ -8461,12 +8581,12 @@
    "skill": "purpose",
    "stem": "Why mention snow covering footprints?",
    "choices": [
+    "to show another reason blazes matter when tracks disappear",
     "to explain how snow forms",
     "to discourage winter hiking forever",
-    "to show another reason blazes matter when tracks disappear",
     "to sell boots"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: to show another reason blazes matter when tracks disappear.",
    "difficulty": 2,
    "passage": "<b>Trail Markers</b><br>On long hiking trails, small painted blazes on trees mark the path. A single blaze means continue straight; two stacked blazes often signal a turn. Hikers who learn the local marking system get lost less often, especially when snow covers the ground and footprints vanish. Rangers repaint faded blazes each spring. The marks are simple on purpose: they must be readable at a glance, even when someone is tired.",
@@ -8474,48 +8594,208 @@
   },
   {
    "section": "Reading",
+   "skill": "main idea",
+   "stem": "The passage mainly explains",
+   "choices": [
+    "how fireflies use light patterns to communicate and find mates",
+    "how streetlamps are built",
+    "how to catch insects",
+    "why parks close at night"
+   ],
+   "answer": 0,
+   "explanation": "The passage supports this answer: how fireflies use light patterns to communicate and find mates.",
+   "difficulty": 2,
+   "passage": "<b>Firefly Signals</b><br>On warm evenings, fireflies flash in patterns that help them find mates. Each species has its own rhythm — some blink in sync along a whole riverbank, a sight that looks like the trees are breathing light. The glow comes from a chemical reaction in the abdomen, efficient enough that almost no heat is wasted. Light pollution from streetlamps can drown out the signals, so darker parks often host the brightest shows.",
+   "id": "R121"
+  },
+  {
+   "section": "Reading",
+   "skill": "detail",
+   "stem": "Where does a firefly's glow come from?",
+   "choices": [
+    "reflected moonlight only",
+    "a chemical reaction in the abdomen",
+    "electric wires",
+    "tree sap"
+   ],
+   "answer": 1,
+   "explanation": "The passage supports this answer: a chemical reaction in the abdomen.",
+   "difficulty": 2,
+   "passage": "<b>Firefly Signals</b><br>On warm evenings, fireflies flash in patterns that help them find mates. Each species has its own rhythm — some blink in sync along a whole riverbank, a sight that looks like the trees are breathing light. The glow comes from a chemical reaction in the abdomen, efficient enough that almost no heat is wasted. Light pollution from streetlamps can drown out the signals, so darker parks often host the brightest shows.",
+   "id": "R122"
+  },
+  {
+   "section": "Reading",
+   "skill": "cause and effect",
+   "stem": "Streetlamps can reduce firefly flashes because",
+   "choices": [
+    "they cool the air too much",
+    "they attract only moths",
+    "their light drowns out the insects' signals",
+    "they remove trees"
+   ],
+   "answer": 2,
+   "explanation": "The passage supports this answer: their light drowns out the insects' signals.",
+   "difficulty": 2,
+   "passage": "<b>Firefly Signals</b><br>On warm evenings, fireflies flash in patterns that help them find mates. Each species has its own rhythm — some blink in sync along a whole riverbank, a sight that looks like the trees are breathing light. The glow comes from a chemical reaction in the abdomen, efficient enough that almost no heat is wasted. Light pollution from streetlamps can drown out the signals, so darker parks often host the brightest shows.",
+   "id": "R123"
+  },
+  {
+   "section": "Reading",
+   "skill": "inference",
+   "stem": "Darker parks often have brighter firefly shows because",
+   "choices": [
+    "trees block all rain",
+    "there is less competing artificial light",
+    "fireflies prefer loud music",
+    "streetlamps help them"
+   ],
+   "answer": 1,
+   "explanation": "The passage supports this answer: there is less competing artificial light.",
+   "difficulty": 2,
+   "passage": "<b>Firefly Signals</b><br>On warm evenings, fireflies flash in patterns that help them find mates. Each species has its own rhythm — some blink in sync along a whole riverbank, a sight that looks like the trees are breathing light. The glow comes from a chemical reaction in the abdomen, efficient enough that almost no heat is wasted. Light pollution from streetlamps can drown out the signals, so darker parks often host the brightest shows.",
+   "id": "R124"
+  },
+  {
+   "section": "Reading",
+   "skill": "vocabulary",
+   "stem": "In the passage, <i>efficient</i> most nearly means",
+   "choices": [
+    "slow",
+    "very loud",
+    "not wasting energy",
+    "colorful"
+   ],
+   "answer": 2,
+   "explanation": "The passage supports this answer: not wasting energy.",
+   "difficulty": 2,
+   "passage": "<b>Firefly Signals</b><br>On warm evenings, fireflies flash in patterns that help them find mates. Each species has its own rhythm — some blink in sync along a whole riverbank, a sight that looks like the trees are breathing light. The glow comes from a chemical reaction in the abdomen, efficient enough that almost no heat is wasted. Light pollution from streetlamps can drown out the signals, so darker parks often host the brightest shows.",
+   "id": "R125"
+  },
+  {
+   "section": "Reading",
+   "skill": "character",
+   "stem": "Omar changes from someone who",
+   "choices": [
+    "hated chalk to owned the gym",
+    "quit sports to a champion overnight",
+    "felt awkward to someone who finished sets with steady form",
+    "ignored Coach Lin to argued daily"
+   ],
+   "answer": 2,
+   "explanation": "The passage supports this answer: felt awkward to someone who finished sets with steady form.",
+   "difficulty": 2,
+   "passage": "<b>Bench Press Day</b><br>Omar's first week in the weight room felt awkward. The bar wobbled; his spotter counted louder than the music. Coach Lin said strength is patient: add a little, rest, repeat. By the sixth week Omar's form looked boring — which Coach said was perfect. “Boring means safe,” she grinned, chalking his palms. Omar still was not the strongest kid there, but he could finish every set he started.",
+   "id": "R126"
+  },
+  {
+   "section": "Reading",
+   "skill": "detail",
+   "stem": "What does Coach Lin say about boring form?",
+   "choices": [
+    "Boring means quit.",
+    "Boring means race.",
+    "\"Boring means safe.\"",
+    "Boring means weak."
+   ],
+   "answer": 2,
+   "explanation": "The passage supports this answer: \"Boring means safe.\".",
+   "difficulty": 2,
+   "passage": "<b>Bench Press Day</b><br>Omar's first week in the weight room felt awkward. The bar wobbled; his spotter counted louder than the music. Coach Lin said strength is patient: add a little, rest, repeat. By the sixth week Omar's form looked boring — which Coach said was perfect. “Boring means safe,” she grinned, chalking his palms. Omar still was not the strongest kid there, but he could finish every set he started.",
+   "id": "R127"
+  },
+  {
+   "section": "Reading",
+   "skill": "theme",
+   "stem": "A theme of the story is that",
+   "choices": [
+    "spotters should be silent",
+    "music ruins workouts",
+    "steady, patient practice builds real strength",
+    "only the strongest matter"
+   ],
+   "answer": 2,
+   "explanation": "The passage supports this answer: steady, patient practice builds real strength.",
+   "difficulty": 2,
+   "passage": "<b>Bench Press Day</b><br>Omar's first week in the weight room felt awkward. The bar wobbled; his spotter counted louder than the music. Coach Lin said strength is patient: add a little, rest, repeat. By the sixth week Omar's form looked boring — which Coach said was perfect. “Boring means safe,” she grinned, chalking his palms. Omar still was not the strongest kid there, but he could finish every set he started.",
+   "id": "R128"
+  },
+  {
+   "section": "Reading",
+   "skill": "vocabulary",
+   "stem": "In the passage, <i>wobbled</i> most nearly means",
+   "choices": [
+    "vanished",
+    "shook unsteadily",
+    "glowed",
+    "sang"
+   ],
+   "answer": 1,
+   "explanation": "The passage supports this answer: shook unsteadily.",
+   "difficulty": 2,
+   "passage": "<b>Bench Press Day</b><br>Omar's first week in the weight room felt awkward. The bar wobbled; his spotter counted louder than the music. Coach Lin said strength is patient: add a little, rest, repeat. By the sixth week Omar's form looked boring — which Coach said was perfect. “Boring means safe,” she grinned, chalking his palms. Omar still was not the strongest kid there, but he could finish every set he started.",
+   "id": "R129"
+  },
+  {
+   "section": "Reading",
+   "skill": "inference",
+   "stem": "Coach Lin chalks Omar's palms to",
+   "choices": [
+    "improve his grip for the lift",
+    "cool him down",
+    "punish him",
+    "decorate his hands"
+   ],
+   "answer": 0,
+   "explanation": "The passage supports this answer: improve his grip for the lift.",
+   "difficulty": 2,
+   "passage": "<b>Bench Press Day</b><br>Omar's first week in the weight room felt awkward. The bar wobbled; his spotter counted louder than the music. Coach Lin said strength is patient: add a little, rest, repeat. By the sixth week Omar's form looked boring — which Coach said was perfect. “Boring means safe,” she grinned, chalking his palms. Omar still was not the strongest kid there, but he could finish every set he started.",
+   "id": "R130"
+  },
+  {
+   "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>jubilant</u> crowd",
    "choices": [
-    "small",
-    "silent",
     "angry",
+    "silent",
+    "small",
     "joyful"
    ],
    "answer": 3,
    "explanation": "In context, the underlined word means “joyful.”",
    "difficulty": 2,
-   "id": "R121"
+   "id": "R131"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>meticulous</u> worker",
    "choices": [
+    "fast",
     "careful",
-    "tired",
     "sloppy",
-    "fast"
+    "tired"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "In context, the underlined word means “careful.”",
    "difficulty": 2,
-   "id": "R122"
+   "id": "R132"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: an <u>arduous</u> climb",
    "choices": [
-    "easy",
     "difficult",
-    "short",
-    "pleasant"
+    "easy",
+    "pleasant",
+    "short"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "In context, the underlined word means “difficult.”",
    "difficulty": 2,
-   "id": "R123"
+   "id": "R133"
   },
   {
    "section": "Reading",
@@ -8530,22 +8810,22 @@
    "answer": 1,
    "explanation": "In context, the underlined word means “short.”",
    "difficulty": 2,
-   "id": "R124"
+   "id": "R134"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>reluctant</u> to leave",
    "choices": [
-    "able",
     "forced",
     "unwilling",
-    "eager"
+    "eager",
+    "able"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "In context, the underlined word means “unwilling.”",
    "difficulty": 2,
-   "id": "R125"
+   "id": "R135"
   },
   {
    "section": "Reading",
@@ -8554,103 +8834,103 @@
    "choices": [
     "written",
     "old",
-    "new",
-    "boring"
+    "boring",
+    "new"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "In context, the underlined word means “new.”",
    "difficulty": 2,
-   "id": "R126"
+   "id": "R136"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>somber</u> mood",
    "choices": [
-    "busy",
-    "serious",
+    "cheerful",
     "sleepy",
-    "cheerful"
+    "serious",
+    "busy"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "In context, the underlined word means “serious.”",
    "difficulty": 2,
-   "id": "R127"
+   "id": "R137"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>abundant</u> rain",
    "choices": [
-    "plentiful",
-    "cold",
     "light",
-    "rare"
+    "rare",
+    "plentiful",
+    "cold"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "In context, the underlined word means “plentiful.”",
    "difficulty": 2,
-   "id": "R128"
+   "id": "R138"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>frail</u> branch",
    "choices": [
-    "weak",
     "tall",
-    "thick",
-    "leafy"
+    "leafy",
+    "weak",
+    "thick"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "In context, the underlined word means “weak.”",
    "difficulty": 2,
-   "id": "R129"
+   "id": "R139"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>vivid</u> memories",
    "choices": [
-    "faded",
-    "clear",
+    "few",
     "sad",
-    "few"
+    "faded",
+    "clear"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "In context, the underlined word means “clear.”",
    "difficulty": 2,
-   "id": "R130"
+   "id": "R140"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>hostile</u> reply",
    "choices": [
-    "polite",
     "quick",
     "unfriendly",
-    "funny"
+    "funny",
+    "polite"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "In context, the underlined word means “unfriendly.”",
    "difficulty": 2,
-   "id": "R131"
+   "id": "R141"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: an <u>elated</u> winner",
    "choices": [
-    "nervous",
-    "thrilled",
     "tired",
+    "thrilled",
+    "nervous",
     "humble"
    ],
    "answer": 1,
    "explanation": "In context, the underlined word means “thrilled.”",
    "difficulty": 2,
-   "id": "R132"
+   "id": "R142"
   },
   {
    "section": "Reading",
@@ -8658,89 +8938,89 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>conceal</u> the gift",
    "choices": [
     "wrap",
-    "open",
     "hide",
-    "buy"
+    "buy",
+    "open"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "In context, the underlined word means “hide.”",
    "difficulty": 2,
-   "id": "R133"
+   "id": "R143"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>placid</u> lake",
    "choices": [
-    "frozen",
+    "deep",
     "stormy",
     "calm",
-    "deep"
+    "frozen"
    ],
    "answer": 2,
    "explanation": "In context, the underlined word means “calm.”",
    "difficulty": 2,
-   "id": "R134"
+   "id": "R144"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>ample</u> space",
    "choices": [
-    "empty",
     "strange",
+    "little",
     "enough",
-    "little"
+    "empty"
    ],
    "answer": 2,
    "explanation": "In context, the underlined word means “enough.”",
    "difficulty": 2,
-   "id": "R135"
+   "id": "R145"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>keen</u> eye",
    "choices": [
-    "blue",
     "lazy",
+    "closed",
     "sharp",
-    "closed"
+    "blue"
    ],
    "answer": 2,
    "explanation": "In context, the underlined word means “sharp.”",
    "difficulty": 2,
-   "id": "R136"
+   "id": "R146"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>baffled</u> by the clue",
    "choices": [
-    "bored",
     "puzzled",
     "pleased",
+    "bored",
     "scared"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "In context, the underlined word means “puzzled.”",
    "difficulty": 2,
-   "id": "R137"
+   "id": "R147"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>robust</u> plant",
    "choices": [
-    "sturdy",
-    "bitter",
     "dying",
-    "tiny"
+    "tiny",
+    "sturdy",
+    "bitter"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "In context, the underlined word means “sturdy.”",
    "difficulty": 2,
-   "id": "R138"
+   "id": "R148"
   },
   {
    "section": "Reading",
@@ -8748,14 +9028,14 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>diminish</u> the noise",
    "choices": [
     "record",
+    "lessen",
     "increase",
-    "enjoy",
-    "lessen"
+    "enjoy"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "In context, the underlined word means “lessen.”",
    "difficulty": 2,
-   "id": "R139"
+   "id": "R149"
   },
   {
    "section": "Reading",
@@ -8763,14 +9043,14 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>loyal</u> friend",
    "choices": [
     "distant",
-    "faithful",
+    "rude",
     "new",
-    "rude"
+    "faithful"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "In context, the underlined word means “faithful.”",
    "difficulty": 2,
-   "id": "R140"
+   "id": "R150"
   },
   {
    "section": "Reading",
@@ -8778,14 +9058,14 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>exhausted</u> runners",
    "choices": [
     "worn out",
+    "quick",
     "energetic",
-    "proud",
-    "quick"
+    "proud"
    ],
    "answer": 0,
    "explanation": "In context, the underlined word means “worn out.”",
    "difficulty": 2,
-   "id": "R141"
+   "id": "R151"
   },
   {
    "section": "Reading",
@@ -8793,14 +9073,14 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>candid</u> answer",
    "choices": [
     "shy",
-    "honest",
+    "false",
     "long",
-    "false"
+    "honest"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "In context, the underlined word means “honest.”",
    "difficulty": 2,
-   "id": "R142"
+   "id": "R152"
   },
   {
    "section": "Reading",
@@ -8808,29 +9088,29 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>scarce</u> resource",
    "choices": [
     "sweet",
-    "rare",
     "common",
+    "rare",
     "heavy"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "In context, the underlined word means “rare.”",
    "difficulty": 2,
-   "id": "R143"
+   "id": "R153"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: to <u>abandon</u> the plan",
    "choices": [
-    "announce",
-    "copy",
+    "give up",
     "improve",
-    "give up"
+    "announce",
+    "copy"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "In context, the underlined word means “give up.”",
    "difficulty": 2,
-   "id": "R144"
+   "id": "R154"
   },
   {
    "section": "Reading",
@@ -8838,29 +9118,29 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: an <u>urgent</u> message",
    "choices": [
     "boring",
-    "secret forever",
     "needing quick action",
-    "handwritten"
+    "handwritten",
+    "secret forever"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "In context, the underlined word means “needing quick action.”",
    "difficulty": 2,
-   "id": "R145"
+   "id": "R155"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>vast</u> desert",
    "choices": [
-    "tiny",
-    "frozen",
     "huge",
-    "crowded"
+    "tiny",
+    "crowded",
+    "frozen"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "In context, the underlined word means “huge.”",
    "difficulty": 2,
-   "id": "R146"
+   "id": "R156"
   },
   {
    "section": "Reading",
@@ -8868,59 +9148,59 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>imitate</u> a bird call",
    "choices": [
     "fear",
+    "ignore",
     "record only",
-    "copy",
-    "ignore"
+    "copy"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "In context, the underlined word means “copy.”",
    "difficulty": 2,
-   "id": "R147"
+   "id": "R157"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>harsh</u> winter",
    "choices": [
+    "mild",
     "funny",
     "short",
-    "mild",
     "severe"
    ],
    "answer": 3,
    "explanation": "In context, the underlined word means “severe.”",
    "difficulty": 2,
-   "id": "R148"
+   "id": "R158"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: to <u>assemble</u> the tent",
    "choices": [
+    "sell",
     "paint",
     "put together",
-    "sell",
     "pack away"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "In context, the underlined word means “put together.”",
    "difficulty": 2,
-   "id": "R149"
+   "id": "R159"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>grim</u> warning",
    "choices": [
-    "cheerful",
-    "serious and bleak",
+    "quiet",
     "musical",
-    "quiet"
+    "serious and bleak",
+    "cheerful"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "In context, the underlined word means “serious and bleak.”",
    "difficulty": 2,
-   "id": "R150"
+   "id": "R160"
   },
   {
    "section": "Reading",
@@ -8928,104 +9208,104 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>tolerate</u> the noise",
    "choices": [
     "create",
-    "put up with",
     "measure",
+    "put up with",
     "enjoy loudly"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "In context, the underlined word means “put up with.”",
    "difficulty": 2,
-   "id": "R151"
+   "id": "R161"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>brisk</u> walk",
    "choices": [
-    "dangerous",
-    "slow",
     "quick and energetic",
-    "silent"
+    "silent",
+    "dangerous",
+    "slow"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "In context, the underlined word means “quick and energetic.”",
    "difficulty": 2,
-   "id": "R152"
+   "id": "R162"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: to <u>conclude</u> the speech",
    "choices": [
-    "forget",
-    "begin",
+    "translate",
     "end",
-    "translate"
+    "forget",
+    "begin"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "In context, the underlined word means “end.”",
    "difficulty": 2,
-   "id": "R153"
+   "id": "R163"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: an <u>obscure</u> fact",
    "choices": [
-    "false",
     "famous",
+    "mathematical",
     "little known",
-    "mathematical"
+    "false"
    ],
    "answer": 2,
    "explanation": "In context, the underlined word means “little known.”",
    "difficulty": 2,
-   "id": "R154"
+   "id": "R164"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>fragile</u> glass",
    "choices": [
-    "easily broken",
-    "thick",
     "cheap",
-    "colored"
+    "easily broken",
+    "colored",
+    "thick"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "In context, the underlined word means “easily broken.”",
    "difficulty": 2,
-   "id": "R155"
+   "id": "R165"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>solemn</u> promise",
    "choices": [
+    "whispered",
     "silly",
     "broken",
-    "serious",
-    "whispered"
+    "serious"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "In context, the underlined word means “serious.”",
    "difficulty": 2,
-   "id": "R156"
+   "id": "R166"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: to <u>resemble</u> her aunt",
    "choices": [
-    "write to",
     "look like",
-    "argue with",
-    "avoid"
+    "avoid",
+    "write to",
+    "argue with"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "In context, the underlined word means “look like.”",
    "difficulty": 2,
-   "id": "R157"
+   "id": "R167"
   },
   {
    "section": "Reading",
@@ -9033,104 +9313,104 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: an <u>ample</u> supply",
    "choices": [
     "stolen",
-    "expired",
     "empty",
+    "expired",
     "more than enough"
    ],
    "answer": 3,
    "explanation": "In context, the underlined word means “more than enough.”",
    "difficulty": 2,
-   "id": "R158"
+   "id": "R168"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>drench</u> the plants",
    "choices": [
-    "soak",
     "count",
     "trim",
+    "soak",
     "ignore"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "In context, the underlined word means “soak.”",
    "difficulty": 2,
-   "id": "R159"
+   "id": "R169"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>modest</u> home",
    "choices": [
-    "huge mansion",
     "dark",
-    "rented only",
-    "not showy"
+    "huge mansion",
+    "not showy",
+    "rented only"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "In context, the underlined word means “not showy.”",
    "difficulty": 2,
-   "id": "R160"
+   "id": "R170"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: to <u>persist</u> despite failure",
    "choices": [
-    "complain only",
-    "quit early",
+    "hide",
     "keep going",
-    "hide"
+    "complain only",
+    "quit early"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "In context, the underlined word means “keep going.”",
    "difficulty": 2,
-   "id": "R161"
+   "id": "R171"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>shrewd</u> choice",
    "choices": [
-    "clever",
     "random",
+    "clever",
     "noisy",
     "late"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "In context, the underlined word means “clever.”",
    "difficulty": 2,
-   "id": "R162"
+   "id": "R172"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>weary</u> travelers",
    "choices": [
-    "excited",
-    "tired",
     "lost",
-    "wealthy"
+    "tired",
+    "wealthy",
+    "excited"
    ],
    "answer": 1,
    "explanation": "In context, the underlined word means “tired.”",
    "difficulty": 2,
-   "id": "R163"
+   "id": "R173"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: an <u>outright</u> refusal",
    "choices": [
-    "complete / total",
     "polite maybe",
     "delayed",
+    "complete / total",
     "written"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "In context, the underlined word means “complete / total.”",
    "difficulty": 2,
-   "id": "R164"
+   "id": "R174"
   },
   {
    "section": "Reading",
@@ -9138,29 +9418,29 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>meager</u> meal",
    "choices": [
     "frozen",
-    "huge",
     "spicy",
-    "small / scant"
+    "small / scant",
+    "huge"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "In context, the underlined word means “small / scant.”",
    "difficulty": 2,
-   "id": "R165"
+   "id": "R175"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: to <u>conceal</u> a gift",
    "choices": [
-    "unwrap",
     "price",
     "mail",
-    "hide"
+    "hide",
+    "unwrap"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "In context, the underlined word means “hide.”",
    "difficulty": 2,
-   "id": "R166"
+   "id": "R176"
   },
   {
    "section": "Reading",
@@ -9168,59 +9448,59 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>abrupt</u> stop",
    "choices": [
     "planned long",
+    "gradual",
     "musical",
-    "sudden",
-    "gradual"
+    "sudden"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "In context, the underlined word means “sudden.”",
    "difficulty": 2,
-   "id": "R167"
+   "id": "R177"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>diligent</u> student",
    "choices": [
-    "noisy",
-    "new",
     "hardworking",
-    "lazy"
+    "lazy",
+    "noisy",
+    "new"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "In context, the underlined word means “hardworking.”",
    "difficulty": 2,
-   "id": "R168"
+   "id": "R178"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: to <u>alter</u> the plan",
    "choices": [
-    "ignore",
-    "celebrate",
     "change",
-    "copy"
+    "celebrate",
+    "copy",
+    "ignore"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "In context, the underlined word means “change.”",
    "difficulty": 2,
-   "id": "R169"
+   "id": "R179"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>bleak</u> outlook",
    "choices": [
-    "hopeless / grim",
     "colorful",
     "short",
-    "cheerful"
+    "cheerful",
+    "hopeless / grim"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "In context, the underlined word means “hopeless / grim.”",
    "difficulty": 2,
-   "id": "R170"
+   "id": "R180"
   },
   {
    "section": "Reading",
@@ -9228,29 +9508,29 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>frigid</u> air",
    "choices": [
     "dusty",
-    "very cold",
     "sweet",
-    "warm"
+    "warm",
+    "very cold"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "In context, the underlined word means “very cold.”",
    "difficulty": 2,
-   "id": "R171"
+   "id": "R181"
   },
   {
    "section": "Reading",
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: to <u>prevail</u> in the end",
    "choices": [
-    "quit",
     "whisper",
+    "hide",
     "win / succeed",
-    "hide"
+    "quit"
    ],
    "answer": 2,
    "explanation": "In context, the underlined word means “win / succeed.”",
    "difficulty": 2,
-   "id": "R172"
+   "id": "R182"
   }
  ]
 }
