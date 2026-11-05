@@ -11,6 +11,7 @@ items = []
 _SEEN = set()
 L = "ABCD"
 
+_SEEN_STEM = set()
 def add(section, skill, stem, correct, wrong, expl, diff=2, passage=None, fixed=None):
     """correct: str; wrong: list[str]. fixed: keep this exact choice order (list) with correct inside."""
     if fixed:
@@ -18,9 +19,17 @@ def add(section, skill, stem, correct, wrong, expl, diff=2, passage=None, fixed=
     else:
         choices = [correct] + list(wrong)
         R.shuffle(choices)
-    sig = (passage or "")[:40] + stem + "|" + "|".join(sorted(choices))
-    if sig in _SEEN: return  # generated twice: keep the first, skip the repeat
-    _SEEN.add(sig)
+    # Stem-only dedupe for generated Quant/Math (same question, reshuffled distractors).
+    # Verbal/Language/Reading often share instructional stems with different keys — include correct.
+    stem_norm = re.sub(r"\s+", " ", stem).lower()
+    if section in ("Quantitative", "Mathematics") and not passage:
+        stem_sig = stem_norm
+    else:
+        stem_sig = ((passage or "")[:60] + "|" + stem_norm + "|" + str(correct).lower())
+    if stem_sig in _SEEN_STEM: return
+    sig = stem_sig + "|" + "|".join(sorted(map(str, choices)))
+    if sig in _SEEN: return
+    _SEEN.add(sig); _SEEN_STEM.add(stem_sig)
     it = {"section": section, "skill": skill, "stem": stem, "choices": choices,
           "answer": choices.index(correct), "explanation": expl, "difficulty": diff}
     if passage: it["passage"] = passage
@@ -140,7 +149,7 @@ for s, a, e in LOG:
     add("Verbal","logic",stem,a,[t for t in TFU if t != a],e,3,fixed=TFU)
 
 # ---------------- QUANTITATIVE ----------------
-for i in range(18):
+for i in range(36):
     kind = i % 3
     if kind == 0:
         a, d = R.randint(2, 30), R.choice([3, 4, 6, 7, 9, -4, -6])
@@ -157,7 +166,7 @@ for i in range(18):
             else: y += q
         ans = seq[5]; e = f"Two series alternate: one goes up by {p}, the other changes by {q:+d}."
     add("Quantitative","number series","Look at this series: " + ", ".join(map(str, seq[:5])) + ", … What number should come next?",str(ans),numwrong(ans),e,2 + (kind == 2))
-for i in range(18):
+for i in range(36):
     k = i % 6
     if k == 0:
         a, b = R.choice([12, 18, 24, 30, 36]), R.randint(2, 9); ans = a // 3 + b
@@ -187,7 +196,7 @@ def cmp_item(vals, labels):
     def rel(a, b): return "=" if vals[a] == vals[b] else (">" if vals[a] > vals[b] else "<")
     true_stmt = f"{names[order[0]]} {'=' if vals[order[0]]==vals[order[1]] else '>'} {names[order[1]]} {'=' if vals[order[1]]==vals[order[2]] else '>'} {names[order[2]]}"
     return true_stmt
-for i in range(14):
+for i in range(24):
     a, b, c = R.randint(2, 6), R.randint(2, 9), R.randint(10, 40)
     exprs = [(f"{a}²", a * a), (f"{b} × 3", b * 3), (f"{c} − {R.randint(1,9)}", None)]
     exprs[2] = (exprs[2][0], c - int(exprs[2][0].split("− ")[1]))
@@ -210,7 +219,7 @@ for i in range(14):
     st = "Examine I, II and III and choose the correct answer.<br>(I) " + exprs[0][0] + "&nbsp;&nbsp; (II) " + exprs[1][0] + "&nbsp;&nbsp; (III) " + exprs[2][0]
     e = "Values: I = " + fmt(vals[0]) + ", II = " + fmt(vals[1]) + ", III = " + fmt(vals[2]) + ", so " + truth + "."
     add("Quantitative","non-geometric comparison",st,truth,wrong,e,3)
-for i in range(12):
+for i in range(20):
     s = R.randint(3, 9)
     if i % 2 == 0:
         vals = [s * s, 4 * s, 2 * s + 2 * (s - 1)]
@@ -228,6 +237,32 @@ for i in range(12):
             if not ok: fakes.add(st_)
     st = "Compare: (I) " + names_[0] + "; (II) " + names_[1] + "; (III) " + names_[2] + "."
     add("Quantitative","geometric comparison",st,truth,R.sample(sorted(fakes), 3),f"I = {vals[0]}, II = {vals[1]}, III = {vals[2]}, so {truth}.",3)
+
+
+# Extra quantitative: ratios, digit ops, and age/money style (HSPT quantitative reasoning)
+for i in range(16):
+    k = i % 4
+    if k == 0:
+        a, b = R.choice([2,3,4,5]), R.choice([3,4,5,6,8]); n = (a+b)*R.randint(4, 10)
+        ans = n * a // (a + b)
+        st = f"The ratio of red marbles to blue marbles is {a}:{b}. There are {n} marbles in all. How many are red?"
+        e = f"{a}+{b}={a+b} parts; each part is {n//(a+b)}; red = {a}×{n//(a+b)} = {ans}."
+        add("Quantitative","number manipulation",st,str(ans),numwrong(ans),e,2)
+    elif k == 1:
+        x = R.randint(10, 89); tens, ones = x // 10, x % 10; ans = tens + ones
+        st = f"What is the sum of the digits of {x}?"
+        e = f"{tens} + {ones} = {ans}."
+        add("Quantitative","number manipulation",st,str(ans),numwrong(ans),e,1)
+    elif k == 2:
+        a = R.randint(3, 9); b = R.randint(2, 8); ans = a * b - b
+        st = f"What is {a} times {b}, decreased by {b}?"
+        e = f"{a}×{b} = {a*b}; {a*b} − {b} = {ans}."
+        add("Quantitative","number manipulation",st,str(ans),numwrong(ans),e,2)
+    else:
+        total = R.choice([24, 30, 36, 48, 60]); p = R.choice([1,2,3]); ans = total * p // 4
+        st = f"What is {['one','two','three'][p-1]}-fourth{'s' if p>1 else ''} of {total}?"
+        e = f"{total} ÷ 4 = {total//4}; × {p} = {ans}."
+        add("Quantitative","number manipulation",st,str(ans),numwrong(ans),e,1)
 
 # ---------------- MATHEMATICS ----------------
 def M(skill, st, ans, e, d=2, wrong=None):
@@ -410,7 +445,69 @@ PASS = [
   ("detail","What is the only hard part that limits where an octopus can fit?","its beak",["its shell","its spine","its tentacles"]),
   ("inference","Learning faster after watching another octopus suggests they can","learn by observing",["read labels","hear human speech","see in the dark only"]),
   ("vocabulary","In the passage, <i>feats</i> most nearly means","impressive acts",["parts of a foot","meals","mistakes"]),
-  ("purpose","Why does the author include the aquarium stories?","to give vivid examples of octopus escapes",["to complain about aquarium workers","to explain how tanks are built","to sell aquarium tickets"])])]
+  ("purpose","Why does the author include the aquarium stories?","to give vivid examples of octopus escapes",["to complain about aquarium workers","to explain how tanks are built","to sell aquarium tickets"])])
+,
+("River Otters", """River otters are playful mammals that live near clean freshwater. They dig dens in riverbanks and slip into the water to hunt fish, frogs and crayfish. Otters have dense fur that traps air, keeping them warm even in cold streams. People sometimes see them sliding down muddy banks on their bellies — not just for travel, but apparently for fun. Scientists who track otters say a healthy otter population is a good sign that a river is clean enough to support many other animals.""",
+ [("main idea","What is the passage mainly about?","river otters and what their presence can tell us about a river",["how to dig a den","why frogs eat crayfish","the history of muddy banks"]),
+  ("detail","What keeps otters warm in cold water?","dense fur that traps air",["thick bones","a layer of mud","bright sunlight"]),
+  ("inference","Why might scientists care about otter numbers?","Otters suggest the river is healthy.",["Otters scare away fish.","Otters ruin riverbanks.","Otters only live in zoos."]),
+  ("vocabulary","In the passage, <i>track</i> most nearly means","follow and study",["race on a path","erase footprints","build a road"]),
+  ("purpose","Why does the author mention sliding on muddy banks?","to show that otters play as well as hunt",["to warn hikers about mud","to explain how dens are dug","to describe a sport"])]),
+("The Night Market", """Every Saturday after sunset, lanterns bloom along Harbor Street and the night market opens. Steam rises from dumpling carts; a woman tunes a two-string fiddle while children chase soap bubbles between stalls. Mei helps her grandmother sell jars of pickled radish. She used to wish the market were quieter. Now she likes the noise. It means neighbors have come out of their apartments to share food and stories under the same string of lights.""",
+ [("mood","The mood of the passage is best described as","lively and warm",["scary and dark","lonely and cold","angry and rushed"]),
+  ("character","How has Mei's feeling about the market changed?","She has grown to enjoy the lively noise.",["She wants to close the stall.","She no longer helps her grandmother.","She prefers shopping online."]),
+  ("detail","What does Mei's family sell?","jars of pickled radish",["soap bubbles","dumplings","fiddles"]),
+  ("inference","The last sentence suggests the market matters because it","brings neighbors together",["makes a lot of money","replaces daylight","keeps children quiet"]),
+  ("vocabulary","In the passage, <i>bloom</i> most nearly means","light up / open brightly",["wilt","explode","freeze"])]),
+("Compost in a Cup", """Ms. Patel asked each student to build a tiny compost pile in a clear cup: dry leaves, kitchen scraps, a spoon of soil and a little water. Within two weeks, worms and microbes had begun turning the scraps into dark, crumbly compost. \"Nothing really disappears,\" Ms. Patel said. \"It just changes form.\" The class used the finished compost to plant basil on the windowsill. Students who once tossed apple cores in the trash started saving them for the cups.""",
+ [("main idea","The passage is mainly about","students learning how compost turns scraps into soil",["how to grow apple trees","why worms are scary","a windowsill cleaning day"]),
+  ("detail","What did the class plant with the finished compost?","basil",["apple trees","dry leaves","worms"]),
+  ("cause and effect","Students began saving apple cores because","they wanted to add them to the compost cups",["the trash cans were full","Ms. Patel banned trash","apples were expensive"]),
+  ("vocabulary","As used here, <i>crumbly</i> means","breaking into soft bits",["shiny","frozen","sticky like glue"]),
+  ("theme","Which theme fits the story?","Small actions can change habits and help the earth.",["Science class is too messy.","Worms ruin gardens.","Trash is unavoidable."])]),
+("Maps Before Satellites", """Before satellites, mapmakers drew coastlines from sailors' logs, compass readings and sketches made from ships. Errors were common: islands appeared twice, or a bay was drawn miles from its true place. Yet those early maps still helped explorers share knowledge. When Captain Cook charted the Pacific, later navigators corrected his lines instead of starting from a blank page. Modern satellite maps are far more precise, but they stand on centuries of careful, imperfect work.""",
+ [("main idea","The author's main point is that","early maps were imperfect but still useful building blocks",["satellites are useless","sailors never used compasses","Captain Cook erased all maps"]),
+  ("detail","What did early mapmakers use?","sailors' logs, compass readings and sketches",["only satellites","paintings of dragons","airport radar"]),
+  ("inference","Why could later navigators improve Cook's charts?","They had a starting map to correct rather than a blank page.",["Cook forbade changes.","Satellites already existed.","Islands never move."]),
+  ("vocabulary","In the passage, <i>precise</i> most nearly means","exact",["colorful","ancient","heavy"]),
+  ("purpose","Why mention islands appearing twice?","to show how early maps could contain errors",["to describe a magic trick","to praise modern tourism","to explain tides"])]),
+("Goalie Gloves", """Samir hated being goalie until the Saturday he stopped a penalty kick with his fingertips. The ball stung, but the roar from his teammates drowned it out. After that, he started practicing dives on the grass behind his apartment. His sister timed him with a kitchen clock. By the playoffs he still got scored on — every goalie does — but he no longer watched the clock during games, wishing to switch positions.""",
+ [("character","Samir changes from someone who","disliked being goalie to someone who accepted and trained for it",["never played sports to a star striker","feared his sister to ignored her","loved penalties to avoided practice"]),
+  ("detail","Who timed Samir's practice?","his sister",["his coach","a teammate","the referee"]),
+  ("inference","Why did Samir stop watching the clock during games?","He became more engaged in playing goalie.",["The stadium banned clocks.","Games got shorter.","His sister took the clock."]),
+  ("plot","What is the turning point?","He stops a penalty kick with his fingertips.",["He buys new gloves.","The playoffs end.","He switches to striker."]),
+  ("vocabulary","In the passage, <i>drowned it out</i> means","was so loud it covered the pain",["made him swim","turned off the lights","ended the game"])]),
+("Desert Rain", """Rain is rare in the Sonoran Desert, but when it comes, the land answers quickly. Seeds that waited months in dry soil sprout within days. Toads that slept underground dig out to lay eggs in short-lived pools. Cacti swell as they store water in their stems. Visitors who see the desert only in drought may think it is empty. A week after a storm, the same ground can blaze with wildflowers.""",
+ [("main idea","The passage mainly shows that","desert life responds quickly when rare rain arrives",["deserts never get rain","cacti need daily watering","toads dislike water"]),
+  ("detail","Where do toads come from after rain?","underground",["the ocean","tree branches","mountain snow"]),
+  ("cause and effect","Wildflowers appear after a storm because","seeds sprout when they finally get water",["visitors plant them","wind paints the ground","cacti shed flowers daily"]),
+  ("inference","Someone who visits only during drought might wrongly conclude that","the desert has little life",["toads live in pools year-round","rain falls every week","cacti cannot store water"]),
+  ("vocabulary","In the passage, <i>blaze</i> most nearly means","show bright color",["catch fire dangerously","dry out","freeze"])]),
+("The Lending Shelf", """At the back of Room 12 stood a crooked shelf labeled \"Take one, leave one.\" Students left novels, comics and puzzle books; others borrowed them overnight. No checklist tracked who took what. Ms. Cho said trust was the point. When a favorite graphic novel went missing for two weeks, the class worried. Then it reappeared with a sticky note: \"Sorry — finished it in the hospital. Thank you.\" The shelf stayed.""",
+ [("theme","A theme of the story is that","trust and sharing can create a caring community",["books should be locked up","hospitals ban reading","checklists solve everything"]),
+  ("detail","What rule did the shelf use?","Take one, leave one",["Pay a dollar","Ask Ms. Cho first","Only comics allowed"]),
+  ("inference","The sticky note suggests the borrower","had a good reason and returned the book gratefully",["stole the book forever","disliked graphic novels","was angry at the class"]),
+  ("vocabulary","As used here, <i>crooked</i> means","not straight / slightly tilted",["dishonest","brand new","locked"]),
+  ("purpose","Why include the hospital note?","to show the shelf helped someone through a hard time",["to advertise hospitals","to scold the class","to end the lending project"])]),
+("Bee Math", """Honeybees tell nestmates where food is by dancing. A round dance means food is nearby. A waggle dance means food is farther: the angle of the waggle shows direction relative to the sun, and the length of the waggle shows distance. Researchers who moved food dishes found bees adjusted their dances within minutes. The hive, in other words, shares a living map updated all day long.""",
+ [("main idea","The passage mainly explains","how honeybee dances share the location of food",["how to keep a hive as a pet","why the sun moves","how researchers eat honey"]),
+  ("detail","What does a longer waggle mean?","greater distance to the food",["sweeter nectar","more bees nearby","danger from bears"]),
+  ("cause and effect","Bees change their dances quickly when","researchers move the food dishes",["the sun sets forever","the hive is painted","round dances are banned"]),
+  ("inference","Calling the hive's knowledge a \"living map\" suggests it","is updated as conditions change",["is drawn on paper","never changes","only works at night"]),
+  ("vocabulary","In the passage, <i>relative to</i> means","compared with / in relation to",["against the wishes of","inside of","instead of"])]),
+("Library After Hours", """Most people think a library sleeps when the doors lock. Jana, who shelved books three evenings a week, knew otherwise. Motion lights clicked on as she wheeled the cart. The air still smelled of paper and floor wax. Sometimes she found a forgotten bookmark with a grocery list on one side and a poem on the other. She tucked those back where they belonged. \"Books wait,\" her supervisor liked to say. \"Readers come back.\"""",
+ [("mood","The mood is best described as","quiet and thoughtful",["chaotic and loud","scary and dangerous","boring and empty"]),
+  ("detail","What job does Jana do?","shelve books in the evening",["write poems for the desk","wax the floors","lock patrons in"]),
+  ("inference","The supervisor's saying suggests a belief that","people return to books over time",["books should be thrown away","libraries should stay closed","bookmarks are trash"]),
+  ("vocabulary","In the passage, <i>forgotten</i> most nearly means","left behind by accident",["brand new","forbidden","expensive"]),
+  ("figurative language","\"A library sleeps\" is an example of","personification",["a factual measurement","a rhyme scheme","a timeline"])]),
+("Steel Bridges", """A steel bridge flexes. Engineers design tiny amounts of give into the span so wind and traffic do not crack it. Expansion joints leave gaps that close on hot days and open on cold ones. When people say a bridge \"hummed\" in a storm, they are hearing safe vibration, not failure. Inspectors still climb the beams each year looking for rust, because flexibility is not the same as neglect.""",
+ [("main idea","The passage explains that","steel bridges are built to flex safely and still need inspection",["bridges should never move","rust is decorative","storms destroy all bridges"]),
+  ("detail","What do expansion joints do?","allow gaps to change with temperature",["play music in storms","hold paint","block traffic"]),
+  ("inference","Inspectors climb the beams because","flexibility does not remove the need to check for damage",["the bridge is about to open to skating","humming means immediate collapse","steel never rusts"]),
+  ("vocabulary","In the passage, <i>give</i> most nearly means","flexibility / ability to bend a little",["a donated gift","permission slip","loud noise"]),
+  ("cause and effect","Gaps close on hot days because","heat makes the steel expand",["inspectors tighten bolts daily","wind pushes joints shut","traffic melts the steel"])])
+]
 for title, text, qs in PASS:
     psg = f"<b>{title}</b><br>{text}"
     for sk, st, c, w in qs:
@@ -425,7 +522,18 @@ VOC = [("a <u>jubilant</u> crowd","joyful",["silent","angry","small"]),("a <u>me
 ("<u>ample</u> space","enough",["little","empty","strange"]),("a <u>keen</u> eye","sharp",["closed","lazy","blue"]),
 ("<u>baffled</u> by the clue","puzzled",["pleased","bored","scared"]),("a <u>robust</u> plant","sturdy",["dying","tiny","bitter"]),
 ("<u>diminish</u> the noise","lessen",["increase","record","enjoy"]),("a <u>loyal</u> friend","faithful",["new","distant","rude"]),
-("<u>exhausted</u> runners","worn out",["energetic","quick","proud"]),("a <u>candid</u> answer","honest",["shy","long","false"])]
+("<u>exhausted</u> runners","worn out",["energetic","quick","proud"]),("a <u>candid</u> answer","honest",["shy","long","false"]),
+("a <u>scarce</u> resource","rare",["common","heavy","sweet"]),("to <u>abandon</u> the plan","give up",["improve","announce","copy"]),
+("an <u>urgent</u> message","needing quick action",["boring","handwritten","secret forever"]),("a <u>vast</u> desert","huge",["tiny","crowded","frozen"]),
+("<u>imitate</u> a bird call","copy",["ignore","record only","fear"]),("a <u>harsh</u> winter","severe",["mild","short","funny"]),
+("to <u>assemble</u> the tent","put together",["pack away","paint","sell"]),("a <u>grim</u> warning","serious and bleak",["cheerful","quiet","musical"]),
+("<u>tolerate</u> the noise","put up with",["enjoy loudly","create","measure"]),("a <u>brisk</u> walk","quick and energetic",["slow","dangerous","silent"]),
+("to <u>conclude</u> the speech","end",["begin","translate","forget"]),("an <u>obscure</u> fact","little known",["famous","false","mathematical"]),
+("<u>fragile</u> glass","easily broken",["thick","cheap","colored"]),("a <u>solemn</u> promise","serious",["silly","broken","whispered"]),
+("to <u>resemble</u> her aunt","look like",["argue with","write to","avoid"]),("an <u>ample</u> supply","more than enough",["empty","stolen","expired"]),
+("<u>drench</u> the plants","soak",["trim","count","ignore"]),("a <u>modest</u> home","not showy",["huge mansion","rented only","dark"]),
+("to <u>persist</u> despite failure","keep going",["quit early","hide","complain only"]),("a <u>shrewd</u> choice","clever",["random","noisy","late"]),
+("<u>weary</u> travelers","tired",["excited","lost","wealthy"]),("an <u>outright</u> refusal","complete / total",["polite maybe","delayed","written"])]
 for ph, c, w in VOC:
     add("Reading","vocabulary",f"Choose the word that means the same, or about the same, as the underlined word: {ph}",c,w,f"In context, the underlined word means “{c}.”",2)
 
@@ -456,6 +564,6 @@ if __name__ == "__main__":
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     by = {}
     for it in items: by[it["section"]] = by.get(it["section"], 0) + 1
-    bank = {"version": 2, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117)", "counts": by, "total": len(items), "items": items}
+    bank = {"version": 3, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v3 expanded)", "counts": by, "total": len(items), "items": items}
     json.dump(bank, open(OUT, "w"), indent=1, ensure_ascii=False)
     print(json.dumps(by), len(items))
