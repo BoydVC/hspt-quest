@@ -77,6 +77,6 @@ test("bank: no family names", () => {
   const txt = JSON.stringify(bank); for (const n of ["Charlotte", "Victor", "Miranda", "Boyd", "Spalding", "St. Mary", "Char ", "Vic "]) assert.ok(!txt.includes(n), n);
 });
 test("bank: answer letters are spread out (no key bias)", () => {
-  const c = [0, 0, 0, 0]; bank.filter((q) => q.choices.length === 4 && q.skill !== "classification").forEach((q) => c[q.answer]++); const t = c.reduce((a, b) => a + b);
+  const c = [0, 0, 0, 0]; bank.filter((q) => q.choices.length === 4).forEach((q) => c[q.answer]++); const t = c.reduce((a, b) => a + b);
   c.forEach((x) => assert.ok(x / t > 0.15 && x / t < 0.35, JSON.stringify(c)));
 });

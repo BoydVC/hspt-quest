@@ -5,11 +5,11 @@
  "counts": {
   "Verbal": 104,
   "Quantitative": 62,
-  "Mathematics": 80,
+  "Mathematics": 78,
   "Language": 73,
   "Reading": 62
  },
- "total": 381,
+ "total": 379,
  "items": [
   {
    "section": "Verbal",
@@ -1096,12 +1096,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "apple",
-    "banana",
     "pear",
-    "carrot"
+    "apple",
+    "carrot",
+    "banana"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "Carrot is a vegetable; the others are fruits.",
    "difficulty": 2,
    "id": "V073"
@@ -1112,11 +1112,11 @@
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
     "violin",
-    "cello",
     "trumpet",
+    "cello",
     "harp"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The trumpet is a brass instrument; the others have strings.",
    "difficulty": 2,
    "id": "V074"
@@ -1126,12 +1126,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "Mars",
     "Venus",
     "Moon",
+    "Mars",
     "Jupiter"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The Moon is not a planet.",
    "difficulty": 2,
    "id": "V075"
@@ -1141,12 +1141,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "whisper",
     "murmur",
-    "mutter",
-    "scream"
+    "whisper",
+    "scream",
+    "mutter"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "Scream is loud; the others are quiet ways of speaking.",
    "difficulty": 2,
    "id": "V076"
@@ -1156,12 +1156,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "oak",
-    "maple",
     "rose",
+    "maple",
+    "oak",
     "pine"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "Rose is a flower; the others are trees.",
    "difficulty": 2,
    "id": "V077"
@@ -1171,12 +1171,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "triangle",
-    "square",
     "cube",
+    "square",
+    "triangle",
     "pentagon"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "A cube is three-dimensional; the others are flat shapes.",
    "difficulty": 2,
    "id": "V078"
@@ -1186,12 +1186,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "delighted",
     "pleased",
     "content",
-    "furious"
+    "furious",
+    "delighted"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "Furious is a negative feeling.",
    "difficulty": 2,
    "id": "V079"
@@ -1202,9 +1202,9 @@
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
     "inch",
-    "foot",
+    "yard",
     "pound",
-    "yard"
+    "foot"
    ],
    "answer": 2,
    "explanation": "A pound measures weight; the others measure length.",
@@ -1216,12 +1216,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
+    "silver",
     "copper",
     "iron",
-    "plastic",
-    "silver"
+    "plastic"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "Plastic is not a metal.",
    "difficulty": 2,
    "id": "V081"
@@ -1231,12 +1231,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "sprint",
     "dash",
     "race",
-    "stroll"
+    "stroll",
+    "sprint"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "A stroll is slow; the others are fast.",
    "difficulty": 2,
    "id": "V082"
@@ -1246,12 +1246,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
+    "owl",
     "eagle",
     "hawk",
-    "bat",
-    "owl"
+    "bat"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "A bat is a mammal; the others are birds.",
    "difficulty": 2,
    "id": "V083"
@@ -1261,12 +1261,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "ancient",
+    "novel",
     "old",
-    "aged",
-    "novel"
+    "ancient",
+    "aged"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "Novel means new.",
    "difficulty": 2,
    "id": "V084"
@@ -1276,9 +1276,9 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "hammer",
     "saw",
     "wrench",
+    "hammer",
     "nail"
    ],
    "answer": 3,
@@ -1291,12 +1291,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
+    "island",
     "lake",
     "pond",
-    "river",
-    "island"
+    "river"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "An island is land; the others are bodies of water.",
    "difficulty": 2,
    "id": "V086"
@@ -1306,12 +1306,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "shy",
-    "timid",
     "bashful",
-    "bold"
+    "timid",
+    "bold",
+    "shy"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "Bold is the opposite of the others.",
    "difficulty": 2,
    "id": "V087"
@@ -1321,10 +1321,10 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "seven",
+    "thirteen",
     "eleven",
     "nine",
-    "thirteen"
+    "seven"
    ],
    "answer": 2,
    "explanation": "Nine is not a prime number.",
@@ -1336,12 +1336,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
+    "seal",
     "shark",
-    "whale",
     "dolphin",
-    "seal"
+    "whale"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "A shark is a fish; the others are mammals.",
    "difficulty": 2,
    "id": "V089"
@@ -1352,8 +1352,8 @@
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
     "chapter",
-    "page",
     "paragraph",
+    "page",
     "pencil"
    ],
    "answer": 3,
@@ -1367,8 +1367,8 @@
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
     "gallon",
-    "quart",
     "pint",
+    "quart",
     "ounce of weight"
    ],
    "answer": 3,
@@ -1381,12 +1381,12 @@
    "skill": "classification",
    "stem": "Which word does <i>not</i> belong with the others?",
    "choices": [
-    "thrifty",
-    "frugal",
     "economical",
-    "lavish"
+    "thrifty",
+    "lavish",
+    "frugal"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "Lavish means spending freely; the others mean careful with money.",
    "difficulty": 2,
    "id": "V092"
@@ -1562,14 +1562,14 @@
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 12, 15, 18, 21, 24, … What number should come next?",
+   "stem": "Look at this series: 29, 32, 35, 38, 41, … What number should come next?",
    "choices": [
-    "27",
+    "88",
+    "43",
     "54",
-    "32",
-    "34"
+    "44"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "Each term changes by +3.",
    "difficulty": 2,
    "id": "Q001"
@@ -1577,89 +1577,89 @@
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 4, 12, 36, 108, 324, … What number should come next?",
+   "stem": "Look at this series: 2, 4, 8, 16, 32, … What number should come next?",
    "choices": [
-    "486",
-    "982",
-    "972",
-    "967"
+    "59",
+    "64",
+    "63",
+    "74"
    ],
-   "answer": 2,
-   "explanation": "Each term is multiplied by 3.",
+   "answer": 1,
+   "explanation": "Each term is multiplied by 2.",
    "difficulty": 2,
    "id": "Q002"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 2, 58, 7, 55, 12, … What number should come next?",
+   "stem": "Look at this series: 20, 32, 25, 30, 30, … What number should come next?",
    "choices": [
-    "49",
-    "47",
-    "54",
-    "52"
+    "56",
+    "23",
+    "27",
+    "28"
    ],
    "answer": 3,
-   "explanation": "Two series alternate: one goes up by 5, the other changes by -3.",
+   "explanation": "Two series alternate: one goes up by 5, the other changes by -2.",
    "difficulty": 3,
    "id": "Q003"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 9, 3, -3, -9, -15, … What number should come next?",
+   "stem": "Look at this series: 21, 25, 29, 33, 37, … What number should come next?",
    "choices": [
-    "-19",
-    "-24",
-    "-21",
-    "-42"
+    "38",
+    "39",
+    "42",
+    "41"
    ],
-   "answer": 2,
-   "explanation": "Each term changes by -6.",
+   "answer": 3,
+   "explanation": "Each term changes by +4.",
    "difficulty": 2,
    "id": "Q004"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 1, 3, 9, 27, 81, … What number should come next?",
+   "stem": "Look at this series: 4, 8, 16, 32, 64, … What number should come next?",
    "choices": [
-    "243",
-    "242",
-    "253",
-    "238"
+    "125",
+    "128",
+    "256",
+    "130"
    ],
-   "answer": 0,
-   "explanation": "Each term is multiplied by 3.",
+   "answer": 1,
+   "explanation": "Each term is multiplied by 2.",
    "difficulty": 2,
    "id": "Q005"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 7, 49, 10, 51, 13, … What number should come next?",
+   "stem": "Look at this series: 2, 31, 6, 28, 10, … What number should come next?",
    "choices": [
-    "56",
-    "53",
-    "52",
-    "57"
+    "20",
+    "25",
+    "35",
+    "29"
    ],
    "answer": 1,
-   "explanation": "Two series alternate: one goes up by 3, the other changes by +2.",
+   "explanation": "Two series alternate: one goes up by 4, the other changes by -3.",
    "difficulty": 3,
    "id": "Q006"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 20, 23, 26, 29, 32, … What number should come next?",
+   "stem": "Look at this series: 7, 10, 13, 16, 19, … What number should come next?",
    "choices": [
-    "70",
-    "32",
-    "37",
-    "35"
+    "26",
+    "21",
+    "22",
+    "11"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "Each term changes by +3.",
    "difficulty": 2,
    "id": "Q007"
@@ -1667,104 +1667,104 @@
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 3, 6, 12, 24, 48, … What number should come next?",
+   "stem": "Look at this series: 1, 3, 9, 27, 81, … What number should come next?",
    "choices": [
-    "93",
-    "94",
-    "97",
-    "96"
+    "247",
+    "486",
+    "243",
+    "253"
    ],
-   "answer": 3,
-   "explanation": "Each term is multiplied by 2.",
+   "answer": 2,
+   "explanation": "Each term is multiplied by 3.",
    "difficulty": 2,
    "id": "Q008"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 15, 35, 18, 32, 21, … What number should come next?",
+   "stem": "Look at this series: 6, 49, 9, 47, 12, … What number should come next?",
    "choices": [
-    "26",
-    "29",
-    "28",
-    "36"
+    "45",
+    "40",
+    "55",
+    "43"
    ],
-   "answer": 1,
-   "explanation": "Two series alternate: one goes up by 3, the other changes by -3.",
+   "answer": 0,
+   "explanation": "Two series alternate: one goes up by 3, the other changes by -2.",
    "difficulty": 3,
    "id": "Q009"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 2, 5, 8, 11, 14, … What number should come next?",
+   "stem": "Look at this series: 10, 14, 18, 22, 26, … What number should come next?",
    "choices": [
+    "33",
     "34",
-    "17",
-    "22",
-    "12"
+    "30",
+    "27"
    ],
-   "answer": 1,
-   "explanation": "Each term changes by +3.",
+   "answer": 2,
+   "explanation": "Each term changes by +4.",
    "difficulty": 2,
    "id": "Q010"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 2, 4, 8, 16, 32, … What number should come next?",
+   "stem": "Look at this series: 3, 9, 27, 81, 243, … What number should come next?",
    "choices": [
-    "68",
-    "63",
-    "64",
-    "32"
+    "728",
+    "729",
+    "1458",
+    "736"
    ],
-   "answer": 2,
-   "explanation": "Each term is multiplied by 2.",
+   "answer": 1,
+   "explanation": "Each term is multiplied by 3.",
    "difficulty": 2,
    "id": "Q011"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 3, 49, 8, 46, 13, … What number should come next?",
+   "stem": "Look at this series: 8, 53, 11, 55, 14, … What number should come next?",
    "choices": [
-    "47",
-    "86",
-    "43",
-    "53"
+    "57",
+    "67",
+    "59",
+    "56"
    ],
-   "answer": 2,
-   "explanation": "Two series alternate: one goes up by 5, the other changes by -3.",
+   "answer": 0,
+   "explanation": "Two series alternate: one goes up by 3, the other changes by +2.",
    "difficulty": 3,
    "id": "Q012"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 6, 15, 24, 33, 42, … What number should come next?",
+   "stem": "Look at this series: 26, 30, 34, 38, 42, … What number should come next?",
    "choices": [
-    "51",
-    "61",
-    "54",
-    "48"
+    "47",
+    "45",
+    "46",
+    "43"
    ],
-   "answer": 0,
-   "explanation": "Each term changes by +9.",
+   "answer": 2,
+   "explanation": "Each term changes by +4.",
    "difficulty": 2,
    "id": "Q013"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 4, 12, 36, 108, 324, … What number should come next?",
+   "stem": "Look at this series: 1, 3, 9, 27, 81, … What number should come next?",
    "choices": [
-    "1944",
-    "972",
-    "971",
-    "967"
+    "238",
+    "246",
+    "247",
+    "243"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "Each term is multiplied by 3.",
    "difficulty": 2,
    "id": "Q014"
@@ -1772,30 +1772,30 @@
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 8, 32, 12, 29, 16, … What number should come next?",
+   "stem": "Look at this series: 6, 59, 11, 61, 16, … What number should come next?",
    "choices": [
-    "28",
-    "21",
-    "26",
-    "27"
+    "126",
+    "66",
+    "63",
+    "67"
    ],
    "answer": 2,
-   "explanation": "Two series alternate: one goes up by 4, the other changes by -3.",
+   "explanation": "Two series alternate: one goes up by 5, the other changes by +2.",
    "difficulty": 3,
    "id": "Q015"
   },
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 11, 20, 29, 38, 47, … What number should come next?",
+   "stem": "Look at this series: 30, 33, 36, 39, 42, … What number should come next?",
    "choices": [
-    "56",
-    "60",
-    "61",
-    "57"
+    "42",
+    "47",
+    "45",
+    "49"
    ],
-   "answer": 0,
-   "explanation": "Each term changes by +9.",
+   "answer": 2,
+   "explanation": "Each term changes by +3.",
    "difficulty": 2,
    "id": "Q016"
   },
@@ -1804,12 +1804,12 @@
    "skill": "number series",
    "stem": "Look at this series: 4, 12, 36, 108, 324, … What number should come next?",
    "choices": [
-    "973",
-    "971",
     "972",
-    "969"
+    "971",
+    "970",
+    "982"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "Each term is multiplied by 3.",
    "difficulty": 2,
    "id": "Q017"
@@ -1817,165 +1817,165 @@
   {
    "section": "Quantitative",
    "skill": "number series",
-   "stem": "Look at this series: 4, 56, 9, 53, 14, … What number should come next?",
+   "stem": "Look at this series: 13, 38, 17, 35, 21, … What number should come next?",
    "choices": [
-    "45",
-    "53",
-    "54",
-    "50"
+    "32",
+    "31",
+    "37",
+    "27"
    ],
-   "answer": 3,
-   "explanation": "Two series alternate: one goes up by 5, the other changes by -3.",
+   "answer": 0,
+   "explanation": "Two series alternate: one goes up by 4, the other changes by -3.",
    "difficulty": 3,
    "id": "Q018"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What number is 7 more than 1/3 of 18?",
+   "stem": "What number is 7 more than 1/3 of 12?",
    "choices": [
-    "20",
-    "16",
-    "13",
-    "26"
+    "12",
+    "10",
+    "14",
+    "11"
    ],
-   "answer": 2,
-   "explanation": "1/3 of 18 = 6; 6 + 7 = 13.",
+   "answer": 3,
+   "explanation": "1/3 of 12 = 4; 4 + 7 = 11.",
    "difficulty": 2,
    "id": "Q019"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What number is 3 less than 25% of 20?",
+   "stem": "What number is 3 less than 75% of 40?",
    "choices": [
-    "0",
-    "4",
-    "2",
-    "3"
+    "30",
+    "27",
+    "54",
+    "24"
    ],
-   "answer": 2,
-   "explanation": "25% of 20 = 5; minus 3 = 2.",
+   "answer": 1,
+   "explanation": "75% of 40 = 30; minus 3 = 27.",
    "difficulty": 2,
    "id": "Q020"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What number multiplied by 6 equals 54?",
+   "stem": "What number multiplied by 4 equals 44?",
    "choices": [
-    "9",
-    "8",
-    "7",
-    "19"
+    "21",
+    "18",
+    "11",
+    "6"
    ],
-   "answer": 0,
-   "explanation": "54 ÷ 6 = 9.",
+   "answer": 2,
+   "explanation": "44 ÷ 4 = 11.",
    "difficulty": 2,
    "id": "Q021"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What is the sum of 7 squared and 7?",
+   "stem": "What is the sum of 3 squared and 3?",
    "choices": [
-    "60",
-    "58",
-    "51",
-    "56"
+    "17",
+    "14",
+    "12",
+    "6"
    ],
-   "answer": 3,
-   "explanation": "7² = 49; 49 + 7 = 56.",
+   "answer": 2,
+   "explanation": "3² = 9; 9 + 3 = 12.",
    "difficulty": 2,
    "id": "Q022"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What is one-half of three-fourths of 48?",
+   "stem": "What is one-half of three-fourths of 16?",
    "choices": [
-    "18",
-    "21",
-    "19",
-    "9"
+    "12",
+    "5",
+    "1",
+    "6"
    ],
-   "answer": 0,
-   "explanation": "3/4 of 48 = 36; half of that is 18.",
+   "answer": 3,
+   "explanation": "3/4 of 16 = 12; half of that is 6.",
    "difficulty": 2,
    "id": "Q023"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "If a number is doubled and then increased by 5, the result is 35. What is the number?",
+   "stem": "If a number is doubled and then increased by 5, the result is 31. What is the number?",
    "choices": [
-    "17",
-    "13",
-    "15",
-    "25"
+    "12",
+    "23",
+    "8",
+    "13"
    ],
-   "answer": 2,
-   "explanation": "Work backwards: 35 − 5 = 30; ÷ 2 = 15.",
+   "answer": 3,
+   "explanation": "Work backwards: 31 − 5 = 26; ÷ 2 = 13.",
    "difficulty": 2,
    "id": "Q024"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What number is 7 more than 1/3 of 12?",
+   "stem": "What number is 2 more than 1/3 of 36?",
    "choices": [
-    "10",
-    "13",
-    "11",
-    "6"
+    "16",
+    "14",
+    "7",
+    "17"
    ],
-   "answer": 2,
-   "explanation": "1/3 of 12 = 4; 4 + 7 = 11.",
+   "answer": 1,
+   "explanation": "1/3 of 36 = 12; 12 + 2 = 14.",
    "difficulty": 2,
    "id": "Q025"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What number is 3 less than 25% of 60?",
+   "stem": "What number is 3 less than 25% of 40?",
    "choices": [
-    "15",
-    "16",
-    "11",
-    "12"
+    "2",
+    "14",
+    "7",
+    "10"
    ],
-   "answer": 3,
-   "explanation": "25% of 60 = 15; minus 3 = 12.",
+   "answer": 2,
+   "explanation": "25% of 40 = 10; minus 3 = 7.",
    "difficulty": 2,
    "id": "Q026"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What number multiplied by 6 equals 54?",
+   "stem": "What number multiplied by 4 equals 44?",
    "choices": [
     "13",
-    "6",
-    "19",
-    "9"
+    "21",
+    "11",
+    "10"
    ],
-   "answer": 3,
-   "explanation": "54 ÷ 6 = 9.",
+   "answer": 2,
+   "explanation": "44 ÷ 4 = 11.",
    "difficulty": 2,
    "id": "Q027"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What is the sum of 9 squared and 9?",
+   "stem": "What is the sum of 7 squared and 7?",
    "choices": [
-    "90",
-    "85",
-    "87",
-    "88"
+    "56",
+    "53",
+    "58",
+    "112"
    ],
    "answer": 0,
-   "explanation": "9² = 81; 81 + 9 = 90.",
+   "explanation": "7² = 49; 49 + 7 = 56.",
    "difficulty": 2,
    "id": "Q028"
   },
@@ -1984,12 +1984,12 @@
    "skill": "number manipulation",
    "stem": "What is one-half of three-fourths of 32?",
    "choices": [
-    "22",
-    "14",
-    "12",
-    "7"
+    "17",
+    "10",
+    "16",
+    "12"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "3/4 of 32 = 24; half of that is 12.",
    "difficulty": 2,
    "id": "Q029"
@@ -1997,135 +1997,135 @@
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "If a number is doubled and then increased by 5, the result is 31. What is the number?",
+   "stem": "If a number is doubled and then increased by 5, the result is 29. What is the number?",
    "choices": [
-    "20",
-    "17",
     "13",
-    "14"
+    "12",
+    "14",
+    "11"
    ],
-   "answer": 2,
-   "explanation": "Work backwards: 31 − 5 = 26; ÷ 2 = 13.",
+   "answer": 1,
+   "explanation": "Work backwards: 29 − 5 = 24; ÷ 2 = 12.",
    "difficulty": 2,
    "id": "Q030"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What number is 9 more than 1/3 of 12?",
+   "stem": "What number is 8 more than 1/3 of 30?",
    "choices": [
-    "26",
-    "13",
-    "8",
-    "12"
+    "22",
+    "20",
+    "18",
+    "28"
    ],
-   "answer": 1,
-   "explanation": "1/3 of 12 = 4; 4 + 9 = 13.",
+   "answer": 2,
+   "explanation": "1/3 of 30 = 10; 10 + 8 = 18.",
    "difficulty": 2,
    "id": "Q031"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What number is 3 less than 50% of 80?",
+   "stem": "What number is 3 less than 50% of 40?",
    "choices": [
-    "36",
-    "41",
-    "37",
-    "40"
+    "12",
+    "17",
+    "19",
+    "22"
    ],
-   "answer": 2,
-   "explanation": "50% of 80 = 40; minus 3 = 37.",
+   "answer": 1,
+   "explanation": "50% of 40 = 20; minus 3 = 17.",
    "difficulty": 2,
    "id": "Q032"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What number multiplied by 5 equals 50?",
+   "stem": "What number multiplied by 4 equals 48?",
    "choices": [
-    "15",
-    "8",
-    "5",
-    "10"
+    "13",
+    "14",
+    "22",
+    "12"
    ],
    "answer": 3,
-   "explanation": "50 ÷ 5 = 10.",
+   "explanation": "48 ÷ 4 = 12.",
    "difficulty": 2,
    "id": "Q033"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What is the sum of 5 squared and 5?",
+   "stem": "What is the sum of 2 squared and 2?",
    "choices": [
-    "29",
-    "15",
-    "30",
-    "35"
+    "6",
+    "1",
+    "8",
+    "5"
    ],
-   "answer": 2,
-   "explanation": "5² = 25; 25 + 5 = 30.",
+   "answer": 0,
+   "explanation": "2² = 4; 4 + 2 = 6.",
    "difficulty": 2,
    "id": "Q034"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "What is one-half of three-fourths of 16?",
+   "stem": "What is one-half of three-fourths of 48?",
    "choices": [
-    "8",
-    "4",
-    "11",
-    "6"
+    "28",
+    "18",
+    "20",
+    "13"
    ],
-   "answer": 3,
-   "explanation": "3/4 of 16 = 12; half of that is 6.",
+   "answer": 1,
+   "explanation": "3/4 of 48 = 36; half of that is 18.",
    "difficulty": 2,
    "id": "Q035"
   },
   {
    "section": "Quantitative",
    "skill": "number manipulation",
-   "stem": "If a number is doubled and then increased by 5, the result is 27. What is the number?",
+   "stem": "If a number is doubled and then increased by 5, the result is 15. What is the number?",
    "choices": [
-    "6",
-    "11",
-    "13",
-    "16"
+    "5",
+    "8",
+    "0",
+    "9"
    ],
-   "answer": 1,
-   "explanation": "Work backwards: 27 − 5 = 22; ÷ 2 = 11.",
+   "answer": 0,
+   "explanation": "Work backwards: 15 − 5 = 10; ÷ 2 = 5.",
    "difficulty": 2,
    "id": "Q036"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 6²&nbsp;&nbsp; (II) 6 × 3&nbsp;&nbsp; (III) 23 − 9",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 2²&nbsp;&nbsp; (II) 6 × 3&nbsp;&nbsp; (III) 34 − 7",
    "choices": [
-    "I = III > II",
-    "II = I = III",
-    "I > II > III",
-    "III = I = II"
+    "III > I > II",
+    "III > II > I",
+    "III = I = II",
+    "III > I = II"
    ],
-   "answer": 2,
-   "explanation": "Values: I = 36, II = 18, III = 14, so I > II > III.",
+   "answer": 1,
+   "explanation": "Values: I = 4, II = 18, III = 27, so III > II > I.",
    "difficulty": 3,
    "id": "Q037"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 40&nbsp;&nbsp; (II) 10 + 10&nbsp;&nbsp; (III) 17",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 20&nbsp;&nbsp; (II) 5 + 5&nbsp;&nbsp; (III) 7",
    "choices": [
-    "III > I = II",
+    "III > II > I",
+    "II > III > I",
     "I = II > III",
-    "III > I > II",
-    "I = III = II"
+    "I > III = II"
    ],
-   "answer": 1,
-   "explanation": "Values: I = 20, II = 20, III = 17, so I = II > III.",
+   "answer": 2,
+   "explanation": "Values: I = 10, II = 10, III = 7, so I = II > III.",
    "difficulty": 3,
    "id": "Q038"
   },
@@ -2134,10 +2134,10 @@
    "skill": "non-geometric comparison",
    "stem": "Examine I, II and III and choose the correct answer.<br>(I) 1/4 of 24&nbsp;&nbsp; (II) 0.25 × 12&nbsp;&nbsp; (III) 5",
    "choices": [
+    "III = I > II",
     "III = II = I",
-    "III > I = II",
     "I > III > II",
-    "II > III = I"
+    "II = III = I"
    ],
    "answer": 2,
    "explanation": "Values: I = 6, II = 3, III = 5, so I > III > II.",
@@ -2147,30 +2147,30 @@
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 6²&nbsp;&nbsp; (II) 6 × 3&nbsp;&nbsp; (III) 30 − 7",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 6²&nbsp;&nbsp; (II) 9 × 3&nbsp;&nbsp; (III) 11 − 4",
    "choices": [
-    "I > III > II",
+    "I > II > III",
     "I = II > III",
-    "I > II = III",
-    "III = II > I"
+    "I = III > II",
+    "II = III > I"
    ],
    "answer": 0,
-   "explanation": "Values: I = 36, II = 18, III = 23, so I > III > II.",
+   "explanation": "Values: I = 36, II = 27, III = 7, so I > II > III.",
    "difficulty": 3,
    "id": "Q040"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 60&nbsp;&nbsp; (II) 15 + 15&nbsp;&nbsp; (III) 27",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 20&nbsp;&nbsp; (II) 5 + 5&nbsp;&nbsp; (III) 7",
    "choices": [
-    "I = III = II",
-    "III > I > II",
+    "I = II > III",
+    "III = II > I",
     "I > III > II",
-    "I = II > III"
+    "I > III = II"
    ],
-   "answer": 3,
-   "explanation": "Values: I = 30, II = 30, III = 27, so I = II > III.",
+   "answer": 0,
+   "explanation": "Values: I = 10, II = 10, III = 7, so I = II > III.",
    "difficulty": 3,
    "id": "Q041"
   },
@@ -2179,12 +2179,12 @@
    "skill": "non-geometric comparison",
    "stem": "Examine I, II and III and choose the correct answer.<br>(I) 1/5 of 30&nbsp;&nbsp; (II) 0.2 × 12&nbsp;&nbsp; (III) 6",
    "choices": [
-    "II = I > III",
-    "II = III = I",
-    "II > I = III",
-    "I = III > II"
+    "III > II = I",
+    "I = III > II",
+    "II > I > III",
+    "III > II > I"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "Values: I = 6, II = 2.4, III = 6, so I = III > II.",
    "difficulty": 3,
    "id": "Q042"
@@ -2192,262 +2192,142 @@
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 6²&nbsp;&nbsp; (II) 5 × 3&nbsp;&nbsp; (III) 35 − 3",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 2²&nbsp;&nbsp; (II) 7 × 3&nbsp;&nbsp; (III) 17 − 1",
    "choices": [
-    "I > III = II",
-    "I > III > II",
-    "III = I = II",
-    "I = II > III"
+    "III = I > II",
+    "II > III > I",
+    "II > I > III",
+    "II = I = III"
    ],
    "answer": 1,
-   "explanation": "Values: I = 36, II = 15, III = 32, so I > III > II.",
+   "explanation": "Values: I = 4, II = 21, III = 16, so II > III > I.",
    "difficulty": 3,
    "id": "Q043"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 60&nbsp;&nbsp; (II) 15 + 15&nbsp;&nbsp; (III) 27",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 40&nbsp;&nbsp; (II) 10 + 10&nbsp;&nbsp; (III) 17",
    "choices": [
-    "I = II = III",
-    "I > II > III",
+    "II = III > I",
+    "III > II = I",
     "I = II > III",
-    "III = I > II"
+    "II = I = III"
    ],
    "answer": 2,
-   "explanation": "Values: I = 30, II = 30, III = 27, so I = II > III.",
+   "explanation": "Values: I = 20, II = 20, III = 17, so I = II > III.",
    "difficulty": 3,
    "id": "Q044"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 1/2 of 12&nbsp;&nbsp; (II) 0.5 × 12&nbsp;&nbsp; (III) 3",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 1/4 of 24&nbsp;&nbsp; (II) 0.25 × 12&nbsp;&nbsp; (III) 5",
    "choices": [
-    "III = II > I",
-    "I = III = II",
-    "I = II > III",
-    "III > I > II"
+    "II = III > I",
+    "I > III > II",
+    "I > II > III",
+    "II = III = I"
    ],
-   "answer": 2,
-   "explanation": "Values: I = 6, II = 6, III = 3, so I = II > III.",
+   "answer": 1,
+   "explanation": "Values: I = 6, II = 3, III = 5, so I > III > II.",
    "difficulty": 3,
    "id": "Q045"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 2²&nbsp;&nbsp; (II) 2 × 3&nbsp;&nbsp; (III) 20 − 8",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 5²&nbsp;&nbsp; (II) 8 × 3&nbsp;&nbsp; (III) 20 − 9",
    "choices": [
-    "III > II > I",
-    "III = II > I",
-    "III = II = I",
-    "II = I > III"
+    "II > I > III",
+    "I > II > III",
+    "III = I = II",
+    "III > I = II"
    ],
-   "answer": 0,
-   "explanation": "Values: I = 4, II = 6, III = 12, so III > II > I.",
+   "answer": 1,
+   "explanation": "Values: I = 25, II = 24, III = 11, so I > II > III.",
    "difficulty": 3,
    "id": "Q046"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 60&nbsp;&nbsp; (II) 15 + 15&nbsp;&nbsp; (III) 27",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 40&nbsp;&nbsp; (II) 10 + 10&nbsp;&nbsp; (III) 17",
    "choices": [
+    "III > II = I",
     "I = II > III",
-    "II > III > I",
-    "III = I > II",
-    "I > III = II"
+    "II > III = I",
+    "III > II > I"
    ],
-   "answer": 0,
-   "explanation": "Values: I = 30, II = 30, III = 27, so I = II > III.",
+   "answer": 1,
+   "explanation": "Values: I = 20, II = 20, III = 17, so I = II > III.",
    "difficulty": 3,
    "id": "Q047"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 1/5 of 30&nbsp;&nbsp; (II) 0.2 × 12&nbsp;&nbsp; (III) 6",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 1/4 of 24&nbsp;&nbsp; (II) 0.25 × 12&nbsp;&nbsp; (III) 5",
    "choices": [
-    "III > II > I",
-    "I = III > II",
-    "I = II > III",
-    "II = I > III"
+    "III > I > II",
+    "I > III > II",
+    "III = I > II",
+    "I = III > II"
    ],
    "answer": 1,
-   "explanation": "Values: I = 6, II = 2.4, III = 6, so I = III > II.",
+   "explanation": "Values: I = 6, II = 3, III = 5, so I > III > II.",
    "difficulty": 3,
    "id": "Q048"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 5²&nbsp;&nbsp; (II) 4 × 3&nbsp;&nbsp; (III) 31 − 8",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 2²&nbsp;&nbsp; (II) 3 × 3&nbsp;&nbsp; (III) 25 − 6",
    "choices": [
-    "I > III > II",
-    "I > II > III",
     "III > II > I",
-    "I = III > II"
+    "II > I > III",
+    "II = I = III",
+    "III = II > I"
    ],
    "answer": 0,
-   "explanation": "Values: I = 25, II = 12, III = 23, so I > III > II.",
+   "explanation": "Values: I = 4, II = 9, III = 19, so III > II > I.",
    "difficulty": 3,
    "id": "Q049"
   },
   {
    "section": "Quantitative",
    "skill": "non-geometric comparison",
-   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 60&nbsp;&nbsp; (II) 15 + 15&nbsp;&nbsp; (III) 27",
+   "stem": "Examine I, II and III and choose the correct answer.<br>(I) 50% of 40&nbsp;&nbsp; (II) 10 + 10&nbsp;&nbsp; (III) 17",
    "choices": [
-    "I > II = III",
-    "I = II = III",
+    "I = III > II",
     "I = II > III",
-    "I > III = II"
+    "II = III > I",
+    "III = I > II"
    ],
-   "answer": 2,
-   "explanation": "Values: I = 30, II = 30, III = 27, so I = II > III.",
+   "answer": 1,
+   "explanation": "Values: I = 20, II = 20, III = 17, so I = II > III.",
    "difficulty": 3,
    "id": "Q050"
   },
   {
    "section": "Quantitative",
    "skill": "geometric comparison",
-   "stem": "Compare: (I) the area of a square with side 5; (II) the perimeter of that square; (III) the perimeter of a 5 by 4 rectangle.",
+   "stem": "Compare: (I) the area of a square with side 6; (II) the perimeter of that square; (III) the perimeter of a 6 by 5 rectangle.",
    "choices": [
+    "III > II = I",
     "I > II > III",
-    "II > III = I",
-    "II > I > III",
-    "I > II = III"
+    "II = III > I",
+    "III = II > I"
    ],
-   "answer": 0,
-   "explanation": "I = 25, II = 20, III = 18, so I > II > III.",
+   "answer": 1,
+   "explanation": "I = 36, II = 24, III = 22, so I > II > III.",
    "difficulty": 3,
    "id": "Q051"
   },
   {
    "section": "Quantitative",
    "skill": "geometric comparison",
-   "stem": "Compare: (I) the area of a 5 by 7 rectangle; (II) the area of a square with side 6; (III) the perimeter of a square with side 6.",
-   "choices": [
-    "II > I = III",
-    "II > I > III",
-    "III = II = I",
-    "III > I = II"
-   ],
-   "answer": 1,
-   "explanation": "I = 35, II = 36, III = 24, so II > I > III.",
-   "difficulty": 3,
-   "id": "Q052"
-  },
-  {
-   "section": "Quantitative",
-   "skill": "geometric comparison",
-   "stem": "Compare: (I) the area of a square with side 5; (II) the perimeter of that square; (III) the perimeter of a 5 by 4 rectangle.",
-   "choices": [
-    "I > II > III",
-    "II = I = III",
-    "II > III > I",
-    "II = I > III"
-   ],
-   "answer": 0,
-   "explanation": "I = 25, II = 20, III = 18, so I > II > III.",
-   "difficulty": 3,
-   "id": "Q053"
-  },
-  {
-   "section": "Quantitative",
-   "skill": "geometric comparison",
    "stem": "Compare: (I) the area of a 9 by 11 rectangle; (II) the area of a square with side 10; (III) the perimeter of a square with side 10.",
-   "choices": [
-    "II = I = III",
-    "I = II = III",
-    "III > I = II",
-    "II > I > III"
-   ],
-   "answer": 3,
-   "explanation": "I = 99, II = 100, III = 40, so II > I > III.",
-   "difficulty": 3,
-   "id": "Q054"
-  },
-  {
-   "section": "Quantitative",
-   "skill": "geometric comparison",
-   "stem": "Compare: (I) the area of a square with side 9; (II) the perimeter of that square; (III) the perimeter of a 9 by 8 rectangle.",
-   "choices": [
-    "I = III > II",
-    "I > II > III",
-    "II > III > I",
-    "III = I > II"
-   ],
-   "answer": 1,
-   "explanation": "I = 81, II = 36, III = 34, so I > II > III.",
-   "difficulty": 3,
-   "id": "Q055"
-  },
-  {
-   "section": "Quantitative",
-   "skill": "geometric comparison",
-   "stem": "Compare: (I) the area of a 8 by 10 rectangle; (II) the area of a square with side 9; (III) the perimeter of a square with side 9.",
-   "choices": [
-    "II > I > III",
-    "I = III = II",
-    "III > II > I",
-    "I = III > II"
-   ],
-   "answer": 0,
-   "explanation": "I = 80, II = 81, III = 36, so II > I > III.",
-   "difficulty": 3,
-   "id": "Q056"
-  },
-  {
-   "section": "Quantitative",
-   "skill": "geometric comparison",
-   "stem": "Compare: (I) the area of a square with side 9; (II) the perimeter of that square; (III) the perimeter of a 9 by 8 rectangle.",
-   "choices": [
-    "I > II > III",
-    "III > I = II",
-    "II > III = I",
-    "III = I = II"
-   ],
-   "answer": 0,
-   "explanation": "I = 81, II = 36, III = 34, so I > II > III.",
-   "difficulty": 3,
-   "id": "Q057"
-  },
-  {
-   "section": "Quantitative",
-   "skill": "geometric comparison",
-   "stem": "Compare: (I) the area of a 7 by 9 rectangle; (II) the area of a square with side 8; (III) the perimeter of a square with side 8.",
-   "choices": [
-    "II = I = III",
-    "II > I > III",
-    "II = III > I",
-    "I > II > III"
-   ],
-   "answer": 1,
-   "explanation": "I = 63, II = 64, III = 32, so II > I > III.",
-   "difficulty": 3,
-   "id": "Q058"
-  },
-  {
-   "section": "Quantitative",
-   "skill": "geometric comparison",
-   "stem": "Compare: (I) the area of a square with side 5; (II) the perimeter of that square; (III) the perimeter of a 5 by 4 rectangle.",
-   "choices": [
-    "I > II > III",
-    "II > III > I",
-    "I > III > II",
-    "I = III = II"
-   ],
-   "answer": 0,
-   "explanation": "I = 25, II = 20, III = 18, so I > II > III.",
-   "difficulty": 3,
-   "id": "Q059"
-  },
-  {
-   "section": "Quantitative",
-   "skill": "geometric comparison",
-   "stem": "Compare: (I) the area of a 5 by 7 rectangle; (II) the area of a square with side 6; (III) the perimeter of a square with side 6.",
    "choices": [
     "I > II = III",
     "I > II > III",
@@ -2455,9 +2335,9 @@
     "II > I > III"
    ],
    "answer": 3,
-   "explanation": "I = 35, II = 36, III = 24, so II > I > III.",
+   "explanation": "I = 99, II = 100, III = 40, so II > I > III.",
    "difficulty": 3,
-   "id": "Q060"
+   "id": "Q052"
   },
   {
    "section": "Quantitative",
@@ -2472,7 +2352,7 @@
    "answer": 1,
    "explanation": "I = 81, II = 36, III = 34, so I > II > III.",
    "difficulty": 3,
-   "id": "Q061"
+   "id": "Q053"
   },
   {
    "section": "Quantitative",
@@ -2487,547 +2367,592 @@
    "answer": 1,
    "explanation": "I = 80, II = 81, III = 36, so II > I > III.",
    "difficulty": 3,
+   "id": "Q054"
+  },
+  {
+   "section": "Quantitative",
+   "skill": "geometric comparison",
+   "stem": "Compare: (I) the area of a square with side 8; (II) the perimeter of that square; (III) the perimeter of a 8 by 7 rectangle.",
+   "choices": [
+    "I > II > III",
+    "I > II = III",
+    "II = III = I",
+    "III = II > I"
+   ],
+   "answer": 0,
+   "explanation": "I = 64, II = 32, III = 30, so I > II > III.",
+   "difficulty": 3,
+   "id": "Q055"
+  },
+  {
+   "section": "Quantitative",
+   "skill": "geometric comparison",
+   "stem": "Compare: (I) the area of a 6 by 8 rectangle; (II) the area of a square with side 7; (III) the perimeter of a square with side 7.",
+   "choices": [
+    "II > I > III",
+    "III > I = II",
+    "III = II > I",
+    "II = I = III"
+   ],
+   "answer": 0,
+   "explanation": "I = 48, II = 49, III = 28, so II > I > III.",
+   "difficulty": 3,
+   "id": "Q056"
+  },
+  {
+   "section": "Quantitative",
+   "skill": "geometric comparison",
+   "stem": "Compare: (I) the area of a square with side 8; (II) the perimeter of that square; (III) the perimeter of a 8 by 7 rectangle.",
+   "choices": [
+    "I = III > II",
+    "I > II > III",
+    "III > I = II",
+    "I = II > III"
+   ],
+   "answer": 1,
+   "explanation": "I = 64, II = 32, III = 30, so I > II > III.",
+   "difficulty": 3,
+   "id": "Q057"
+  },
+  {
+   "section": "Quantitative",
+   "skill": "geometric comparison",
+   "stem": "Compare: (I) the area of a 3 by 5 rectangle; (II) the area of a square with side 4; (III) the perimeter of a square with side 4.",
+   "choices": [
+    "I > III > II",
+    "II > I > III",
+    "I = II = III",
+    "II = III > I"
+   ],
+   "answer": 3,
+   "explanation": "I = 15, II = 16, III = 16, so II = III > I.",
+   "difficulty": 3,
+   "id": "Q058"
+  },
+  {
+   "section": "Quantitative",
+   "skill": "geometric comparison",
+   "stem": "Compare: (I) the area of a square with side 8; (II) the perimeter of that square; (III) the perimeter of a 8 by 7 rectangle.",
+   "choices": [
+    "I > III = II",
+    "I > II > III",
+    "I = II > III",
+    "I > II = III"
+   ],
+   "answer": 1,
+   "explanation": "I = 64, II = 32, III = 30, so I > II > III.",
+   "difficulty": 3,
+   "id": "Q059"
+  },
+  {
+   "section": "Quantitative",
+   "skill": "geometric comparison",
+   "stem": "Compare: (I) the area of a 7 by 9 rectangle; (II) the area of a square with side 8; (III) the perimeter of a square with side 8.",
+   "choices": [
+    "I = III > II",
+    "II > I > III",
+    "I > III = II",
+    "II = III > I"
+   ],
+   "answer": 1,
+   "explanation": "I = 63, II = 64, III = 32, so II > I > III.",
+   "difficulty": 3,
+   "id": "Q060"
+  },
+  {
+   "section": "Quantitative",
+   "skill": "geometric comparison",
+   "stem": "Compare: (I) the area of a square with side 3; (II) the perimeter of that square; (III) the perimeter of a 3 by 2 rectangle.",
+   "choices": [
+    "III > II = I",
+    "I = II = III",
+    "II > III > I",
+    "III = II = I"
+   ],
+   "answer": 2,
+   "explanation": "I = 9, II = 12, III = 10, so II > III > I.",
+   "difficulty": 3,
+   "id": "Q061"
+  },
+  {
+   "section": "Quantitative",
+   "skill": "geometric comparison",
+   "stem": "Compare: (I) the area of a 3 by 5 rectangle; (II) the area of a square with side 4; (III) the perimeter of a square with side 4.",
+   "choices": [
+    "II = III > I",
+    "I = III = II",
+    "II > III = I",
+    "II > I = III"
+   ],
+   "answer": 0,
+   "explanation": "I = 15, II = 16, III = 16, so II = III > I.",
+   "difficulty": 3,
    "id": "Q062"
   },
   {
    "section": "Mathematics",
    "skill": "fractions",
-   "stem": "2/4 + 5/6 =",
+   "stem": "4/5 + 4/5 =",
    "choices": [
-    "4/3",
-    "7/10",
-    "11/8",
-    "5/12"
+    "16/25",
+    "4/5",
+    "8/5",
+    "41/25"
    ],
-   "answer": 0,
-   "explanation": "Common denominator: 2/4 + 5/6 = 4/3. (Never add denominators.)",
+   "answer": 2,
+   "explanation": "Common denominator: 4/5 + 4/5 = 8/5. (Never add denominators.)",
    "difficulty": 2,
    "id": "M001"
   },
   {
    "section": "Mathematics",
    "skill": "fractions",
-   "stem": "3/4 + 3/4 =",
+   "stem": "3/4 + 2/8 =",
    "choices": [
-    "3/2",
-    "9/16",
-    "25/16",
-    "3/4"
+    "5/12",
+    "1",
+    "3/16",
+    "33/32"
    ],
-   "answer": 0,
-   "explanation": "Common denominator: 3/4 + 3/4 = 3/2. (Never add denominators.)",
+   "answer": 1,
+   "explanation": "Common denominator: 3/4 + 2/8 = 1. (Never add denominators.)",
    "difficulty": 2,
    "id": "M002"
   },
   {
    "section": "Mathematics",
    "skill": "fractions",
-   "stem": "1/2 + 1/4 =",
+   "stem": "2/6 + 1/2 =",
    "choices": [
-    "1/3",
-    "7/8",
-    "3/4",
-    "1/8"
+    "3/8",
+    "5/6",
+    "11/12",
+    "1/6"
    ],
-   "answer": 2,
-   "explanation": "Common denominator: 1/2 + 1/4 = 3/4. (Never add denominators.)",
+   "answer": 1,
+   "explanation": "Common denominator: 2/6 + 1/2 = 5/6. (Never add denominators.)",
    "difficulty": 2,
    "id": "M003"
   },
   {
    "section": "Mathematics",
    "skill": "fractions",
-   "stem": "4/8 + 1/3 =",
+   "stem": "5/6 + 2/3 =",
    "choices": [
-    "1/6",
-    "5/11",
-    "7/8",
-    "5/6"
+    "7/9",
+    "3/2",
+    "14/9",
+    "5/9"
    ],
-   "answer": 3,
-   "explanation": "Common denominator: 4/8 + 1/3 = 5/6. (Never add denominators.)",
+   "answer": 1,
+   "explanation": "Common denominator: 5/6 + 2/3 = 3/2. (Never add denominators.)",
    "difficulty": 2,
    "id": "M004"
   },
   {
    "section": "Mathematics",
    "skill": "fractions",
-   "stem": "2/3 + 1/4 =",
+   "stem": "1/2 + 2/8 =",
    "choices": [
-    "3/7",
-    "1/6",
-    "1",
-    "11/12"
+    "3/10",
+    "13/16",
+    "1/8",
+    "3/4"
    ],
    "answer": 3,
-   "explanation": "Common denominator: 2/3 + 1/4 = 11/12. (Never add denominators.)",
+   "explanation": "Common denominator: 1/2 + 2/8 = 3/4. (Never add denominators.)",
    "difficulty": 2,
    "id": "M005"
   },
   {
    "section": "Mathematics",
    "skill": "fractions",
-   "stem": "1/2 + 3/4 =",
+   "stem": "1/3 + 1/8 =",
    "choices": [
-    "3/8",
-    "11/8",
-    "5/4",
-    "2/3"
+    "1/2",
+    "1/24",
+    "11/24",
+    "2/11"
    ],
    "answer": 2,
-   "explanation": "Common denominator: 1/2 + 3/4 = 5/4. (Never add denominators.)",
+   "explanation": "Common denominator: 1/3 + 1/8 = 11/24. (Never add denominators.)",
    "difficulty": 2,
    "id": "M006"
   },
   {
    "section": "Mathematics",
    "skill": "fractions",
-   "stem": "4/5 + 2/6 =",
+   "stem": "2/5 + 3/4 =",
    "choices": [
-    "7/6",
-    "6/11",
-    "17/15",
-    "4/15"
+    "23/20",
+    "6/5",
+    "3/10",
+    "5/9"
    ],
-   "answer": 2,
-   "explanation": "Common denominator: 4/5 + 2/6 = 17/15. (Never add denominators.)",
+   "answer": 0,
+   "explanation": "Common denominator: 2/5 + 3/4 = 23/20. (Never add denominators.)",
    "difficulty": 2,
    "id": "M007"
   },
   {
    "section": "Mathematics",
    "skill": "fractions",
-   "stem": "1/4 + 3/4 =",
+   "stem": "3/4 + 3/6 =",
    "choices": [
-    "1",
-    "17/16",
-    "1/2",
-    "3/16"
+    "5/4",
+    "3/5",
+    "31/24",
+    "3/8"
    ],
    "answer": 0,
-   "explanation": "Common denominator: 1/4 + 3/4 = 1. (Never add denominators.)",
+   "explanation": "Common denominator: 3/4 + 3/6 = 5/4. (Never add denominators.)",
    "difficulty": 2,
    "id": "M008"
   },
   {
    "section": "Mathematics",
    "skill": "fractions",
-   "stem": "4/5 + 2/3 =",
+   "stem": "4/6 + 5/8 =",
    "choices": [
-    "22/15",
-    "3/4",
-    "23/15",
-    "8/15"
+    "31/24",
+    "5/12",
+    "9/14",
+    "21/16"
    ],
    "answer": 0,
-   "explanation": "Common denominator: 4/5 + 2/3 = 22/15. (Never add denominators.)",
+   "explanation": "Common denominator: 4/6 + 5/8 = 31/24. (Never add denominators.)",
    "difficulty": 2,
    "id": "M009"
   },
   {
    "section": "Mathematics",
-   "skill": "fractions",
-   "stem": "2/8 + 3/6 =",
+   "skill": "percents",
+   "stem": "What is 40% of 40?",
    "choices": [
-    "37/48",
-    "1/8",
-    "3/4",
-    "5/14"
+    "16",
+    "17",
+    "21",
+    "20"
    ],
-   "answer": 2,
-   "explanation": "Common denominator: 2/8 + 3/6 = 3/4. (Never add denominators.)",
+   "answer": 0,
+   "explanation": "40% = 40/100; 40/100 × 40 = 16.",
    "difficulty": 2,
    "id": "M010"
   },
   {
    "section": "Mathematics",
    "skill": "percents",
-   "stem": "What is 15% of 240?",
+   "stem": "What is 15% of 40?",
    "choices": [
-    "37",
-    "36",
-    "31",
-    "39"
+    "1",
+    "6",
+    "3",
+    "8"
    ],
    "answer": 1,
-   "explanation": "15% = 15/100; 15/100 × 240 = 36.",
+   "explanation": "15% = 15/100; 15/100 × 40 = 6.",
    "difficulty": 2,
    "id": "M011"
   },
   {
    "section": "Mathematics",
    "skill": "percents",
-   "stem": "What is 25% of 60?",
+   "stem": "What is 60% of 200?",
    "choices": [
-    "25",
-    "20",
-    "15",
-    "13"
+    "122",
+    "118",
+    "120",
+    "115"
    ],
    "answer": 2,
-   "explanation": "25% = 25/100; 25/100 × 60 = 15.",
+   "explanation": "60% = 60/100; 60/100 × 200 = 120.",
    "difficulty": 2,
    "id": "M012"
   },
   {
    "section": "Mathematics",
    "skill": "percents",
-   "stem": "What is 15% of 200?",
+   "stem": "What is 20% of 60?",
    "choices": [
-    "30",
-    "35",
-    "31",
-    "34"
+    "7",
+    "12",
+    "13",
+    "14"
    ],
-   "answer": 0,
-   "explanation": "15% = 15/100; 15/100 × 200 = 30.",
+   "answer": 1,
+   "explanation": "20% = 20/100; 20/100 × 60 = 12.",
    "difficulty": 2,
    "id": "M013"
   },
   {
    "section": "Mathematics",
    "skill": "percents",
-   "stem": "What is 75% of 200?",
+   "stem": "What is 20% of 240?",
    "choices": [
-    "150",
-    "148",
-    "149",
-    "154"
+    "48",
+    "45",
+    "50",
+    "49"
    ],
    "answer": 0,
-   "explanation": "75% = 75/100; 75/100 × 200 = 150.",
+   "explanation": "20% = 20/100; 20/100 × 240 = 48.",
    "difficulty": 2,
    "id": "M014"
   },
   {
    "section": "Mathematics",
    "skill": "percents",
-   "stem": "What is 40% of 200?",
+   "stem": "What is 10% of 240?",
    "choices": [
-    "80",
-    "75",
-    "81",
-    "85"
+    "34",
+    "24",
+    "27",
+    "28"
    ],
-   "answer": 0,
-   "explanation": "40% = 40/100; 40/100 × 200 = 80.",
+   "answer": 1,
+   "explanation": "10% = 10/100; 10/100 × 240 = 24.",
    "difficulty": 2,
    "id": "M015"
   },
   {
    "section": "Mathematics",
    "skill": "percents",
-   "stem": "What is 75% of 240?",
+   "stem": "What is 40% of 240?",
    "choices": [
-    "180",
-    "183",
-    "185",
-    "178"
+    "97",
+    "98",
+    "106",
+    "96"
    ],
-   "answer": 0,
-   "explanation": "75% = 75/100; 75/100 × 240 = 180.",
+   "answer": 3,
+   "explanation": "40% = 40/100; 40/100 × 240 = 96.",
    "difficulty": 2,
    "id": "M016"
   },
   {
    "section": "Mathematics",
    "skill": "percents",
-   "stem": "What is 15% of 40?",
+   "stem": "What is 20% of 120?",
    "choices": [
-    "16",
-    "7",
-    "6",
-    "8"
+    "34",
+    "21",
+    "24",
+    "29"
    ],
    "answer": 2,
-   "explanation": "15% = 15/100; 15/100 × 40 = 6.",
+   "explanation": "20% = 20/100; 20/100 × 120 = 24.",
    "difficulty": 2,
    "id": "M017"
   },
   {
    "section": "Mathematics",
    "skill": "percents",
-   "stem": "What is 60% of 240?",
+   "stem": "What is 20% of 120?",
    "choices": [
-    "144",
-    "154",
-    "139",
-    "148"
+    "19",
+    "21",
+    "27",
+    "24"
    ],
-   "answer": 0,
-   "explanation": "60% = 60/100; 60/100 × 240 = 144.",
+   "answer": 3,
+   "explanation": "20% = 20/100; 20/100 × 120 = 24.",
    "difficulty": 2,
    "id": "M018"
   },
   {
    "section": "Mathematics",
    "skill": "percents",
-   "stem": "What is 15% of 60?",
+   "stem": "What is 60% of 120?",
    "choices": [
-    "14",
-    "9",
-    "10",
-    "12"
+    "72",
+    "73",
+    "77",
+    "74"
    ],
-   "answer": 1,
-   "explanation": "15% = 15/100; 15/100 × 60 = 9.",
+   "answer": 0,
+   "explanation": "60% = 60/100; 60/100 × 120 = 72.",
    "difficulty": 2,
    "id": "M019"
   },
   {
    "section": "Mathematics",
-   "skill": "percents",
-   "stem": "What is 75% of 120?",
+   "skill": "algebra",
+   "stem": "Solve for x: 6x + 8 = 50",
    "choices": [
-    "87",
-    "90",
-    "91",
-    "94"
+    "14",
+    "2",
+    "7",
+    "6"
    ],
-   "answer": 1,
-   "explanation": "75% = 75/100; 75/100 × 120 = 90.",
-   "difficulty": 2,
+   "answer": 2,
+   "explanation": "Subtract 8: 6x = 42; divide by 6: x = 7.",
+   "difficulty": 3,
    "id": "M020"
   },
   {
    "section": "Mathematics",
    "skill": "algebra",
-   "stem": "Solve for x: 4x + 15 = 11",
+   "stem": "Solve for x: 2x + 0 = -10",
    "choices": [
-    "4",
-    "9",
-    "-2",
-    "-1"
+    "-6",
+    "-10",
+    "-5",
+    "-2"
    ],
-   "answer": 3,
-   "explanation": "Subtract 15: 4x = -4; divide by 4: x = -1.",
+   "answer": 2,
+   "explanation": "Subtract 0: 2x = -10; divide by 2: x = -5.",
    "difficulty": 3,
    "id": "M021"
   },
   {
    "section": "Mathematics",
    "skill": "algebra",
-   "stem": "Solve for x: 4x − 4 = 0",
+   "stem": "Solve for x: 4x − 7 = -3",
    "choices": [
-    "8",
+    "1",
+    "2",
     "6",
-    "11",
-    "1"
+    "11"
    ],
-   "answer": 3,
-   "explanation": "Subtract -4: 4x = 4; divide by 4: x = 1.",
+   "answer": 0,
+   "explanation": "Subtract -7: 4x = 4; divide by 4: x = 1.",
    "difficulty": 3,
    "id": "M022"
   },
   {
    "section": "Mathematics",
    "skill": "algebra",
-   "stem": "Solve for x: 5x + 2 = 62",
+   "stem": "Solve for x: 6x + 3 = 75",
    "choices": [
-    "6",
-    "12",
-    "13",
-    "24"
+    "15",
+    "11",
+    "22",
+    "12"
    ],
-   "answer": 1,
-   "explanation": "Subtract 2: 5x = 60; divide by 5: x = 12.",
+   "answer": 3,
+   "explanation": "Subtract 3: 6x = 72; divide by 6: x = 12.",
    "difficulty": 3,
    "id": "M023"
   },
   {
    "section": "Mathematics",
    "skill": "algebra",
-   "stem": "Solve for x: 6x + 4 = 70",
+   "stem": "Solve for x: 6x − 4 = 32",
    "choices": [
+    "7",
     "6",
-    "22",
-    "11",
+    "10",
     "16"
    ],
-   "answer": 2,
-   "explanation": "Subtract 4: 6x = 66; divide by 6: x = 11.",
+   "answer": 1,
+   "explanation": "Subtract -4: 6x = 36; divide by 6: x = 6.",
    "difficulty": 3,
    "id": "M024"
   },
   {
    "section": "Mathematics",
    "skill": "algebra",
-   "stem": "Solve for x: 4x + 10 = 34",
+   "stem": "Solve for x: 6x − 9 = 57",
    "choices": [
-    "4",
-    "8",
     "10",
-    "6"
+    "21",
+    "11",
+    "22"
    ],
-   "answer": 3,
-   "explanation": "Subtract 10: 4x = 24; divide by 4: x = 6.",
+   "answer": 2,
+   "explanation": "Subtract -9: 6x = 66; divide by 6: x = 11.",
    "difficulty": 3,
    "id": "M025"
   },
   {
    "section": "Mathematics",
    "skill": "algebra",
-   "stem": "Solve for x: 2x + 15 = 9",
+   "stem": "Solve for x: 4x − 4 = 12",
    "choices": [
-    "-1",
-    "-3",
-    "7",
-    "-2"
+    "4",
+    "9",
+    "14",
+    "8"
    ],
-   "answer": 1,
-   "explanation": "Subtract 15: 2x = -6; divide by 2: x = -3.",
+   "answer": 0,
+   "explanation": "Subtract -4: 4x = 16; divide by 4: x = 4.",
    "difficulty": 3,
    "id": "M026"
   },
   {
    "section": "Mathematics",
    "skill": "algebra",
-   "stem": "Solve for x: 7x + 11 = -31",
+   "stem": "Solve for x: 2x + 9 = 27",
    "choices": [
-    "-6",
-    "4",
-    "-7",
-    "-3"
+    "9",
+    "19",
+    "7",
+    "12"
    ],
    "answer": 0,
-   "explanation": "Subtract 11: 7x = -42; divide by 7: x = -6.",
+   "explanation": "Subtract 9: 2x = 18; divide by 2: x = 9.",
    "difficulty": 3,
    "id": "M027"
   },
   {
    "section": "Mathematics",
    "skill": "algebra",
-   "stem": "Solve for x: 6x + 7 = -17",
+   "stem": "Solve for x: 2x + 2 = 10",
    "choices": [
-    "0",
-    "-4",
+    "8",
     "6",
-    "-5"
+    "4",
+    "5"
    ],
-   "answer": 1,
-   "explanation": "Subtract 7: 6x = -24; divide by 6: x = -4.",
+   "answer": 2,
+   "explanation": "Subtract 2: 2x = 8; divide by 2: x = 4.",
    "difficulty": 3,
    "id": "M028"
   },
   {
    "section": "Mathematics",
    "skill": "algebra",
-   "stem": "Solve for x: 5x − 1 = -1",
+   "stem": "Solve for x: 2x + 6 = 6",
    "choices": [
-    "3",
+    "1",
+    "2",
     "0",
-    "5",
-    "10"
+    "5"
    ],
-   "answer": 1,
-   "explanation": "Subtract -1: 5x = 0; divide by 5: x = 0.",
+   "answer": 2,
+   "explanation": "Subtract 6: 2x = 0; divide by 2: x = 0.",
    "difficulty": 3,
    "id": "M029"
   },
   {
    "section": "Mathematics",
-   "skill": "algebra",
-   "stem": "Solve for x: 2x + 15 = 27",
+   "skill": "geometry",
+   "stem": "A rectangle is 9 cm long and 12 cm wide. What is its area in square centimeters?",
    "choices": [
-    "10",
-    "12",
-    "6",
-    "9"
+    "110",
+    "109",
+    "108",
+    "107"
    ],
    "answer": 2,
-   "explanation": "Subtract 15: 2x = 12; divide by 2: x = 6.",
-   "difficulty": 3,
+   "explanation": "Area = length × width = 9 × 12 = 108.",
+   "difficulty": 2,
    "id": "M030"
   },
   {
    "section": "Mathematics",
    "skill": "geometry",
-   "stem": "A rectangle is 3 cm long and 8 cm wide. What is its area in square centimeters?",
+   "stem": "Two angles of a triangle measure 54° and 31°. What is the third angle in degrees?",
    "choices": [
-    "28",
-    "48",
-    "24",
-    "34"
+    "92",
+    "100",
+    "95",
+    "105"
    ],
    "answer": 2,
-   "explanation": "Area = length × width = 3 × 8 = 24.",
+   "explanation": "Angles in a triangle sum to 180°: 180 − 54 − 31 = 95.",
    "difficulty": 2,
    "id": "M031"
-  },
-  {
-   "section": "Mathematics",
-   "skill": "geometry",
-   "stem": "Two angles of a triangle measure 59° and 61°. What is the third angle in degrees?",
-   "choices": [
-    "70",
-    "61",
-    "60",
-    "62"
-   ],
-   "answer": 2,
-   "explanation": "Angles in a triangle sum to 180°: 180 − 59 − 61 = 60.",
-   "difficulty": 2,
-   "id": "M032"
-  },
-  {
-   "section": "Mathematics",
-   "skill": "geometry",
-   "stem": "A triangle has base 12 in and height 7 in. What is its area in square inches?",
-   "choices": [
-    "41",
-    "47",
-    "42",
-    "84"
-   ],
-   "answer": 2,
-   "explanation": "Area = ½ × base × height = ½ × 12 × 7 = 42.",
-   "difficulty": 2,
-   "id": "M033"
-  },
-  {
-   "section": "Mathematics",
-   "skill": "geometry",
-   "stem": "A circle has radius 8. What is its circumference, in terms of π?",
-   "choices": [
-    "16π",
-    "32π",
-    "8π",
-    "64π"
-   ],
-   "answer": 0,
-   "explanation": "C = 2πr = 2 × π × 8 = 16π.",
-   "difficulty": 2,
-   "id": "M034"
-  },
-  {
-   "section": "Mathematics",
-   "skill": "geometry",
-   "stem": "A rectangle is 11 cm long and 11 cm wide. What is its area in square centimeters?",
-   "choices": [
-    "120",
-    "126",
-    "121",
-    "125"
-   ],
-   "answer": 2,
-   "explanation": "Area = length × width = 11 × 11 = 121.",
-   "difficulty": 2,
-   "id": "M035"
-  },
-  {
-   "section": "Mathematics",
-   "skill": "geometry",
-   "stem": "Two angles of a triangle measure 74° and 48°. What is the third angle in degrees?",
-   "choices": [
-    "55",
-    "63",
-    "58",
-    "68"
-   ],
-   "answer": 2,
-   "explanation": "Angles in a triangle sum to 180°: 180 − 74 − 48 = 58.",
-   "difficulty": 2,
-   "id": "M036"
   },
   {
    "section": "Mathematics",
@@ -3042,7 +2967,7 @@
    "answer": 2,
    "explanation": "Area = ½ × base × height = ½ × 12 × 3 = 18.",
    "difficulty": 2,
-   "id": "M037"
+   "id": "M032"
   },
   {
    "section": "Mathematics",
@@ -3057,7 +2982,7 @@
    "answer": 3,
    "explanation": "C = 2πr = 2 × π × 3 = 6π.",
    "difficulty": 2,
-   "id": "M038"
+   "id": "M033"
   },
   {
    "section": "Mathematics",
@@ -3072,7 +2997,7 @@
    "answer": 2,
    "explanation": "Area = length × width = 6 × 2 = 12.",
    "difficulty": 2,
-   "id": "M039"
+   "id": "M034"
   },
   {
    "section": "Mathematics",
@@ -3087,617 +3012,662 @@
    "answer": 0,
    "explanation": "Angles in a triangle sum to 180°: 180 − 39 − 72 = 69.",
    "difficulty": 2,
+   "id": "M035"
+  },
+  {
+   "section": "Mathematics",
+   "skill": "geometry",
+   "stem": "A triangle has base 8 in and height 6 in. What is its area in square inches?",
+   "choices": [
+    "23",
+    "22",
+    "24",
+    "21"
+   ],
+   "answer": 2,
+   "explanation": "Area = ½ × base × height = ½ × 8 × 6 = 24.",
+   "difficulty": 2,
+   "id": "M036"
+  },
+  {
+   "section": "Mathematics",
+   "skill": "geometry",
+   "stem": "A rectangle is 9 cm long and 3 cm wide. What is its area in square centimeters?",
+   "choices": [
+    "37",
+    "27",
+    "54",
+    "32"
+   ],
+   "answer": 1,
+   "explanation": "Area = length × width = 9 × 3 = 27.",
+   "difficulty": 2,
+   "id": "M037"
+  },
+  {
+   "section": "Mathematics",
+   "skill": "geometry",
+   "stem": "Two angles of a triangle measure 47° and 72°. What is the third angle in degrees?",
+   "choices": [
+    "58",
+    "61",
+    "60",
+    "68"
+   ],
+   "answer": 1,
+   "explanation": "Angles in a triangle sum to 180°: 180 − 47 − 72 = 61.",
+   "difficulty": 2,
+   "id": "M038"
+  },
+  {
+   "section": "Mathematics",
+   "skill": "statistics",
+   "stem": "What is the mean of 5, 8, 10, 21, 26?",
+   "choices": [
+    "19",
+    "14",
+    "13",
+    "18"
+   ],
+   "answer": 1,
+   "explanation": "Sum = 70; 70 ÷ 5 = 14.",
+   "difficulty": 2,
+   "id": "M039"
+  },
+  {
+   "section": "Mathematics",
+   "skill": "statistics",
+   "stem": "What is the median of 29, 37, 17, 24, 31?",
+   "choices": [
+    "29",
+    "34",
+    "24",
+    "30"
+   ],
+   "answer": 0,
+   "explanation": "In order: 17, 24, 29, 31, 37. The middle value is 29.",
+   "difficulty": 2,
    "id": "M040"
   },
   {
    "section": "Mathematics",
    "skill": "statistics",
-   "stem": "What is the mean of 2, 12, 14, 21, 26?",
+   "stem": "What is the mean of 4, 7, 8, 15, 36?",
    "choices": [
-    "20",
-    "13",
     "14",
-    "15"
+    "16",
+    "18",
+    "9"
    ],
-   "answer": 3,
-   "explanation": "Sum = 75; 75 ÷ 5 = 15.",
+   "answer": 0,
+   "explanation": "Sum = 70; 70 ÷ 5 = 14.",
    "difficulty": 2,
    "id": "M041"
   },
   {
    "section": "Mathematics",
    "skill": "statistics",
-   "stem": "What is the median of 18, 27, 13, 4, 9?",
+   "stem": "What is the median of 10, 32, 16, 37, 20?",
    "choices": [
-    "20",
-    "13",
+    "23",
+    "24",
     "18",
-    "11"
+    "20"
    ],
-   "answer": 1,
-   "explanation": "In order: 4, 9, 13, 18, 27. The middle value is 13.",
+   "answer": 3,
+   "explanation": "In order: 10, 16, 20, 32, 37. The middle value is 20.",
    "difficulty": 2,
    "id": "M042"
   },
   {
    "section": "Mathematics",
    "skill": "statistics",
-   "stem": "What is the mean of 5, 8, 18, 35, 39?",
+   "stem": "What is the mean of 6, 10, 18, 20, 36?",
    "choices": [
-    "16",
-    "21",
-    "42",
-    "18"
+    "13",
+    "18",
+    "22",
+    "23"
    ],
    "answer": 1,
-   "explanation": "Sum = 105; 105 ÷ 5 = 21.",
+   "explanation": "Sum = 90; 90 ÷ 5 = 18.",
    "difficulty": 2,
    "id": "M043"
   },
   {
    "section": "Mathematics",
    "skill": "statistics",
-   "stem": "What is the median of 6, 37, 26, 29, 5?",
+   "stem": "What is the median of 13, 5, 15, 25, 34?",
    "choices": [
-    "31",
-    "26",
-    "29",
-    "27"
+    "15",
+    "10",
+    "16",
+    "14"
    ],
-   "answer": 1,
-   "explanation": "In order: 5, 6, 26, 29, 37. The middle value is 26.",
+   "answer": 0,
+   "explanation": "In order: 5, 13, 15, 25, 34. The middle value is 15.",
    "difficulty": 2,
    "id": "M044"
   },
   {
    "section": "Mathematics",
    "skill": "statistics",
-   "stem": "What is the mean of 14, 16, 19, 29, 42?",
+   "stem": "What is the mean of 2, 4, 8, 16, 35?",
    "choices": [
-    "34",
-    "48",
-    "23",
-    "24"
+    "8",
+    "15",
+    "26",
+    "13"
    ],
    "answer": 3,
-   "explanation": "Sum = 120; 120 ÷ 5 = 24.",
+   "explanation": "Sum = 65; 65 ÷ 5 = 13.",
    "difficulty": 2,
    "id": "M045"
   },
   {
    "section": "Mathematics",
    "skill": "statistics",
-   "stem": "What is the median of 16, 9, 5, 23, 26?",
+   "stem": "What is the median of 23, 5, 24, 19, 37?",
    "choices": [
-    "16",
-    "17",
-    "21",
-    "13"
+    "22",
+    "25",
+    "23",
+    "46"
    ],
-   "answer": 0,
-   "explanation": "In order: 5, 9, 16, 23, 26. The middle value is 16.",
+   "answer": 2,
+   "explanation": "In order: 5, 19, 23, 24, 37. The middle value is 23.",
    "difficulty": 2,
    "id": "M046"
   },
   {
    "section": "Mathematics",
-   "skill": "statistics",
-   "stem": "What is the mean of 3, 7, 8, 16, 26?",
+   "skill": "probability",
+   "stem": "A bag has 1 red, 3 blue and 1 green marbles. If one is picked at random, what is the probability it is blue?",
    "choices": [
-    "12",
-    "22",
-    "17",
-    "9"
+    "1/5",
+    "3/2",
+    "3/5"
    ],
-   "answer": 0,
-   "explanation": "Sum = 60; 60 ÷ 5 = 12.",
+   "answer": 2,
+   "explanation": "3 blue out of 5 total = 3/5.",
    "difficulty": 2,
    "id": "M047"
   },
   {
    "section": "Mathematics",
-   "skill": "statistics",
-   "stem": "What is the median of 36, 4, 9, 34, 35?",
+   "skill": "probability",
+   "stem": "A bag has 4 red, 6 blue and 3 green marbles. If one is picked at random, what is the probability it is blue?",
    "choices": [
-    "38",
-    "29",
-    "31",
-    "34"
+    "6/13",
+    "4/13",
+    "1/13",
+    "6/7"
    ],
-   "answer": 3,
-   "explanation": "In order: 4, 9, 34, 35, 36. The middle value is 34.",
+   "answer": 0,
+   "explanation": "6 blue out of 13 total = 6/13.",
    "difficulty": 2,
    "id": "M048"
   },
   {
    "section": "Mathematics",
    "skill": "probability",
-   "stem": "A bag has 6 red, 4 blue and 4 green marbles. If one is picked at random, what is the probability it is blue?",
+   "stem": "A bag has 1 red, 5 blue and 5 green marbles. If one is picked at random, what is the probability it is blue?",
    "choices": [
-    "2/7",
-    "4/10",
-    "1/14",
-    "3/7"
+    "5/11",
+    "1/11",
+    "5/6"
    ],
    "answer": 0,
-   "explanation": "4 blue out of 14 total = 2/7.",
+   "explanation": "5 blue out of 11 total = 5/11.",
    "difficulty": 2,
    "id": "M049"
   },
   {
    "section": "Mathematics",
    "skill": "probability",
-   "stem": "A bag has 3 red, 3 blue and 4 green marbles. If one is picked at random, what is the probability it is blue?",
+   "stem": "A bag has 4 red, 6 blue and 2 green marbles. If one is picked at random, what is the probability it is blue?",
    "choices": [
-    "3/10",
-    "1/10",
-    "3/7",
-    "4/10"
+    "1/2",
+    "6/6",
+    "1/12",
+    "1/3"
    ],
    "answer": 0,
-   "explanation": "3 blue out of 10 total = 3/10.",
+   "explanation": "6 blue out of 12 total = 1/2.",
    "difficulty": 2,
    "id": "M050"
   },
   {
    "section": "Mathematics",
    "skill": "probability",
-   "stem": "A bag has 2 red, 1 blue and 4 green marbles. If one is picked at random, what is the probability it is blue?",
+   "stem": "A bag has 4 red, 2 blue and 1 green marbles. If one is picked at random, what is the probability it is blue?",
    "choices": [
-    "1/6",
+    "4/7",
+    "2/5",
     "1/7",
     "2/7"
    ],
-   "answer": 1,
-   "explanation": "1 blue out of 7 total = 1/7.",
+   "answer": 3,
+   "explanation": "2 blue out of 7 total = 2/7.",
    "difficulty": 2,
    "id": "M051"
   },
   {
    "section": "Mathematics",
    "skill": "probability",
-   "stem": "A bag has 6 red, 1 blue and 1 green marbles. If one is picked at random, what is the probability it is blue?",
+   "stem": "A bag has 6 red, 6 blue and 4 green marbles. If one is picked at random, what is the probability it is blue?",
    "choices": [
-    "3/4",
-    "2/8",
-    "1/7",
-    "1/8"
+    "3/8",
+    "7/16",
+    "6/10",
+    "1/16"
    ],
-   "answer": 3,
-   "explanation": "1 blue out of 8 total = 1/8.",
+   "answer": 0,
+   "explanation": "6 blue out of 16 total = 3/8.",
    "difficulty": 2,
    "id": "M052"
   },
   {
    "section": "Mathematics",
-   "skill": "probability",
-   "stem": "A bag has 3 red, 2 blue and 2 green marbles. If one is picked at random, what is the probability it is blue?",
+   "skill": "measurement",
+   "stem": "How many feet are in 4 yards?",
    "choices": [
-    "1/7",
-    "2/5",
-    "3/7",
-    "2/7"
+    "12",
+    "16",
+    "22",
+    "7"
    ],
-   "answer": 3,
-   "explanation": "2 blue out of 7 total = 2/7.",
+   "answer": 0,
+   "explanation": "1 yard = 3 feet, so 4 × 3 = 12.",
    "difficulty": 2,
    "id": "M053"
   },
   {
    "section": "Mathematics",
-   "skill": "probability",
-   "stem": "A bag has 1 red, 1 blue and 1 green marbles. If one is picked at random, what is the probability it is blue?",
+   "skill": "measurement",
+   "stem": "How many inches are in 9 feet?",
    "choices": [
-    "1/2",
-    "2/3",
-    "1/3"
+    "108",
+    "106",
+    "109",
+    "105"
    ],
-   "answer": 2,
-   "explanation": "1 blue out of 3 total = 1/3.",
+   "answer": 0,
+   "explanation": "1 foot = 12 inches, so 9 × 12 = 108.",
    "difficulty": 2,
    "id": "M054"
   },
   {
    "section": "Mathematics",
    "skill": "measurement",
-   "stem": "How many feet are in 2 yards?",
+   "stem": "How many ounces are in 6 pounds?",
    "choices": [
-    "6",
-    "16",
-    "12",
-    "3"
+    "192",
+    "96",
+    "91",
+    "93"
    ],
-   "answer": 0,
-   "explanation": "1 yard = 3 feet, so 2 × 3 = 6.",
+   "answer": 1,
+   "explanation": "1 pound = 16 ounces, so 6 × 16 = 96.",
    "difficulty": 2,
    "id": "M055"
   },
   {
    "section": "Mathematics",
    "skill": "measurement",
-   "stem": "How many inches are in 2 feet?",
+   "stem": "How many cups are in 6 quarts?",
    "choices": [
-    "23",
-    "26",
+    "12",
     "24",
-    "22"
+    "26",
+    "29"
    ],
-   "answer": 2,
-   "explanation": "1 foot = 12 inches, so 2 × 12 = 24.",
+   "answer": 1,
+   "explanation": "1 quart = 4 cups, so 6 × 4 = 24.",
    "difficulty": 2,
    "id": "M056"
   },
   {
    "section": "Mathematics",
    "skill": "measurement",
-   "stem": "How many ounces are in 2 pounds?",
+   "stem": "How many minutes are in 3 hours?",
    "choices": [
-    "35",
-    "32",
-    "31",
-    "36"
+    "182",
+    "181",
+    "90",
+    "180"
    ],
-   "answer": 1,
-   "explanation": "1 pound = 16 ounces, so 2 × 16 = 32.",
+   "answer": 3,
+   "explanation": "1 hour = 60 minutes, so 3 × 60 = 180.",
    "difficulty": 2,
    "id": "M057"
   },
   {
    "section": "Mathematics",
    "skill": "measurement",
-   "stem": "How many cups are in 6 quarts?",
+   "stem": "How many centimeters are in 5 meters?",
    "choices": [
-    "28",
-    "24",
-    "29",
-    "48"
+    "250",
+    "500",
+    "501",
+    "499"
    ],
    "answer": 1,
-   "explanation": "1 quart = 4 cups, so 6 × 4 = 24.",
+   "explanation": "1 meter = 100 cm, so 5 × 100 = 500.",
    "difficulty": 2,
    "id": "M058"
   },
   {
    "section": "Mathematics",
    "skill": "measurement",
-   "stem": "How many minutes are in 3 hours?",
+   "stem": "How many quarts are in 7 gallons?",
    "choices": [
-    "180",
-    "360",
-    "175",
-    "190"
+    "29",
+    "28",
+    "25",
+    "23"
    ],
-   "answer": 0,
-   "explanation": "1 hour = 60 minutes, so 3 × 60 = 180.",
+   "answer": 1,
+   "explanation": "1 gallon = 4 quarts, so 7 × 4 = 28.",
    "difficulty": 2,
    "id": "M059"
   },
   {
    "section": "Mathematics",
    "skill": "measurement",
-   "stem": "How many centimeters are in 9 meters?",
+   "stem": "How many grams are in 9 kilograms?",
    "choices": [
-    "900",
-    "898",
-    "901",
-    "897"
+    "9000",
+    "9001",
+    "4500",
+    "8998"
    ],
    "answer": 0,
-   "explanation": "1 meter = 100 cm, so 9 × 100 = 900.",
+   "explanation": "1 kg = 1000 g, so 9 × 1000 = 9000.",
    "difficulty": 2,
    "id": "M060"
   },
   {
    "section": "Mathematics",
-   "skill": "measurement",
-   "stem": "How many quarts are in 6 gallons?",
+   "skill": "word problems",
+   "stem": "A jacket costs $120. It is on sale for 10% off. What is the sale price in dollars?",
    "choices": [
-    "48",
-    "24",
-    "19",
-    "21"
+    "118",
+    "108",
+    "112",
+    "113"
    ],
    "answer": 1,
-   "explanation": "1 gallon = 4 quarts, so 6 × 4 = 24.",
+   "explanation": "10% of 120 = 12; 120 − 12 = 108.",
    "difficulty": 2,
    "id": "M061"
   },
   {
    "section": "Mathematics",
-   "skill": "measurement",
-   "stem": "How many grams are in 6 kilograms?",
+   "skill": "word problems",
+   "stem": "A bus travels at 45 miles per hour for 2 hours. How many miles does it travel?",
    "choices": [
-    "3000",
-    "6000",
-    "6002",
-    "6005"
+    "90",
+    "88",
+    "91",
+    "92"
    ],
-   "answer": 1,
-   "explanation": "1 kg = 1000 g, so 6 × 1000 = 6000.",
+   "answer": 0,
+   "explanation": "Distance = rate × time = 45 × 2 = 90.",
    "difficulty": 2,
    "id": "M062"
   },
   {
    "section": "Mathematics",
    "skill": "word problems",
-   "stem": "A jacket costs $40. It is on sale for 25% off. What is the sale price in dollars?",
+   "stem": "The ratio of cats to dogs at a shelter is 2:5. There are 28 animals in all. How many are cats?",
    "choices": [
-    "31",
-    "32",
-    "35",
-    "30"
+    "8",
+    "13",
+    "12",
+    "7"
    ],
-   "answer": 3,
-   "explanation": "25% of 40 = 10; 40 − 10 = 30.",
-   "difficulty": 2,
+   "answer": 0,
+   "explanation": "2+5 = 7 parts; each part is 4; cats = 2 × 4 = 8.",
+   "difficulty": 3,
    "id": "M063"
   },
   {
    "section": "Mathematics",
    "skill": "word problems",
-   "stem": "A bus travels at 50 miles per hour for 4 hours. How many miles does it travel?",
+   "stem": "Pencils cost $4 for a pack of 2. How much do 24 pencils cost in dollars?",
    "choices": [
-    "203",
-    "200",
-    "201",
-    "199"
+    "52",
+    "47",
+    "48",
+    "43"
    ],
-   "answer": 1,
-   "explanation": "Distance = rate × time = 50 × 4 = 200.",
+   "answer": 2,
+   "explanation": "24 pencils = 12 packs; 12 × 4 = 48.",
    "difficulty": 2,
    "id": "M064"
   },
   {
    "section": "Mathematics",
    "skill": "word problems",
-   "stem": "The ratio of cats to dogs at a shelter is 4:4. There are 48 animals in all. How many are cats?",
+   "stem": "Ana scored 80 and 86 on two tests. What must she score on the third test to average 85?",
    "choices": [
-    "24",
-    "22",
-    "25",
-    "19"
+    "178",
+    "94",
+    "89",
+    "92"
    ],
-   "answer": 0,
-   "explanation": "4+4 = 8 parts; each part is 6; cats = 4 × 6 = 24.",
+   "answer": 2,
+   "explanation": "255 − 80 − 86 = 89.",
    "difficulty": 3,
    "id": "M065"
   },
   {
    "section": "Mathematics",
    "skill": "word problems",
-   "stem": "Pencils cost $3 for a pack of 2. How much do 22 pencils cost in dollars?",
+   "stem": "A jacket costs $40. It is on sale for 10% off. What is the sale price in dollars?",
    "choices": [
-    "34",
-    "32",
-    "33",
-    "38"
+    "46",
+    "37",
+    "36",
+    "33"
    ],
    "answer": 2,
-   "explanation": "22 pencils = 11 packs; 11 × 3 = 33.",
+   "explanation": "10% of 40 = 4; 40 − 4 = 36.",
    "difficulty": 2,
    "id": "M066"
   },
   {
    "section": "Mathematics",
    "skill": "word problems",
-   "stem": "Ana scored 86 and 87 on two tests. What must she score on the third test to average 85?",
+   "stem": "A bus travels at 45 miles per hour for 4 hours. How many miles does it travel?",
    "choices": [
-    "83",
-    "87",
-    "82",
-    "86"
+    "179",
+    "178",
+    "184",
+    "180"
    ],
-   "answer": 2,
-   "explanation": "Total needed = 3 × 85 = 255; 255 − 86 − 87 = 82.",
-   "difficulty": 3,
+   "answer": 3,
+   "explanation": "Distance = rate × time = 45 × 4 = 180.",
+   "difficulty": 2,
    "id": "M067"
   },
   {
    "section": "Mathematics",
    "skill": "word problems",
-   "stem": "A jacket costs $40. It is on sale for 10% off. What is the sale price in dollars?",
+   "stem": "The ratio of cats to dogs at a shelter is 2:5. There are 35 animals in all. How many are cats?",
    "choices": [
-    "33",
-    "36",
-    "37",
-    "38"
+    "10",
+    "8",
+    "5",
+    "11"
    ],
-   "answer": 1,
-   "explanation": "10% of 40 = 4; 40 − 4 = 36.",
-   "difficulty": 2,
+   "answer": 0,
+   "explanation": "2+5 = 7 parts; each part is 5; cats = 2 × 5 = 10.",
+   "difficulty": 3,
    "id": "M068"
   },
   {
    "section": "Mathematics",
    "skill": "word problems",
-   "stem": "A bus travels at 60 miles per hour for 4 hours. How many miles does it travel?",
+   "stem": "Pencils cost $3 for a pack of 2. How much do 18 pencils cost in dollars?",
    "choices": [
-    "235",
-    "240",
-    "243",
-    "237"
+    "27",
+    "28",
+    "29",
+    "25"
    ],
-   "answer": 1,
-   "explanation": "Distance = rate × time = 60 × 4 = 240.",
+   "answer": 0,
+   "explanation": "18 pencils = 9 packs; 9 × 3 = 27.",
    "difficulty": 2,
    "id": "M069"
   },
   {
    "section": "Mathematics",
    "skill": "word problems",
-   "stem": "The ratio of cats to dogs at a shelter is 2:2. There are 28 animals in all. How many are cats?",
+   "stem": "Ana scored 84 and 90 on two tests. What must she score on the third test to average 85?",
    "choices": [
-    "13",
-    "15",
-    "14",
-    "18"
+    "86",
+    "91",
+    "81",
+    "80"
    ],
    "answer": 2,
-   "explanation": "2+2 = 4 parts; each part is 7; cats = 2 × 7 = 14.",
+   "explanation": "Total needed = 3 × 85 = 255; 255 − 84 − 90 = 81.",
    "difficulty": 3,
    "id": "M070"
   },
   {
    "section": "Mathematics",
-   "skill": "word problems",
-   "stem": "Pencils cost $3 for a pack of 2. How much do 22 pencils cost in dollars?",
+   "skill": "numbers & numeration",
+   "stem": "What is 5 to the power of 4?",
    "choices": [
-    "30",
-    "43",
-    "66",
-    "33"
+    "632",
+    "620",
+    "635",
+    "625"
    ],
    "answer": 3,
-   "explanation": "22 pencils = 11 packs; 11 × 3 = 33.",
+   "explanation": "5^4 = 5 × 5 × 5 × 5 = 625.",
    "difficulty": 2,
    "id": "M071"
   },
   {
    "section": "Mathematics",
-   "skill": "word problems",
-   "stem": "Ana scored 73 and 86 on two tests. What must she score on the third test to average 85?",
+   "skill": "numbers & numeration",
+   "stem": "What is the greatest common factor of 36 and 16?",
    "choices": [
-    "192",
-    "91",
-    "96",
-    "106"
+    "4",
+    "2",
+    "8",
+    "5"
    ],
-   "answer": 2,
-   "explanation": "Total needed = 3 × 85 = 255; 255 − 73 − 86 = 96.",
-   "difficulty": 3,
+   "answer": 0,
+   "explanation": "The largest number dividing both 36 and 16 is 4.",
+   "difficulty": 2,
    "id": "M072"
   },
   {
    "section": "Mathematics",
    "skill": "numbers & numeration",
-   "stem": "What is 3 to the power of 4?",
+   "stem": "What is the least common multiple of 8 and 15?",
    "choices": [
-    "81",
-    "91",
-    "86",
-    "88"
+    "120",
+    "125",
+    "60",
+    "124"
    ],
    "answer": 0,
-   "explanation": "3^4 = 3 × 3 × 3 × 3 = 81.",
+   "explanation": "Smallest number both divide into: 120.",
    "difficulty": 2,
    "id": "M073"
   },
   {
    "section": "Mathematics",
    "skill": "numbers & numeration",
-   "stem": "What is the greatest common factor of 18 and 8?",
+   "stem": "What is the square root of 64?",
    "choices": [
-    "4",
-    "12",
-    "0",
-    "2"
+    "8",
+    "10",
+    "6",
+    "13"
    ],
-   "answer": 3,
-   "explanation": "The largest number dividing both 18 and 8 is 2.",
+   "answer": 0,
+   "explanation": "8 × 8 = 64.",
    "difficulty": 2,
    "id": "M074"
   },
   {
    "section": "Mathematics",
    "skill": "numbers & numeration",
-   "stem": "What is the least common multiple of 6 and 6?",
+   "stem": "What is 4 to the power of 3?",
    "choices": [
-    "3",
-    "7",
-    "1",
-    "6"
+    "62",
+    "68",
+    "64",
+    "32"
    ],
-   "answer": 3,
-   "explanation": "Smallest number both divide into: 6.",
+   "answer": 2,
+   "explanation": "4^3 = 4 × 4 × 4 = 64.",
    "difficulty": 2,
    "id": "M075"
   },
   {
    "section": "Mathematics",
    "skill": "numbers & numeration",
-   "stem": "What is the square root of 144?",
+   "stem": "What is the greatest common factor of 36 and 20?",
    "choices": [
-    "15",
-    "16",
-    "12",
-    "17"
+    "14",
+    "3",
+    "4",
+    "7"
    ],
    "answer": 2,
-   "explanation": "12 × 12 = 144.",
+   "explanation": "The largest number dividing both 36 and 20 is 4.",
    "difficulty": 2,
    "id": "M076"
   },
   {
    "section": "Mathematics",
    "skill": "numbers & numeration",
-   "stem": "What is 4 to the power of 3?",
+   "stem": "What is the least common multiple of 9 and 6?",
    "choices": [
-    "74",
-    "61",
-    "65",
-    "64"
+    "21",
+    "28",
+    "15",
+    "18"
    ],
    "answer": 3,
-   "explanation": "4^3 = 4 × 4 × 4 = 64.",
+   "explanation": "Smallest number both divide into: 18.",
    "difficulty": 2,
    "id": "M077"
   },
   {
    "section": "Mathematics",
    "skill": "numbers & numeration",
-   "stem": "What is the greatest common factor of 30 and 20?",
+   "stem": "What is the square root of 144?",
    "choices": [
-    "10",
-    "7",
-    "11",
-    "5"
+    "22",
+    "6",
+    "12",
+    "17"
    ],
-   "answer": 0,
-   "explanation": "The largest number dividing both 30 and 20 is 10.",
+   "answer": 2,
+   "explanation": "12 × 12 = 144.",
    "difficulty": 2,
    "id": "M078"
-  },
-  {
-   "section": "Mathematics",
-   "skill": "numbers & numeration",
-   "stem": "What is the least common multiple of 4 and 15?",
-   "choices": [
-    "61",
-    "60",
-    "58",
-    "64"
-   ],
-   "answer": 1,
-   "explanation": "Smallest number both divide into: 60.",
-   "difficulty": 2,
-   "id": "M079"
-  },
-  {
-   "section": "Mathematics",
-   "skill": "numbers & numeration",
-   "stem": "What is the square root of 81?",
-   "choices": [
-    "10",
-    "9",
-    "8",
-    "18"
-   ],
-   "answer": 1,
-   "explanation": "9 × 9 = 81.",
-   "difficulty": 2,
-   "id": "M080"
   },
   {
    "section": "Language",
    "skill": "punctuation",
    "stem": "Choose the sentence with correct punctuation.",
    "choices": [
+    "After the game we, went out for pizza.",
     "After, the game we went out for pizza.",
     "After the game we went, out for pizza.",
-    "After the game, we went out for pizza.",
-    "After the game we, went out for pizza."
+    "After the game, we went out for pizza."
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "An introductory phrase is followed by a comma.",
    "difficulty": 2,
    "id": "L001"
@@ -3707,12 +3677,12 @@
    "skill": "punctuation",
    "stem": "Choose the sentence with correct punctuation.",
    "choices": [
+    "My aunt lives, in Denver, Colorado.",
     "My aunt lives in Denver, Colorado.",
-    "My aunt lives in Denver Colorado.",
     "My aunt, lives in Denver Colorado.",
-    "My aunt lives, in Denver, Colorado."
+    "My aunt lives in Denver Colorado."
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "Put a comma between a city and its state.",
    "difficulty": 2,
    "id": "L002"
@@ -3724,8 +3694,8 @@
    "choices": [
     "We bought apples, pears, and plums.",
     "We bought apples pears, and plums.",
-    "We bought, apples, pears, and plums.",
-    "We bought apples, pears and, plums."
+    "We bought apples, pears and, plums.",
+    "We bought, apples, pears, and plums."
    ],
    "answer": 0,
    "explanation": "Commas separate items in a list.",
@@ -3737,12 +3707,12 @@
    "skill": "punctuation",
    "stem": "Choose the sentence with correct punctuation.",
    "choices": [
-    "The dog wagged its' tail.",
+    "The dog wagged its tail.",
     "The dog wagged it's tail.",
-    "The dog wagged their's tail.",
-    "The dog wagged its tail."
+    "The dog wagged its' tail.",
+    "The dog wagged their's tail."
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "“Its” (no apostrophe) is possessive; “it's” means “it is.”",
    "difficulty": 2,
    "id": "L004"
@@ -3754,8 +3724,8 @@
    "choices": [
     "Where are you going? “asked Mom.”",
     "“Where are you going?” asked Mom.",
-    "“Where are you going”? asked Mom.",
-    "“Where are you going,” asked Mom?"
+    "“Where are you going,” asked Mom?",
+    "“Where are you going”? asked Mom."
    ],
    "answer": 1,
    "explanation": "The question mark goes inside the closing quotation mark.",
@@ -3767,12 +3737,12 @@
    "skill": "punctuation",
    "stem": "Choose the sentence with correct punctuation.",
    "choices": [
-    "I wanted, to swim however the pool was closed.",
-    "I wanted to swim; however, the pool was closed.",
     "I wanted to swim, however the pool was closed.",
-    "I wanted to swim however; the pool was closed."
+    "I wanted to swim however; the pool was closed.",
+    "I wanted to swim; however, the pool was closed.",
+    "I wanted, to swim however the pool was closed."
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "Use a semicolon before “however” joining two complete sentences.",
    "difficulty": 2,
    "id": "L006"
@@ -3783,11 +3753,11 @@
    "stem": "Choose the sentence with correct punctuation.",
    "choices": [
     "The girl's lockers are down the hall (many girls).",
+    "The girls's lockers are down the hall.",
     "The girls lockers are down the hall.",
-    "The girls' lockers are down the hall.",
-    "The girls's lockers are down the hall."
+    "The girls' lockers are down the hall."
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "For a plural noun ending in s, add only an apostrophe.",
    "difficulty": 2,
    "id": "L007"
@@ -3797,12 +3767,12 @@
    "skill": "punctuation",
    "stem": "Choose the sentence with correct punctuation.",
    "choices": [
-    "Bring three things, a pencil a ruler and an eraser.",
-    "Bring three things a pencil: a ruler, and an eraser.",
     "Bring three things: a pencil, a ruler, and an eraser.",
-    "Bring: three things a pencil, a ruler, and an eraser."
+    "Bring three things, a pencil a ruler and an eraser.",
+    "Bring: three things a pencil, a ruler, and an eraser.",
+    "Bring three things a pencil: a ruler, and an eraser."
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "A colon introduces a list after a complete sentence.",
    "difficulty": 2,
    "id": "L008"
@@ -3812,12 +3782,12 @@
    "skill": "punctuation",
    "stem": "Choose the sentence with correct punctuation.",
    "choices": [
-    "Mr. Reyes, our coach gave a speech.",
     "Mr. Reyes our coach, gave a speech.",
-    "Mr. Reyes, our coach, gave a speech.",
-    "Mr. Reyes our coach gave, a speech."
+    "Mr. Reyes, our coach gave a speech.",
+    "Mr. Reyes our coach gave, a speech.",
+    "Mr. Reyes, our coach, gave a speech."
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "An appositive (“our coach”) needs commas on both sides.",
    "difficulty": 2,
    "id": "L009"
@@ -3827,12 +3797,12 @@
    "skill": "punctuation",
    "stem": "Choose the sentence with correct punctuation.",
    "choices": [
+    "It was, cold so we wore our coats.",
     "It was cold, so we wore our coats.",
-    "It was cold, so, we wore our coats.",
     "It was cold so, we wore our coats.",
-    "It was, cold so we wore our coats."
+    "It was cold, so, we wore our coats."
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "Put a comma before “so” when it joins two sentences.",
    "difficulty": 2,
    "id": "L010"
@@ -3842,12 +3812,12 @@
    "skill": "punctuation",
    "stem": "Choose the sentence with correct punctuation.",
    "choices": [
-    "The children's books were on sale.",
-    "The childrens' books were on sale.",
     "The children's' books were on sale.",
-    "The childrens books were on sale."
+    "The childrens books were on sale.",
+    "The children's books were on sale.",
+    "The childrens' books were on sale."
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "“Children” is already plural, so add 's.",
    "difficulty": 2,
    "id": "L011"
@@ -3857,8 +3827,8 @@
    "skill": "capitalization",
    "stem": "Choose the sentence with correct capitalization.",
    "choices": [
-    "We visited the Grand canyon last july.",
     "We visited the grand canyon last July.",
+    "We visited the Grand canyon last july.",
     "we visited the Grand Canyon last July.",
     "We visited the Grand Canyon last July."
    ],
@@ -3873,8 +3843,8 @@
    "stem": "Choose the sentence with correct capitalization.",
    "choices": [
     "My favorite subject is spanish.",
-    "My Favorite Subject is Spanish.",
     "my favorite subject is Spanish.",
+    "My Favorite Subject is Spanish.",
     "My favorite subject is Spanish."
    ],
    "answer": 3,
@@ -3887,12 +3857,12 @@
    "skill": "capitalization",
    "stem": "Choose the sentence with correct capitalization.",
    "choices": [
-    "On Friday, Uncle Dev drove us to lake erie.",
-    "On Friday, uncle Dev drove us to lake Erie.",
     "On Friday, Uncle Dev drove us to Lake Erie.",
+    "On Friday, uncle Dev drove us to lake Erie.",
+    "On Friday, Uncle Dev drove us to lake erie.",
     "On friday, uncle Dev drove us to Lake Erie."
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "Days, titles used as names, and specific lakes are capitalized.",
    "difficulty": 1,
    "id": "L014"
@@ -3902,12 +3872,12 @@
    "skill": "capitalization",
    "stem": "Choose the sentence with correct capitalization.",
    "choices": [
-    "We read a book called <i>The secret garden</i>.",
-    "We read a Book called <i>The Secret Garden</i>.",
     "We read a book called <i>the secret garden</i>.",
-    "We read a book called <i>The Secret Garden</i>."
+    "We read a book called <i>The Secret Garden</i>.",
+    "We read a book called <i>The secret garden</i>.",
+    "We read a Book called <i>The Secret Garden</i>."
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "Capitalize the main words in a title.",
    "difficulty": 1,
    "id": "L015"
@@ -3917,10 +3887,10 @@
    "skill": "capitalization",
    "stem": "Choose the sentence with correct capitalization.",
    "choices": [
-    "She was born in the South but moved North for School.",
+    "She was Born in the south but moved north for school.",
     "She was born in the south but moved North for school.",
     "She was born in the South but moved north for school.",
-    "She was Born in the south but moved north for school."
+    "She was born in the South but moved North for School."
    ],
    "answer": 2,
    "explanation": "A region (the South) is capitalized; a direction (north) is not.",
@@ -3932,12 +3902,12 @@
    "skill": "capitalization",
    "stem": "Choose the sentence with correct capitalization.",
    "choices": [
-    "The pacific ocean is the largest ocean.",
-    "The Pacific ocean is the largest Ocean.",
+    "the Pacific Ocean is the largest ocean.",
     "The Pacific Ocean is the largest ocean.",
-    "the Pacific Ocean is the largest ocean."
+    "The Pacific ocean is the largest Ocean.",
+    "The pacific ocean is the largest ocean."
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The full name of an ocean is capitalized.",
    "difficulty": 1,
    "id": "L017"
@@ -3947,9 +3917,9 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "pocket",
-    "teacher",
-    "ladder",
+    "bottle",
+    "silver",
+    "village",
     "neccessary"
    ],
    "answer": 3,
@@ -3962,9 +3932,9 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
+    "puzzle",
+    "bottle",
     "silver",
-    "garden",
-    "journey",
     "seperate"
    ],
    "answer": 3,
@@ -3977,12 +3947,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "definately",
-    "history",
-    "teacher",
-    "harbor"
+    "bottle",
+    "journey",
+    "thunder",
+    "definately"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The correct spelling is “definitely.”",
    "difficulty": 2,
    "id": "L020"
@@ -3992,10 +3962,10 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "pocket",
+    "silver",
     "recieve",
-    "journey",
-    "ladder"
+    "window",
+    "teacher"
    ],
    "answer": 1,
    "explanation": "The correct spelling is “receive.”",
@@ -4007,12 +3977,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
+    "pocket",
     "beleive",
     "journey",
-    "window",
-    "garden"
+    "thunder"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The correct spelling is “believe.”",
    "difficulty": 2,
    "id": "L022"
@@ -4022,12 +3992,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "mountain",
+    "quickly",
+    "history",
     "calender",
-    "teacher",
-    "quickly"
+    "journey"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The correct spelling is “calendar.”",
    "difficulty": 2,
    "id": "L023"
@@ -4037,12 +4007,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "garden",
-    "mountain",
+    "harbor",
     "embarass",
-    "pocket"
+    "silver",
+    "teacher"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The correct spelling is “embarrass.”",
    "difficulty": 2,
    "id": "L024"
@@ -4052,12 +4022,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
+    "pocket",
+    "quickly",
     "ocassion",
-    "garden",
-    "thunder",
     "window"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "The correct spelling is “occasion.”",
    "difficulty": 2,
    "id": "L025"
@@ -4067,12 +4037,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "history",
-    "bottle",
-    "puzzle",
-    "tommorow"
+    "harbor",
+    "tommorow",
+    "teacher",
+    "thunder"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The correct spelling is “tomorrow.”",
    "difficulty": 2,
    "id": "L026"
@@ -4082,12 +4052,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "bottle",
-    "begining",
+    "village",
     "thunder",
-    "picture"
+    "begining",
+    "pocket"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The correct spelling is “beginning.”",
    "difficulty": 2,
    "id": "L027"
@@ -4097,12 +4067,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "goverment",
-    "pocket",
-    "picture",
-    "silver"
+    "whistle",
+    "village",
+    "journey",
+    "goverment"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The correct spelling is “government.”",
    "difficulty": 2,
    "id": "L028"
@@ -4112,12 +4082,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "harbor",
-    "mountain",
-    "libary",
-    "teacher"
+    "garden",
+    "teacher",
+    "picture",
+    "libary"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "The correct spelling is “library.”",
    "difficulty": 2,
    "id": "L029"
@@ -4127,12 +4097,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "pocket",
-    "window",
-    "whistle",
-    "Febuary"
+    "Febuary",
+    "thunder",
+    "garden",
+    "pocket"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The correct spelling is “February.”",
    "difficulty": 2,
    "id": "L030"
@@ -4142,12 +4112,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "teacher",
-    "restaraunt",
-    "history",
-    "thunder"
+    "village",
+    "garden",
+    "bottle",
+    "restaraunt"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The correct spelling is “restaurant.”",
    "difficulty": 2,
    "id": "L031"
@@ -4157,10 +4127,10 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "history",
+    "station",
     "enviroment",
-    "window",
-    "station"
+    "pocket",
+    "mountain"
    ],
    "answer": 1,
    "explanation": "The correct spelling is “environment.”",
@@ -4172,12 +4142,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "picture",
-    "immediatly",
-    "thunder",
-    "village"
+    "ladder",
+    "quickly",
+    "pocket",
+    "immediatly"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The correct spelling is “immediately.”",
    "difficulty": 2,
    "id": "L033"
@@ -4187,9 +4157,9 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "silver",
-    "garden",
-    "station",
+    "quickly",
+    "history",
+    "picture",
     "knowlege"
    ],
    "answer": 3,
@@ -4202,9 +4172,9 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
+    "silver",
+    "harbor",
     "garden",
-    "ladder",
-    "history",
     "priviledge"
    ],
    "answer": 3,
@@ -4217,10 +4187,10 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "garden",
-    "pocket",
+    "teacher",
+    "picture",
     "rythm",
-    "village"
+    "pocket"
    ],
    "answer": 2,
    "explanation": "The correct spelling is “rhythm.”",
@@ -4232,12 +4202,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "whistle",
-    "village",
-    "journey",
-    "wierd"
+    "window",
+    "wierd",
+    "teacher",
+    "bottle"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The correct spelling is “weird.”",
    "difficulty": 2,
    "id": "L037"
@@ -4247,12 +4217,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "garden",
-    "teacher",
+    "puzzle",
     "picture",
-    "accomodate"
+    "accomodate",
+    "bottle"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The correct spelling is “accommodate.”",
    "difficulty": 2,
    "id": "L038"
@@ -4262,12 +4232,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
+    "ladder",
     "concience",
-    "thunder",
-    "garden",
-    "pocket"
+    "silver",
+    "history"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The correct spelling is “conscience.”",
    "difficulty": 2,
    "id": "L039"
@@ -4277,9 +4247,9 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "village",
-    "garden",
-    "bottle",
+    "pocket",
+    "ladder",
+    "whistle",
     "lisence"
    ],
    "answer": 3,
@@ -4292,12 +4262,12 @@
    "skill": "spelling",
    "stem": "Which word is spelled <i>incorrectly</i>?",
    "choices": [
-    "station",
     "noticable",
-    "pocket",
-    "mountain"
+    "puzzle",
+    "village",
+    "pocket"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "The correct spelling is “noticeable.”",
    "difficulty": 2,
    "id": "L041"
@@ -4308,11 +4278,11 @@
    "stem": "Choose the sentence that is correct.",
    "choices": [
     "Neither of the boys are finish.",
-    "Neither of the boys have finished.",
     "Neither of the boy has finished.",
-    "Neither of the boys has finished."
+    "Neither of the boys has finished.",
+    "Neither of the boys have finished."
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "“Neither” is singular, so use “has.”",
    "difficulty": 2,
    "id": "L042"
@@ -4322,12 +4292,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "Her and I went to the store.",
-    "Her and me went to the store.",
     "Me and her went to the store.",
-    "She and I went to the store."
+    "She and I went to the store.",
+    "Her and me went to the store.",
+    "Her and I went to the store."
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "Use subject pronouns (She, I) as the subject.",
    "difficulty": 2,
    "id": "L043"
@@ -4352,12 +4322,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "Between yourself and I, the test was easy.",
     "Between you and I, the test was easy.",
     "Between I and you, the test was easy.",
-    "Between you and me, the test was easy."
+    "Between you and me, the test was easy.",
+    "Between yourself and I, the test was easy."
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "After a preposition, use object pronouns (me).",
    "difficulty": 2,
    "id": "L045"
@@ -4367,12 +4337,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "He ran most quickly than his brother.",
     "He ran quicker-ly than his brother.",
-    "He ran more quicker than his brother.",
-    "He ran more quickly than his brother."
+    "He ran most quickly than his brother.",
+    "He ran more quickly than his brother.",
+    "He ran more quicker than his brother."
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "Use “more quickly”; don't double comparatives.",
    "difficulty": 2,
    "id": "L046"
@@ -4382,12 +4352,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "Each of the students have brought a lunch.",
     "Each of the students were bringing a lunch.",
+    "Each of the students brought a lunch.",
     "Each of the students brought their lunches all.",
-    "Each of the students brought a lunch."
+    "Each of the students have brought a lunch."
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "“Each” is singular.",
    "difficulty": 2,
    "id": "L047"
@@ -4397,8 +4367,8 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "I could of gone earlier.",
     "I could of went earlier.",
+    "I could of gone earlier.",
     "I could have went earlier.",
     "I could have gone earlier."
    ],
@@ -4412,12 +4382,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "There are less cookies than yesterday.",
-    "Their are fewer cookies than yesterday.",
     "There are fewer cookies than yesterday.",
+    "Their are fewer cookies than yesterday.",
+    "There are less cookies than yesterday.",
     "There is fewer cookies than yesterday."
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "Use “fewer” for things you can count.",
    "difficulty": 2,
    "id": "L049"
@@ -4427,12 +4397,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
+    "Their dog is bigger than ours.",
     "They're dog is bigger than ours.",
     "Their dog is more bigger than ours.",
-    "There dog is bigger than ours.",
-    "Their dog is bigger than ours."
+    "There dog is bigger than ours."
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "“Their” shows ownership.",
    "difficulty": 2,
    "id": "L050"
@@ -4442,12 +4412,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "The book was lain on the table.",
-    "The book was lying on the table.",
+    "The book was layed on the table.",
     "The book was laying on the table.",
-    "The book was layed on the table."
+    "The book was lying on the table.",
+    "The book was lain on the table."
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "“Lie” (rest) has no object; “lying” is correct.",
    "difficulty": 2,
    "id": "L051"
@@ -4457,12 +4427,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "Whom did you invite?",
+    "Who did you invited?",
     "Who you did invite?",
-    "Whom did you invited?",
-    "Who did you invited?"
+    "Whom did you invite?",
+    "Whom did you invited?"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "“Whom” is the object of “invite.”",
    "difficulty": 2,
    "id": "L052"
@@ -4472,12 +4442,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "She do not likes spinach.",
-    "She doesn't like spinach.",
     "She don't like spinach.",
-    "She doesn't likes spinach."
+    "She doesn't likes spinach.",
+    "She do not likes spinach.",
+    "She doesn't like spinach."
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "Use “doesn't” with she/he/it.",
    "difficulty": 2,
    "id": "L053"
@@ -4487,12 +4457,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "Of the two runners, Mia is the faster.",
-    "Of the two runners, Mia is the most fast.",
     "Of the two runners, Mia is the fastest.",
-    "Of the two runner, Mia is faster."
+    "Of the two runners, Mia is the most fast.",
+    "Of the two runner, Mia is faster.",
+    "Of the two runners, Mia is the faster."
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "Comparing two, use the comparative (-er).",
    "difficulty": 2,
    "id": "L054"
@@ -4502,12 +4472,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "The cookies tasted good.",
-    "The cookies tastes good.",
     "The cookies tasted goodly.",
-    "The cookies tasted well."
+    "The cookies tasted good.",
+    "The cookies tasted well.",
+    "The cookies tastes good."
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "Linking verbs like “taste” take adjectives.",
    "difficulty": 2,
    "id": "L055"
@@ -4517,12 +4487,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "Everyone has his or her own locker.",
+    "Everyone have their own locker.",
     "Everyone have his or her own locker.",
-    "Everyone has they're own locker.",
-    "Everyone have their own locker."
+    "Everyone has his or her own locker.",
+    "Everyone has they're own locker."
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "“Everyone” is singular.",
    "difficulty": 2,
    "id": "L056"
@@ -4532,12 +4502,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "If I am taller, I could reach it.",
-    "If I was taller, I could reached it.",
+    "If I were taller, I could reach it.",
     "If I be taller, I could reach it.",
-    "If I were taller, I could reach it."
+    "If I am taller, I could reach it.",
+    "If I was taller, I could reached it."
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "Use “were” for wishes and contrary-to-fact ideas.",
    "difficulty": 2,
    "id": "L057"
@@ -4547,12 +4517,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
-    "We should have brought an umbrella.",
+    "We should of brought an umbrella.",
     "We should have brang an umbrella.",
     "We should have bringed an umbrella.",
-    "We should of brought an umbrella."
+    "We should have brought an umbrella."
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "Past participle of “bring” is “brought.”",
    "difficulty": 2,
    "id": "L058"
@@ -4562,12 +4532,12 @@
    "skill": "usage",
    "stem": "Choose the sentence that is correct.",
    "choices": [
+    "The data from both labs agrees with eachother.",
     "The data from both labs agree.",
     "The datas from both labs agrees.",
-    "The data from both labs agrees with eachother.",
     "The data from both lab agrees."
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "Keep subject and verb in agreement.",
    "difficulty": 2,
    "id": "L059"
@@ -4578,11 +4548,11 @@
    "stem": "Choose the word that best completes the sentence: “It started to rain; ____, the game went on.”",
    "choices": [
     "for example",
-    "therefore",
     "nevertheless",
-    "because"
+    "because",
+    "therefore"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The game went on despite the rain, so a contrast word fits.",
    "difficulty": 2,
    "id": "L060"
@@ -4592,12 +4562,12 @@
    "skill": "composition",
    "stem": "Choose the word that best completes the sentence: “She studied every night; ____, she aced the test.”",
    "choices": [
-    "in contrast",
     "as a result",
     "however",
+    "in contrast",
     "instead"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "Studying caused the good score: a result word fits.",
    "difficulty": 2,
    "id": "L061"
@@ -4607,12 +4577,12 @@
    "skill": "composition",
    "stem": "Which sentence expresses the idea most clearly?",
    "choices": [
-    "The bus drove slowly the bridge was icy.",
     "Icy was the bridge, so slowly the bus.",
     "Because the bridge was icy, the bus drove slowly.",
-    "The bus, the bridge being icy, it drove slowly."
+    "The bus, the bridge being icy, it drove slowly.",
+    "The bus drove slowly the bridge was icy."
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "It is complete, clear and correctly joined.",
    "difficulty": 2,
    "id": "L062"
@@ -4622,12 +4592,12 @@
    "skill": "composition",
    "stem": "Which sentence expresses the idea most clearly?",
    "choices": [
-    "Running to the bus, the phone was dropped by Jon.",
-    "Jon's phone, running to the bus, dropped.",
     "Running to the bus, Jon dropped his phone.",
+    "Jon's phone, running to the bus, dropped.",
+    "Running to the bus, the phone was dropped by Jon.",
     "The phone dropped running to the bus by Jon."
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The opening phrase must describe Jon, not the phone.",
    "difficulty": 2,
    "id": "L063"
@@ -4637,10 +4607,10 @@
    "skill": "composition",
    "stem": "Which topic is best for a one-paragraph report?",
    "choices": [
-    "Everything about farming",
+    "The history of all insects",
     "World food production since 1800",
     "How honeybees make honey",
-    "The history of all insects"
+    "Everything about farming"
    ],
    "answer": 2,
    "explanation": "A paragraph needs a narrow topic.",
@@ -4652,10 +4622,10 @@
    "skill": "composition",
    "stem": "Which sentence does <i>not</i> belong in a paragraph about how to plant a tomato seedling?",
    "choices": [
-    "Water it well right after planting.",
-    "My cousin prefers cucumbers to tomatoes.",
     "Dig a hole twice as wide as the pot.",
-    "Set the seedling in and firm the soil."
+    "My cousin prefers cucumbers to tomatoes.",
+    "Set the seedling in and firm the soil.",
+    "Water it well right after planting."
    ],
    "answer": 1,
    "explanation": "That sentence is off-topic.",
@@ -4667,12 +4637,12 @@
    "skill": "composition",
    "stem": "Choose the word that best completes the sentence: “Owls hunt at night, ____ hawks hunt by day.”",
    "choices": [
-    "therefore",
-    "because",
     "so that",
-    "whereas"
+    "whereas",
+    "because",
+    "therefore"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "A contrast between two habits.",
    "difficulty": 2,
    "id": "L066"
@@ -4682,12 +4652,12 @@
    "skill": "composition",
    "stem": "Which is a complete sentence?",
    "choices": [
-    "The fox slipped under the fence.",
-    "Slipping quietly past the hens.",
+    "Because the fox was hungry.",
     "Under the fence and into the woods.",
-    "Because the fox was hungry."
+    "The fox slipped under the fence.",
+    "Slipping quietly past the hens."
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "It has a subject and a verb and expresses a full thought.",
    "difficulty": 2,
    "id": "L067"
@@ -4698,9 +4668,9 @@
    "stem": "Which is a run-on sentence?",
    "choices": [
     "The bell rang everyone ran outside.",
-    "When the bell rang, everyone ran outside.",
+    "The bell rang, and everyone ran outside.",
     "The bell rang. Everyone ran outside.",
-    "The bell rang, and everyone ran outside."
+    "When the bell rang, everyone ran outside."
    ],
    "answer": 0,
    "explanation": "Two sentences are joined with no punctuation or conjunction.",
@@ -4712,12 +4682,12 @@
    "skill": "composition",
    "stem": "Which is the best topic sentence for a paragraph about recycling at school?",
    "choices": [
-    "Some cans are blue.",
     "Paper is made from trees.",
     "Our school could cut its trash in half by recycling more.",
-    "Last week was rainy."
+    "Last week was rainy.",
+    "Some cans are blue."
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "It states the paragraph's main point.",
    "difficulty": 2,
    "id": "L069"
@@ -4727,12 +4697,12 @@
    "skill": "composition",
    "stem": "Choose the word that best completes the sentence: “The trail was steep; ____, the view at the top was worth it.”",
    "choices": [
-    "similarly",
-    "because",
     "however",
-    "for instance"
+    "for instance",
+    "because",
+    "similarly"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "A contrast between effort and reward.",
    "difficulty": 2,
    "id": "L070"
@@ -4742,9 +4712,9 @@
    "skill": "composition",
    "stem": "Which sentence is written most concisely?",
    "choices": [
-    "The meeting, it starts at the time of noon.",
-    "The meeting is starting at the hour of twelve noon o'clock.",
     "At noon is when the meeting will be starting up.",
+    "The meeting is starting at the hour of twelve noon o'clock.",
+    "The meeting, it starts at the time of noon.",
     "The meeting starts at noon."
    ],
    "answer": 3,
@@ -4758,11 +4728,11 @@
    "stem": "Choose the best way to combine: “Lena plays piano. Lena plays violin.”",
    "choices": [
     "Lena plays piano, Lena plays violin.",
-    "Lena plays piano she plays violin.",
+    "Lena plays piano and violin.",
     "Playing piano, violin is played by Lena.",
-    "Lena plays piano and violin."
+    "Lena plays piano she plays violin."
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "Combine the shared subject and verb.",
    "difficulty": 2,
    "id": "L072"
@@ -4772,12 +4742,12 @@
    "skill": "composition",
    "stem": "Which sentence is in the passive voice?",
    "choices": [
-    "Sam threw the ball.",
-    "The window was broken by the ball.",
     "The ball broke the window.",
-    "The window shattered loudly."
+    "Sam threw the ball.",
+    "The window shattered loudly.",
+    "The window was broken by the ball."
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The subject receives the action.",
    "difficulty": 2,
    "id": "L073"
@@ -4788,11 +4758,11 @@
    "stem": "What is the passage mainly about?",
    "choices": [
     "how lenses are made",
-    "why ships wreck in storms",
     "how the Gull Point lighthouse was kept running and what remains of that work",
-    "the history of clockwork"
+    "the history of clockwork",
+    "why ships wreck in storms"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The passage supports this answer: how the Gull Point lighthouse was kept running and what remains of that work.",
    "difficulty": 2,
    "passage": "<b>The Lighthouse Keeper's Log</b><br>For forty years the lighthouse on Gull Point was tended by hand. Each evening the keeper climbed ninety-two steps, trimmed the wick and wound the clockwork that turned the great lens. In storms she stayed awake all night, because a stopped lens could mean a ship on the rocks. When the light was automated in 1962, the keeper's log ended with a single line: \"Light burning bright. Gone ashore.\" Today, visitors can climb the same steps and read that log, now kept behind glass in the keeper's cottage.",
@@ -4803,12 +4773,12 @@
    "skill": "detail",
    "stem": "How many steps did the keeper climb?",
    "choices": [
-    "ninety-two",
     "nineteen",
+    "forty",
     "sixty-two",
-    "forty"
+    "ninety-two"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: ninety-two.",
    "difficulty": 2,
    "passage": "<b>The Lighthouse Keeper's Log</b><br>For forty years the lighthouse on Gull Point was tended by hand. Each evening the keeper climbed ninety-two steps, trimmed the wick and wound the clockwork that turned the great lens. In storms she stayed awake all night, because a stopped lens could mean a ship on the rocks. When the light was automated in 1962, the keeper's log ended with a single line: \"Light burning bright. Gone ashore.\" Today, visitors can climb the same steps and read that log, now kept behind glass in the keeper's cottage.",
@@ -4835,12 +4805,12 @@
    "skill": "vocabulary",
    "stem": "In this passage, <i>tended</i> most nearly means",
    "choices": [
-    "offered",
     "cared for",
     "leaned",
+    "offered",
     "stretched"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "The passage supports this answer: cared for.",
    "difficulty": 2,
    "passage": "<b>The Lighthouse Keeper's Log</b><br>For forty years the lighthouse on Gull Point was tended by hand. Each evening the keeper climbed ninety-two steps, trimmed the wick and wound the clockwork that turned the great lens. In storms she stayed awake all night, because a stopped lens could mean a ship on the rocks. When the light was automated in 1962, the keeper's log ended with a single line: \"Light burning bright. Gone ashore.\" Today, visitors can climb the same steps and read that log, now kept behind glass in the keeper's cottage.",
@@ -4852,11 +4822,11 @@
    "stem": "The keeper's last line suggests she felt",
    "choices": [
     "afraid of the sea",
-    "calm and satisfied that her work was done",
     "angry at the change",
-    "confused about the light"
+    "confused about the light",
+    "calm and satisfied that her work was done"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: calm and satisfied that her work was done.",
    "difficulty": 2,
    "passage": "<b>The Lighthouse Keeper's Log</b><br>For forty years the lighthouse on Gull Point was tended by hand. Each evening the keeper climbed ninety-two steps, trimmed the wick and wound the clockwork that turned the great lens. In storms she stayed awake all night, because a stopped lens could mean a ship on the rocks. When the light was automated in 1962, the keeper's log ended with a single line: \"Light burning bright. Gone ashore.\" Today, visitors can climb the same steps and read that log, now kept behind glass in the keeper's cottage.",
@@ -4867,12 +4837,12 @@
    "skill": "main idea",
    "stem": "The author's main point is that",
    "choices": [
-    "moss is not a reliable way to find north",
     "moss grows only on the north side",
-    "streams are good guides",
-    "moss needs sunlight"
+    "moss needs sunlight",
+    "moss is not a reliable way to find north",
+    "streams are good guides"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "The passage supports this answer: moss is not a reliable way to find north.",
    "difficulty": 2,
    "passage": "<b>Moss Map</b><br>Hikers once said that moss grows on the north side of trees, so it can serve as a compass. Scientists who study forests say this is only partly true. Moss needs shade and moisture. In the Northern Hemisphere, the north side of a tree often gets less sun, so moss may grow there. But in a deep, damp forest, moss can cover every side of a trunk. A tree near a stream may have the most moss on whatever side faces the water. A wise hiker carries a real compass.",
@@ -4883,12 +4853,12 @@
    "skill": "detail",
    "stem": "What two things does moss need?",
    "choices": [
-    "soil and sand",
-    "shade and moisture",
     "sun and wind",
-    "heat and light"
+    "soil and sand",
+    "heat and light",
+    "shade and moisture"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: shade and moisture.",
    "difficulty": 2,
    "passage": "<b>Moss Map</b><br>Hikers once said that moss grows on the north side of trees, so it can serve as a compass. Scientists who study forests say this is only partly true. Moss needs shade and moisture. In the Northern Hemisphere, the north side of a tree often gets less sun, so moss may grow there. But in a deep, damp forest, moss can cover every side of a trunk. A tree near a stream may have the most moss on whatever side faces the water. A wise hiker carries a real compass.",
@@ -4899,12 +4869,12 @@
    "skill": "cause and effect",
    "stem": "Why might moss grow on the north side of a tree?",
    "choices": [
-    "That side often gets less sun.",
-    "Birds rest there.",
     "That side faces the wind.",
-    "The bark is thicker there."
+    "Birds rest there.",
+    "The bark is thicker there.",
+    "That side often gets less sun."
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: That side often gets less sun.",
    "difficulty": 2,
    "passage": "<b>Moss Map</b><br>Hikers once said that moss grows on the north side of trees, so it can serve as a compass. Scientists who study forests say this is only partly true. Moss needs shade and moisture. In the Northern Hemisphere, the north side of a tree often gets less sun, so moss may grow there. But in a deep, damp forest, moss can cover every side of a trunk. A tree near a stream may have the most moss on whatever side faces the water. A wise hiker carries a real compass.",
@@ -4931,12 +4901,12 @@
    "skill": "inference",
    "stem": "The author would most likely advise a hiker to",
    "choices": [
-    "follow the moss",
-    "bring a compass",
+    "hike only in the north",
     "walk near streams",
-    "hike only in the north"
+    "bring a compass",
+    "follow the moss"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: bring a compass.",
    "difficulty": 2,
    "passage": "<b>Moss Map</b><br>Hikers once said that moss grows on the north side of trees, so it can serve as a compass. Scientists who study forests say this is only partly true. Moss needs shade and moisture. In the Northern Hemisphere, the north side of a tree often gets less sun, so moss may grow there. But in a deep, damp forest, moss can cover every side of a trunk. A tree near a stream may have the most moss on whatever side faces the water. A wise hiker carries a real compass.",
@@ -4949,8 +4919,8 @@
    "choices": [
     "boastful",
     "determined",
-    "lazy",
-    "fearful"
+    "fearful",
+    "lazy"
    ],
    "answer": 1,
    "explanation": "The passage supports this answer: determined.",
@@ -4963,10 +4933,10 @@
    "skill": "vocabulary",
    "stem": "As used in the passage, <i>coaxed</i> means",
    "choices": [
-    "bought cheaply",
     "forced quickly",
+    "hid carefully",
     "gently encouraged",
-    "hid carefully"
+    "bought cheaply"
    ],
    "answer": 2,
    "explanation": "The passage supports this answer: gently encouraged.",
@@ -4979,12 +4949,12 @@
    "skill": "detail",
    "stem": "What did Tamsin add to the soil in the second week?",
    "choices": [
+    "sunflower seeds",
     "compost",
     "sand",
-    "water from a stream",
-    "sunflower seeds"
+    "water from a stream"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: compost.",
    "difficulty": 2,
    "passage": "<b>Tamsin's Garden Plot</b><br>Tamsin had never grown anything but a bean in a paper cup. When the community garden offered free plots, she signed up and was handed a square of hard, pale dirt. The first week she pulled weeds until her palms blistered. The second week she mixed in compost from the shared bin. By June, her neighbor Mr. Okafor was leaning over the fence to ask how she had coaxed such tall sunflowers from \"that hopeless corner.\" Tamsin just grinned and handed him a bag of seeds.",
@@ -4995,10 +4965,10 @@
    "skill": "inference",
    "stem": "Mr. Okafor's comment shows that he",
    "choices": [
-    "owned the plot before",
-    "thought the plot would be hard to grow anything in",
     "wanted Tamsin to leave",
-    "dislikes sunflowers"
+    "thought the plot would be hard to grow anything in",
+    "dislikes sunflowers",
+    "owned the plot before"
    ],
    "answer": 1,
    "explanation": "The passage supports this answer: thought the plot would be hard to grow anything in.",
@@ -5011,12 +4981,12 @@
    "skill": "theme",
    "stem": "Which is a theme of the story?",
    "choices": [
-    "Hard work can turn something unpromising into a success.",
     "Neighbors should mind their own business.",
-    "Beans grow best in cups.",
-    "Gardens are too much trouble."
+    "Hard work can turn something unpromising into a success.",
+    "Gardens are too much trouble.",
+    "Beans grow best in cups."
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: Hard work can turn something unpromising into a success.",
    "difficulty": 2,
    "passage": "<b>Tamsin's Garden Plot</b><br>Tamsin had never grown anything but a bean in a paper cup. When the community garden offered free plots, she signed up and was handed a square of hard, pale dirt. The first week she pulled weeds until her palms blistered. The second week she mixed in compost from the shared bin. By June, her neighbor Mr. Okafor was leaning over the fence to ask how she had coaxed such tall sunflowers from \"that hopeless corner.\" Tamsin just grinned and handed him a bag of seeds.",
@@ -5028,8 +4998,8 @@
    "stem": "Which title best fits the passage?",
    "choices": [
     "Deserts of the World",
-    "How Glass Is Made",
     "The Life of a Silk Worm",
+    "How Glass Is Made",
     "A Web of Trade and Ideas"
    ],
    "answer": 3,
@@ -5043,12 +5013,12 @@
    "skill": "detail",
    "stem": "Which good moved west?",
    "choices": [
-    "horses",
     "silk",
-    "silver",
-    "glassware"
+    "horses",
+    "glassware",
+    "silver"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "The passage supports this answer: silk.",
    "difficulty": 2,
    "passage": "<b>The Silk Road</b><br>The Silk Road was not one road but a web of routes linking China to the Mediterranean. Few traders traveled the whole way. Instead, goods passed from merchant to merchant, city to city. Silk moved west; glassware, horses and silver moved east. Ideas traveled too: paper-making, new crops and religions spread along the same paths. Oasis cities such as Samarkand grew rich by offering water, markets and rest to caravans crossing the deserts.",
@@ -5059,12 +5029,12 @@
    "skill": "inference",
    "stem": "Why did few traders travel the whole way?",
    "choices": [
-    "The road was too smooth.",
-    "Silk was too light to carry.",
+    "Goods were passed along in shorter trips between cities.",
     "No one lived in Samarkand.",
-    "Goods were passed along in shorter trips between cities."
+    "Silk was too light to carry.",
+    "The road was too smooth."
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The passage supports this answer: Goods were passed along in shorter trips between cities.",
    "difficulty": 2,
    "passage": "<b>The Silk Road</b><br>The Silk Road was not one road but a web of routes linking China to the Mediterranean. Few traders traveled the whole way. Instead, goods passed from merchant to merchant, city to city. Silk moved west; glassware, horses and silver moved east. Ideas traveled too: paper-making, new crops and religions spread along the same paths. Oasis cities such as Samarkand grew rich by offering water, markets and rest to caravans crossing the deserts.",
@@ -5075,12 +5045,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>web</i> most nearly means",
    "choices": [
+    "spider",
     "trap",
     "network",
-    "spider",
     "cloth"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: network.",
    "difficulty": 2,
    "passage": "<b>The Silk Road</b><br>The Silk Road was not one road but a web of routes linking China to the Mediterranean. Few traders traveled the whole way. Instead, goods passed from merchant to merchant, city to city. Silk moved west; glassware, horses and silver moved east. Ideas traveled too: paper-making, new crops and religions spread along the same paths. Oasis cities such as Samarkand grew rich by offering water, markets and rest to caravans crossing the deserts.",
@@ -5091,12 +5061,12 @@
    "skill": "cause and effect",
    "stem": "Oasis cities grew rich because they",
    "choices": [
-    "sold glassware to China",
     "grew silk",
     "made paper first",
-    "served the caravans that passed through"
+    "served the caravans that passed through",
+    "sold glassware to China"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "The passage supports this answer: served the caravans that passed through.",
    "difficulty": 2,
    "passage": "<b>The Silk Road</b><br>The Silk Road was not one road but a web of routes linking China to the Mediterranean. Few traders traveled the whole way. Instead, goods passed from merchant to merchant, city to city. Silk moved west; glassware, horses and silver moved east. Ideas traveled too: paper-making, new crops and religions spread along the same paths. Oasis cities such as Samarkand grew rich by offering water, markets and rest to caravans crossing the deserts.",
@@ -5108,11 +5078,11 @@
    "stem": "The mood of the passage is best described as",
    "choices": [
     "sad and lonely",
+    "quiet and peaceful",
     "tense and frightening",
-    "noisy and crowded",
-    "quiet and peaceful"
+    "noisy and crowded"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: quiet and peaceful.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -5123,12 +5093,12 @@
    "skill": "figurative language",
    "stem": "“The smell of yeast slowly waking” is an example of",
    "choices": [
-    "personification",
+    "rhyme",
     "a simile",
-    "exaggeration of numbers",
-    "rhyme"
+    "personification",
+    "exaggeration of numbers"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "The passage supports this answer: personification.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -5139,12 +5109,12 @@
    "skill": "detail",
    "stem": "When does the first bus pass?",
    "choices": [
+    "at six",
     "at noon",
-    "at three",
     "at midnight",
-    "at six"
+    "at three"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "The passage supports this answer: at six.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -5156,11 +5126,11 @@
    "stem": "Why does Gabe like this hour best?",
    "choices": [
     "He is paid more then.",
-    "Customers bring him coffee.",
     "It is calm, with no interruptions.",
-    "He can sleep at work."
+    "He can sleep at work.",
+    "Customers bring him coffee."
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "The passage supports this answer: It is calm, with no interruptions.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -5172,11 +5142,11 @@
    "stem": "As used in the passage, <i>roaring</i> means",
    "choices": [
     "shouting",
+    "burning strongly",
     "laughing",
-    "breaking",
-    "burning strongly"
+    "breaking"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: burning strongly.",
    "difficulty": 2,
    "passage": "<b>Night Shift at the Bakery</b><br>At 3 a.m., while the town slept, the ovens at Ruiz Bakery were already roaring. Gabe measured flour by the bucketful, his breath clouding in the cold back room. He liked this hour best. No phones rang; no customers waited. There was only the soft thump of dough on the steel table and the smell of yeast slowly waking. By the time the first bus rumbled past at six, two hundred rolls sat cooling in neat rows, as if they had appeared by magic.",
@@ -5188,11 +5158,11 @@
    "stem": "The passage mainly explains",
    "choices": [
     "how to plant a tree",
+    "why leaves turn different colors in autumn",
     "why trees need water",
-    "how chlorophyll is sold",
-    "why leaves turn different colors in autumn"
+    "how chlorophyll is sold"
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: why leaves turn different colors in autumn.",
    "difficulty": 2,
    "passage": "<b>Why Leaves Change Color</b><br>Leaves are green because of chlorophyll, which helps trees turn sunlight into food. Other colors, yellow and orange, are in the leaf all summer, but the green hides them. As autumn days shorten, trees stop making chlorophyll. The green fades, and the hidden yellows show through. Reds are different: many trees make red pigments only in fall, especially after sunny days and cool nights. That is why a dry, bright autumn often brings the most brilliant reds.",
@@ -5203,12 +5173,12 @@
    "skill": "detail",
    "stem": "What makes leaves green?",
    "choices": [
-    "red pigment",
-    "yellow pigment",
     "chlorophyll",
-    "cool nights"
+    "yellow pigment",
+    "cool nights",
+    "red pigment"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: chlorophyll.",
    "difficulty": 2,
    "passage": "<b>Why Leaves Change Color</b><br>Leaves are green because of chlorophyll, which helps trees turn sunlight into food. Other colors, yellow and orange, are in the leaf all summer, but the green hides them. As autumn days shorten, trees stop making chlorophyll. The green fades, and the hidden yellows show through. Reds are different: many trees make red pigments only in fall, especially after sunny days and cool nights. That is why a dry, bright autumn often brings the most brilliant reds.",
@@ -5219,12 +5189,12 @@
    "skill": "cause and effect",
    "stem": "Yellow appears in fall because",
    "choices": [
+    "the green chlorophyll fades away",
     "leaves dry out",
     "rain washes leaves",
-    "the green chlorophyll fades away",
     "trees make yellow only in fall"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: the green chlorophyll fades away.",
    "difficulty": 2,
    "passage": "<b>Why Leaves Change Color</b><br>Leaves are green because of chlorophyll, which helps trees turn sunlight into food. Other colors, yellow and orange, are in the leaf all summer, but the green hides them. As autumn days shorten, trees stop making chlorophyll. The green fades, and the hidden yellows show through. Reds are different: many trees make red pigments only in fall, especially after sunny days and cool nights. That is why a dry, bright autumn often brings the most brilliant reds.",
@@ -5235,12 +5205,12 @@
    "skill": "inference",
    "stem": "Which fall weather would likely bring the brightest reds?",
    "choices": [
-    "heavy rain every day",
     "sunny days and cool nights",
+    "cloudy, warm days",
     "snow in September",
-    "cloudy, warm days"
+    "heavy rain every day"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "The passage supports this answer: sunny days and cool nights.",
    "difficulty": 2,
    "passage": "<b>Why Leaves Change Color</b><br>Leaves are green because of chlorophyll, which helps trees turn sunlight into food. Other colors, yellow and orange, are in the leaf all summer, but the green hides them. As autumn days shorten, trees stop making chlorophyll. The green fades, and the hidden yellows show through. Reds are different: many trees make red pigments only in fall, especially after sunny days and cool nights. That is why a dry, bright autumn often brings the most brilliant reds.",
@@ -5251,12 +5221,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>brilliant</i> most nearly means",
    "choices": [
-    "smart",
-    "costly",
     "vivid",
-    "dim"
+    "smart",
+    "dim",
+    "costly"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "The passage supports this answer: vivid.",
    "difficulty": 2,
    "passage": "<b>Why Leaves Change Color</b><br>Leaves are green because of chlorophyll, which helps trees turn sunlight into food. Other colors, yellow and orange, are in the leaf all summer, but the green hides them. As autumn days shorten, trees stop making chlorophyll. The green fades, and the hidden yellows show through. Reds are different: many trees make red pigments only in fall, especially after sunny days and cool nights. That is why a dry, bright autumn often brings the most brilliant reds.",
@@ -5267,12 +5237,12 @@
    "skill": "character",
    "stem": "Priya's choice shows that she is",
    "choices": [
-    "careless",
-    "fair-minded",
     "stubborn",
-    "shy"
+    "shy",
+    "careless",
+    "fair-minded"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: fair-minded.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -5283,12 +5253,12 @@
    "skill": "detail",
    "stem": "What benefit of the longer day did the article mention?",
    "choices": [
+    "less homework",
     "later start times",
     "time for music",
-    "less homework",
     "more recess"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "The passage supports this answer: time for music.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -5299,12 +5269,12 @@
    "skill": "inference",
    "stem": "Why did Priya open by admitting a point against her?",
    "choices": [
-    "because she changed teams",
     "to show she had considered both sides",
-    "because she had lost her notes",
-    "to end the debate early"
+    "to end the debate early",
+    "because she changed teams",
+    "because she had lost her notes"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "The passage supports this answer: to show she had considered both sides.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -5315,12 +5285,12 @@
    "skill": "plot",
    "stem": "What is the turning point of the story?",
    "choices": [
-    "The debate begins.",
     "Priya fills her notebook.",
-    "Priya wins a prize.",
-    "Priya reads an article that makes her doubt herself."
+    "Priya reads an article that makes her doubt herself.",
+    "The debate begins.",
+    "Priya wins a prize."
    ],
-   "answer": 3,
+   "answer": 1,
    "explanation": "The passage supports this answer: Priya reads an article that makes her doubt herself.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -5331,12 +5301,12 @@
    "skill": "purpose",
    "stem": "The author's purpose is mainly to",
    "choices": [
-    "show how a character responds to new information",
     "argue for longer school days",
+    "describe a school district",
     "teach debate rules",
-    "describe a school district"
+    "show how a character responds to new information"
    ],
-   "answer": 0,
+   "answer": 3,
    "explanation": "The passage supports this answer: show how a character responds to new information.",
    "difficulty": 2,
    "passage": "<b>The Debate</b><br>Priya had argued against the longer school day for weeks, filling a notebook with facts. But the night before the debate, she read an article that made her doubt herself: students in one district said the extra hour finally gave them time for music. Priya did not throw out her notes. Instead, she added a new page titled \"What the other side gets right,\" and the next day she opened by admitting the strongest point against her.",
@@ -5347,12 +5317,12 @@
    "skill": "main idea",
    "stem": "The passage mainly shows that octopuses",
    "choices": [
+    "live only in aquariums",
     "are clever and flexible problem-solvers",
     "have strong bones",
-    "live only in aquariums",
     "are dangerous to people"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "The passage supports this answer: are clever and flexible problem-solvers.",
    "difficulty": 2,
    "passage": "<b>Octopus Escape Artists</b><br>Octopuses have no bones, so any opening larger than their beak is a doorway. Aquarium workers tell stories of octopuses that slipped out of tanks at night, crossed the floor, and raided a neighboring tank for snacks before returning home. Scientists think such feats show real problem-solving. In lab tests, octopuses have unscrewed jar lids to reach crabs inside, and some learned the task faster after watching another octopus do it.",
@@ -5363,10 +5333,10 @@
    "skill": "detail",
    "stem": "What is the only hard part that limits where an octopus can fit?",
    "choices": [
-    "its tentacles",
     "its shell",
+    "its spine",
     "its beak",
-    "its spine"
+    "its tentacles"
    ],
    "answer": 2,
    "explanation": "The passage supports this answer: its beak.",
@@ -5379,10 +5349,10 @@
    "skill": "inference",
    "stem": "Learning faster after watching another octopus suggests they can",
    "choices": [
+    "see in the dark only",
     "read labels",
-    "hear human speech",
     "learn by observing",
-    "see in the dark only"
+    "hear human speech"
    ],
    "answer": 2,
    "explanation": "The passage supports this answer: learn by observing.",
@@ -5395,12 +5365,12 @@
    "skill": "vocabulary",
    "stem": "In the passage, <i>feats</i> most nearly means",
    "choices": [
-    "mistakes",
-    "impressive acts",
     "parts of a foot",
-    "meals"
+    "meals",
+    "mistakes",
+    "impressive acts"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "The passage supports this answer: impressive acts.",
    "difficulty": 2,
    "passage": "<b>Octopus Escape Artists</b><br>Octopuses have no bones, so any opening larger than their beak is a doorway. Aquarium workers tell stories of octopuses that slipped out of tanks at night, crossed the floor, and raided a neighboring tank for snacks before returning home. Scientists think such feats show real problem-solving. In lab tests, octopuses have unscrewed jar lids to reach crabs inside, and some learned the task faster after watching another octopus do it.",
@@ -5411,10 +5381,10 @@
    "skill": "purpose",
    "stem": "Why does the author include the aquarium stories?",
    "choices": [
-    "to explain how tanks are built",
     "to complain about aquarium workers",
+    "to sell aquarium tickets",
     "to give vivid examples of octopus escapes",
-    "to sell aquarium tickets"
+    "to explain how tanks are built"
    ],
    "answer": 2,
    "explanation": "The passage supports this answer: to give vivid examples of octopus escapes.",
@@ -5427,12 +5397,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>jubilant</u> crowd",
    "choices": [
+    "silent",
     "joyful",
-    "small",
     "angry",
-    "silent"
+    "small"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "In context, the underlined word means “joyful.”",
    "difficulty": 2,
    "id": "R041"
@@ -5442,10 +5412,10 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>meticulous</u> worker",
    "choices": [
-    "sloppy",
+    "tired",
     "careful",
-    "fast",
-    "tired"
+    "sloppy",
+    "fast"
    ],
    "answer": 1,
    "explanation": "In context, the underlined word means “careful.”",
@@ -5458,11 +5428,11 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: an <u>arduous</u> climb",
    "choices": [
     "easy",
-    "difficult",
     "short",
+    "difficult",
     "pleasant"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "In context, the underlined word means “difficult.”",
    "difficulty": 2,
    "id": "R043"
@@ -5472,12 +5442,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>brief</u> visit",
    "choices": [
-    "long",
     "short",
+    "secret",
     "happy",
-    "secret"
+    "long"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "In context, the underlined word means “short.”",
    "difficulty": 2,
    "id": "R044"
@@ -5488,9 +5458,9 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>reluctant</u> to leave",
    "choices": [
     "unwilling",
+    "eager",
     "forced",
-    "able",
-    "eager"
+    "able"
    ],
    "answer": 0,
    "explanation": "In context, the underlined word means “unwilling.”",
@@ -5502,12 +5472,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>novel</u> idea",
    "choices": [
-    "new",
     "old",
-    "written",
-    "boring"
+    "new",
+    "boring",
+    "written"
    ],
-   "answer": 0,
+   "answer": 1,
    "explanation": "In context, the underlined word means “new.”",
    "difficulty": 2,
    "id": "R046"
@@ -5517,12 +5487,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>somber</u> mood",
    "choices": [
-    "serious",
     "cheerful",
     "sleepy",
+    "serious",
     "busy"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "In context, the underlined word means “serious.”",
    "difficulty": 2,
    "id": "R047"
@@ -5533,9 +5503,9 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>abundant</u> rain",
    "choices": [
     "plentiful",
-    "light",
     "cold",
-    "rare"
+    "rare",
+    "light"
    ],
    "answer": 0,
    "explanation": "In context, the underlined word means “plentiful.”",
@@ -5547,9 +5517,9 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>frail</u> branch",
    "choices": [
-    "thick",
     "tall",
     "leafy",
+    "thick",
     "weak"
    ],
    "answer": 3,
@@ -5562,12 +5532,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>vivid</u> memories",
    "choices": [
-    "sad",
-    "few",
     "clear",
-    "faded"
+    "faded",
+    "few",
+    "sad"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "In context, the underlined word means “clear.”",
    "difficulty": 2,
    "id": "R050"
@@ -5577,12 +5547,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>hostile</u> reply",
    "choices": [
-    "unfriendly",
     "funny",
-    "quick",
-    "polite"
+    "polite",
+    "unfriendly",
+    "quick"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "In context, the underlined word means “unfriendly.”",
    "difficulty": 2,
    "id": "R051"
@@ -5592,12 +5562,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: an <u>elated</u> winner",
    "choices": [
-    "tired",
     "thrilled",
+    "tired",
     "humble",
     "nervous"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "In context, the underlined word means “thrilled.”",
    "difficulty": 2,
    "id": "R052"
@@ -5607,12 +5577,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>conceal</u> the gift",
    "choices": [
+    "hide",
     "open",
-    "buy",
     "wrap",
-    "hide"
+    "buy"
    ],
-   "answer": 3,
+   "answer": 0,
    "explanation": "In context, the underlined word means “hide.”",
    "difficulty": 2,
    "id": "R053"
@@ -5623,11 +5593,11 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>placid</u> lake",
    "choices": [
     "deep",
-    "calm",
     "frozen",
-    "stormy"
+    "stormy",
+    "calm"
    ],
-   "answer": 1,
+   "answer": 3,
    "explanation": "In context, the underlined word means “calm.”",
    "difficulty": 2,
    "id": "R054"
@@ -5637,12 +5607,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>ample</u> space",
    "choices": [
-    "little",
-    "empty",
     "enough",
+    "empty",
+    "little",
     "strange"
    ],
-   "answer": 2,
+   "answer": 0,
    "explanation": "In context, the underlined word means “enough.”",
    "difficulty": 2,
    "id": "R055"
@@ -5652,10 +5622,10 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>keen</u> eye",
    "choices": [
-    "blue",
+    "lazy",
     "closed",
     "sharp",
-    "lazy"
+    "blue"
    ],
    "answer": 2,
    "explanation": "In context, the underlined word means “sharp.”",
@@ -5667,12 +5637,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>baffled</u> by the clue",
    "choices": [
-    "pleased",
-    "bored",
     "scared",
-    "puzzled"
+    "pleased",
+    "puzzled",
+    "bored"
    ],
-   "answer": 3,
+   "answer": 2,
    "explanation": "In context, the underlined word means “puzzled.”",
    "difficulty": 2,
    "id": "R057"
@@ -5682,12 +5652,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>robust</u> plant",
    "choices": [
+    "tiny",
     "dying",
     "bitter",
-    "sturdy",
-    "tiny"
+    "sturdy"
    ],
-   "answer": 2,
+   "answer": 3,
    "explanation": "In context, the underlined word means “sturdy.”",
    "difficulty": 2,
    "id": "R058"
@@ -5697,12 +5667,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>diminish</u> the noise",
    "choices": [
-    "increase",
     "lessen",
     "record",
-    "enjoy"
+    "enjoy",
+    "increase"
    ],
-   "answer": 1,
+   "answer": 0,
    "explanation": "In context, the underlined word means “lessen.”",
    "difficulty": 2,
    "id": "R059"
@@ -5712,12 +5682,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>loyal</u> friend",
    "choices": [
-    "rude",
-    "faithful",
+    "distant",
     "new",
-    "distant"
+    "faithful",
+    "rude"
    ],
-   "answer": 1,
+   "answer": 2,
    "explanation": "In context, the underlined word means “faithful.”",
    "difficulty": 2,
    "id": "R060"
@@ -5728,11 +5698,11 @@
    "stem": "Choose the word that means the same, or about the same, as the underlined word: <u>exhausted</u> runners",
    "choices": [
     "energetic",
-    "quick",
     "worn out",
-    "proud"
+    "proud",
+    "quick"
    ],
-   "answer": 2,
+   "answer": 1,
    "explanation": "In context, the underlined word means “worn out.”",
    "difficulty": 2,
    "id": "R061"
@@ -5742,12 +5712,12 @@
    "skill": "vocabulary",
    "stem": "Choose the word that means the same, or about the same, as the underlined word: a <u>candid</u> answer",
    "choices": [
-    "honest",
+    "shy",
     "false",
-    "long",
-    "shy"
+    "honest",
+    "long"
    ],
-   "answer": 0,
+   "answer": 2,
    "explanation": "In context, the underlined word means “honest.”",
    "difficulty": 2,
    "id": "R062"

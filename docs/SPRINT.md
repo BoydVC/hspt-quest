@@ -41,19 +41,19 @@ Every day also includes the due spaced-review questions. Format and sources: [HS
 | Verbal | 104 | synonyms 30, antonyms 22, analogies 20, classification 20, logic 12 |
 | Quantitative | 62 | number series 18, number manipulation 18, non-geometric comparison 14, geometric comparison 12 |
 | Reading | 62 | main idea 5, detail 8, inference 8, vocabulary 28, tone 1, cause and effect 3, purpose 3, character 2, theme 1, mood 1, figurative language 1, plot 1 |
-| Mathematics | 80 | fractions 10, percents 10, algebra 10, geometry 10, statistics 8, probability 6, measurement 8, word problems 10, numbers & numeration 8 |
+| Mathematics | 78 | fractions 9, percents 10, algebra 10, geometry 9, statistics 8, probability 6, measurement 8, word problems 10, numbers & numeration 8 |
 | Language | 73 | punctuation 11, capitalization 6, spelling 24, usage 18, composition 14 |
-| **Total** | **381** | |
+| **Total** | **379** | |
 
 - **Original:** every word is written for this project, and the math and quantitative items are generated from templates with a fixed seed (1117). Nothing is copied from any published or copyrighted test. Reading uses 8 original passages (informational and literary, 5 questions each) plus 22 vocabulary-in-context items.
 - Every item has a section, a skill tag, a difficulty, 3–4 choices (logic items use True / False / Uncertain like the real test), an answer index and an explanation.
 - Each section has at least as many items as the real section, so the full mock never repeats a question within a section.
-- **Validation** (`sprint/tests/validate_bank.py`, 4,399 checks): ids unique; key index in range; choices distinct; no duplicate items; 300+ total; every arithmetic key recomputed independently (percents, fractions, algebra, series, mean, median); every quantitative comparison answer re-derived and every distractor proven false; spelling keys checked against the correct spelling. Plus a spot-check read of random samples from every section.
+- **Validation** (`sprint/tests/validate_bank.py`, 4,376 checks): ids unique; key index in range; choices distinct; no duplicate items; 300+ total; every arithmetic key recomputed independently (percents, fractions, algebra, series, mean, median); every quantitative comparison answer re-derived and every distractor proven false; spelling keys checked against the correct spelling. Plus a spot-check read of random samples from every section.
 
 ## Tests
 
 - `cd sprint && npm i && npm test` (needs the static server on :4455, or set `HQ_BASE`). If Playwright's bundled browser is missing, set `CHROME_PATH` to a Chromium binary.
 - Unit (`node --test`): 22 tests on the plan, timing, spaced repetition, weakness ranking, set picking, mock building, scoring, answer sheet numbering and bank hygiene.
-- Bank: 4,399 checks.
+- Bank: 4,376 checks.
 - Playwright: 13 browser tests: countdown, plan, a full mini-set with misses coming back in review on the right days, weak-spot dashboard and drill, weak-spot day targeting, timer expiry, a full 5-section mock with real sizes, no feedback in mock, the 298-row answer sheet and print CSS, keyboard, persistence, phone layout with no sideways scroll, and test-day / before-sprint states.
 - Screenshots: `node tests/shots.mjs` writes `screenshots/sprint/` (desktop 1440×900 and phone 390×844) plus frames for `screenshots/demo.gif`. Synthetic student "Alex" and synthetic progress only; OCR-checked for family names.

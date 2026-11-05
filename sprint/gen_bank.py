@@ -8,6 +8,7 @@ from fractions import Fraction as F
 R = random.Random(1117)
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "web", "sprint", "bank.json")
 items = []
+_SEEN = set()
 L = "ABCD"
 
 def add(section, skill, stem, correct, wrong, expl, diff=2, passage=None, fixed=None):
@@ -17,6 +18,9 @@ def add(section, skill, stem, correct, wrong, expl, diff=2, passage=None, fixed=
     else:
         choices = [correct] + list(wrong)
         R.shuffle(choices)
+    sig = (passage or "")[:40] + stem + "|" + "|".join(sorted(choices))
+    if sig in _SEEN: return  # generated twice: keep the first, skip the repeat
+    _SEEN.add(sig)
     it = {"section": section, "skill": skill, "stem": stem, "choices": choices,
           "answer": choices.index(correct), "explanation": expl, "difficulty": diff}
     if passage: it["passage"] = passage
@@ -116,7 +120,7 @@ CLS = [(["apple","banana","pear","carrot"],"carrot","Carrot is a vegetable; the 
 (["gallon","quart","pint","ounce of weight"],"ounce of weight","The others are measures of liquid volume."),
 (["thrifty","frugal","economical","lavish"],"lavish","Lavish means spending freely; the others mean careful with money.")]
 for ch, odd, e in CLS:
-    add("Verbal","classification","Which word does <i>not</i> belong with the others?",odd,[c for c in ch if c != odd],e,2,fixed=ch)
+    add("Verbal","classification","Which word does <i>not</i> belong with the others?",odd,[c for c in ch if c != odd],e,2)
 TFU = ["True","False","Uncertain"]
 LOG = [("Maple Street is longer than Oak Street. Oak Street is longer than Elm Street. Maple Street is longer than Elm Street.","True","If Maple > Oak and Oak > Elm, then Maple > Elm."),
 ("Rina is older than Theo. Theo is older than Juno. Juno is older than Rina.","False","Rina > Theo > Juno, so Juno is the youngest."),
