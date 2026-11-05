@@ -153,7 +153,7 @@ for s, a, e in LOG:
     add("Verbal","logic",stem,a,[t for t in TFU if t != a],e,3,fixed=TFU)
 
 # ---------------- QUANTITATIVE ----------------
-for i in range(36):
+for i in range(42):
     kind = i % 3
     if kind == 0:
         a, d = R.randint(2, 30), R.choice([3, 4, 6, 7, 9, -4, -6])
@@ -170,7 +170,7 @@ for i in range(36):
             else: y += q
         ans = seq[5]; e = f"Two series alternate: one goes up by {p}, the other changes by {q:+d}."
     add("Quantitative","number series","Look at this series: " + ", ".join(map(str, seq[:5])) + ", … What number should come next?",str(ans),numwrong(ans),e,2 + (kind == 2))
-for i in range(36):
+for i in range(42):
     k = i % 6
     if k == 0:
         a, b = R.choice([12, 18, 24, 30, 36]), R.randint(2, 9); ans = a // 3 + b
@@ -296,7 +296,11 @@ for i in range(14):
     elif k == 2:
         b, h = R.choice([4, 6, 8, 10, 12]), R.randint(3, 11); M("geometry", f"A triangle has base {b} in and height {h} in. What is its area in square inches?", b * h // 2, f"Area = ½ × base × height = ½ × {b} × {h} = {b*h//2}.")
     else:
-        r = R.randint(2, 9); M("geometry", f"A circle has radius {r}. What is its circumference, in terms of π?", f"{2*r}π", f"C = 2πr = 2 × π × {r} = {2*r}π.", 2, [f"{r*r}π", f"{r}π", f"{4*r}π"])
+        r = R.randint(2, 9); ans = f"{2*r}π"; wrong = []; 
+        for w in (f"{r*r}π", f"{r}π", f"{4*r}π", f"{3*r}π", f"{2*r+1}π", f"{r+2}π"):
+            if w != ans and w not in wrong: wrong.append(w)
+            if len(wrong) == 3: break
+        M("geometry", f"A circle has radius {r}. What is its circumference, in terms of π?", ans, f"C = 2πr = 2 × π × {r} = {2*r}π.", 2, wrong)
 for i in range(12):
     n = sorted(R.sample(range(2, 40), 5))
     if i % 2 == 0:
@@ -532,6 +536,32 @@ PASS = [
   ("inference","Inspectors climb the beams because","flexibility does not remove the need to check for damage",["the bridge is about to open to skating","humming means immediate collapse","steel never rusts"]),
   ("vocabulary","In the passage, <i>give</i> most nearly means","flexibility / ability to bend a little",["a donated gift","permission slip","loud noise"]),
   ("cause and effect","Gaps close on hot days because","heat makes the steel expand",["inspectors tighten bolts daily","wind pushes joints shut","traffic melts the steel"])])
+
+,
+("Tide Pools", """At low tide, rocky shelves along the coast become tide pools — shallow bowls of seawater left behind by the retreating ocean. Inside them, sea stars pry open mussels, hermit crabs swap shells and anemones wave sticky tentacles. A tide pool looks calm, but it is a packed neighborhood that must survive baking sun, then cold waves, twice a day. Scientists counting species in one pool are really counting survivors of a daily obstacle course.""",
+ [("main idea","What is the passage mainly about?","tide pools as tough, crowded habitats that change with the tide",["how to catch hermit crabs","why the ocean never moves","building rocky shelves"]),
+  ("detail","What do anemones use to catch food?","sticky tentacles",["borrowed shells","baking sun","counting tools"]),
+  ("inference","Calling life in a tide pool an \"obstacle course\" suggests animals there must","handle hard, changing conditions",["race for medals","avoid all water","live only at night"]),
+  ("vocabulary","In the passage, <i>retreating</i> most nearly means","going back / pulling away",["attacking","freezing","glowing"]),
+  ("purpose","Why mention baking sun and cold waves?","to show the harsh conditions tide-pool animals face",["to advertise a beach","to explain astronomy","to scare swimmers away forever"])]),
+("Code Club", """No one expected the after-school code club to fill the library. Then Samira posted a flyer that said \"Build a game in six weeks — no experience needed.\" Twenty students showed up. Some had never typed a loop. By week three, pairs were debugging each other's projects, and the librarian had to ask them to whisper. On demo day, a maze game froze twice — and the room still applauded, because everyone recognized the hours behind the glitch.""",
+ [("theme","A theme of the story is that","effort and learning together matter more than a perfect demo",["only experts should code","libraries should ban clubs","games are a waste of time"]),
+  ("detail","What did Samira's flyer promise?","Build a game in six weeks with no experience needed",["Free pizza every day","A trip to a tech company","A prize for the loudest team"]),
+  ("inference","The applause after the freeze suggests the audience","valued the work even when the game failed",["was glad the club would end","hated maze games","wanted longer speeches"]),
+  ("character","Samira is best described as","someone who invites beginners in",["someone who hates libraries","a strict judge of demos","afraid of groups"]),
+  ("vocabulary","In the passage, <i>debugging</i> most nearly means","finding and fixing errors",["decorating screens","deleting friends","printing flyers"])]),
+("Glacier Pace", """Glaciers look still in photographs, yet they move. Gravity pulls their ice downhill a few inches — or a few feet — each day. Rocks trapped in the ice scrape the valley floor, carving U-shaped valleys over thousands of years. When a glacier melts back, it leaves ridges of debris called moraines. Hikers who stand on a moraine are standing on a timeline written in stone and dirt.""",
+ [("main idea","The passage mainly explains","how glaciers move and reshape the land",["how to photograph ice","why hikers need tents","how rivers freeze overnight"]),
+  ("detail","What are moraines?","ridges of debris left by a melting glacier",["U-shaped clouds","daily weather reports","ice cream flavors"]),
+  ("cause and effect","Valleys become U-shaped because","rocks in the ice scrape the floor over long periods",["hikers dig them","photographs melt ice","moraines block rain"]),
+  ("inference","Calling a moraine a \"timeline\" suggests it","records past glacier positions",["tells the hour of day","is made of clocks","predicts next week's weather"]),
+  ("vocabulary","In the passage, <i>debris</i> most nearly means","scattered leftover material",["clean ice only","fresh snow","tree sap"])]),
+("The Quiet Car", """The 7:42 train had one car labeled QUIET. No phone calls, no speaker music, headphones only. Mira chose it so she could finish a chapter before school. A tourist once asked, loudly, why everyone looked so serious. The conductor pointed to the sign and smiled. Mira realized the quiet was not empty — it was full of people protecting a little space to think.""",
+ [("main idea","The passage is mainly about","why a quiet train car matters to the people who use it",["train schedules in the city","how conductors are hired","phone companies"]),
+  ("detail","What rule applies in the quiet car?","No phone calls or speaker music; headphones only",["No reading allowed","Standing room only","Free snacks"]),
+  ("inference","Mira chooses the quiet car because she","wants uninterrupted time to read",["likes talking to tourists","misses her stop on purpose","works for the railroad"]),
+  ("vocabulary","In the passage, <i>protecting</i> most nearly means","keeping safe / guarding",["destroying","selling","ignoring"]),
+  ("tone","The tone of the ending is best described as","thoughtful and appreciative",["angry and bitter","comic and wild","cold and technical"])])
 ]
 for title, text, qs in PASS:
     psg = f"<b>{title}</b><br>{text}"
@@ -589,6 +619,6 @@ if __name__ == "__main__":
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     by = {}
     for it in items: by[it["section"]] = by.get(it["section"], 0) + 1
-    bank = {"version": 4, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v4 expanded)", "counts": by, "total": len(items), "items": items}
+    bank = {"version": 5, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v5 expanded)", "counts": by, "total": len(items), "items": items}
     json.dump(bank, open(OUT, "w"), indent=1, ensure_ascii=False)
     print(json.dumps(by), len(items))
