@@ -108,7 +108,12 @@ ANA = [("Feather is to bird as scale is to","fish","wing","snake skin","weight",
 ("Minute is to hour as month is to","year","day","week","calendar","A smaller unit within a larger one: 60 minutes per hour, 12 months per year."),
 ("Angry is to furious as happy is to","ecstatic","sad","calm","content","Mild to extreme degree."),
 ("Lock is to key as problem is to","solution","question","trouble","door","A key opens a lock; a solution resolves a problem."),
-("Library is to books as gallery is to","paintings","visitors","frames","walls","What each place displays.")]
+("Library is to books as gallery is to","paintings","visitors","frames","walls","What each place displays."),
+("Camera is to photograph as oven is to","bread","kitchen","heat","recipe","The tool and what it produces."),
+("Root is to plant as foundation is to","building","roof","garden","soil","What something grows from or rests on."),
+("Doctor is to hospital as teacher is to","school","book","student desk","chalk","Where each professional works."),
+("Flash is to lightning as boom is to","thunder","rain","cloud","storm drain","The sound that goes with the sight."),
+("Caterpillar is to butterfly as tadpole is to","frog","pond","lily","fish","Young form to adult form.")]
 for st, c, *rest in ANA:
     d, e = rest[:3], rest[3]
     add("Verbal","analogies",st,c,d,e,2)
@@ -271,7 +276,7 @@ for i in range(16):
 # ---------------- MATHEMATICS ----------------
 def M(skill, st, ans, e, d=2, wrong=None):
     add("Mathematics", skill, st, fmt(ans), wrong or numwrong(ans), e, d)
-for i in range(14):
+for i in range(16):
     a, b, c, d = R.randint(1, 5), R.choice([2,3,4,5,6,8]), R.randint(1, 5), R.choice([2,3,4,5,6,8])
     if a >= b: a = b - 1
     if c >= d: c = d - 1
@@ -280,11 +285,11 @@ for i in range(14):
     w = [x for x in dict.fromkeys(w) if x != fmt(s)]
     while len(w) < 3: w.append(fmt(s + len(w) + 1))
     M("fractions", f"{a}/{b} + {c}/{d} =", s, f"Common denominator: {a}/{b} + {c}/{d} = {fmt(s)}. (Never add denominators.)", 2, w[:3])
-for i in range(14):
+for i in range(16):
     p, n = R.choice([10, 15, 20, 25, 30, 40, 60, 75]), R.choice([40, 60, 80, 120, 200, 240])
     v = F(p * n, 100)
     M("percents", f"What is {p}% of {n}?", v, f"{p}% = {p}/100; {p}/100 × {n} = {fmt(v)}.")
-for i in range(14):
+for i in range(16):
     x, a, b = R.randint(-6, 12), R.randint(2, 7), R.randint(-10, 15)
     M("algebra", f"Solve for x: {a}x {'+' if b>=0 else '−'} {abs(b)} = {a*x+b}", x, f"Subtract {b}: {a}x = {a*x}; divide by {a}: x = {x}.", 3)
 for i in range(14):
@@ -363,7 +368,9 @@ SPELL = [("necessary","neccessary"),("separate","seperate"),("definitely","defin
 ("calendar","calender"),("embarrass","embarass"),("occasion","ocassion"),("tomorrow","tommorow"),("beginning","begining"),
 ("government","goverment"),("library","libary"),("February","Febuary"),("restaurant","restaraunt"),("environment","enviroment"),
 ("immediately","immediatly"),("knowledge","knowlege"),("privilege","priviledge"),("rhythm","rythm"),("weird","wierd"),
-("accommodate","accomodate"),("conscience","concience"),("license","lisence"),("noticeable","noticable")]
+("accommodate","accomodate"),("conscience","concience"),("license","lisence"),("noticeable","noticable"),
+("questionnaire","questionaire"),("maintenance","maintainance"),("occurrence","occurence"),("parallel","paralel"),
+("recommend","recomend"),("successful","successfull"),("twelfth","twelfh"),("vacuum","vaccuum")]
 fill = ["window","garden","quickly","teacher","history","mountain","journey","picture","station","village","bottle","harbor","whistle","puzzle","silver","ladder","pocket","thunder"]
 for good, bad in SPELL:
     others = R.sample(fill, 3)
@@ -588,7 +595,11 @@ VOC = [("a <u>jubilant</u> crowd","joyful",["silent","angry","small"]),("a <u>me
 ("to <u>resemble</u> her aunt","look like",["argue with","write to","avoid"]),("an <u>ample</u> supply","more than enough",["empty","stolen","expired"]),
 ("<u>drench</u> the plants","soak",["trim","count","ignore"]),("a <u>modest</u> home","not showy",["huge mansion","rented only","dark"]),
 ("to <u>persist</u> despite failure","keep going",["quit early","hide","complain only"]),("a <u>shrewd</u> choice","clever",["random","noisy","late"]),
-("<u>weary</u> travelers","tired",["excited","lost","wealthy"]),("an <u>outright</u> refusal","complete / total",["polite maybe","delayed","written"])]
+("<u>weary</u> travelers","tired",["excited","lost","wealthy"]),("an <u>outright</u> refusal","complete / total",["polite maybe","delayed","written"]),
+("a <u>meager</u> meal","small / scant",["huge","spicy","frozen"]),("to <u>conceal</u> a gift","hide",["unwrap","mail","price"]),
+("<u>abrupt</u> stop","sudden",["gradual","musical","planned long"]),("a <u>diligent</u> student","hardworking",["lazy","noisy","new"]),
+("to <u>alter</u> the plan","change",["copy","ignore","celebrate"]),("a <u>bleak</u> outlook","hopeless / grim",["cheerful","short","colorful"]),
+("<u>frigid</u> air","very cold",["warm","dusty","sweet"]),("to <u>prevail</u> in the end","win / succeed",["quit","hide","whisper"])]
 for ph, c, w in VOC:
     add("Reading","vocabulary",f"Choose the word that means the same, or about the same, as the underlined word: {ph}",c,w,f"In context, the underlined word means “{c}.”",2)
 
@@ -619,6 +630,6 @@ if __name__ == "__main__":
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     by = {}
     for it in items: by[it["section"]] = by.get(it["section"], 0) + 1
-    bank = {"version": 5, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v5 expanded)", "counts": by, "total": len(items), "items": items}
+    bank = {"version": 6, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v6 expanded)", "counts": by, "total": len(items), "items": items}
     json.dump(bank, open(OUT, "w"), indent=1, ensure_ascii=False)
     print(json.dumps(by), len(items))

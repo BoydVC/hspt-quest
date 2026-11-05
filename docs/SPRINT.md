@@ -43,7 +43,7 @@ Every day also includes the due spaced-review questions. Format and sources: [HS
 | Reading | 62 | main idea 5, detail 8, inference 8, vocabulary 28, tone 1, cause and effect 3, purpose 3, character 2, theme 1, mood 1, figurative language 1, plot 1 |
 | Mathematics | 78 | fractions 9, percents 10, algebra 10, geometry 9, statistics 8, probability 6, measurement 8, word problems 10, numbers & numeration 8 |
 | Language | 73 | punctuation 11, capitalization 6, spelling 24, usage 18, composition 14 |
-| **Total** | **566** | |
+| **Total** | **593** | |
 
 - **Original:** every word is written for this project, and the math and quantitative items are generated from templates with a fixed seed (1117). Nothing is copied from any published or copyrighted test. Reading uses 18 original passages (informational and literary, 5 questions each) plus 22 vocabulary-in-context items.
 - Every item has a section, a skill tag, a difficulty, 3–4 choices (logic items use True / False / Uncertain like the real test), an answer index and an explanation.
