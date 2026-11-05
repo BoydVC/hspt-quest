@@ -72,7 +72,7 @@
 
   function sheet() {
     var nm = esc(ST.name);
-    view('<div class="noprint">' + head() + nav("sheet") + '<div class="card"><p>Bubble sheet numbered 1–298 like the real booklet. Print it, then take the mock with the app on Paper mode. <button class="btn" onclick="print()">🖨️ Print</button></p></div></div>' +
+    view('<div class="noprint">' + head() + nav("sheet") + '<div class="card"><p>Bubble sheet numbered 1–298 like the real booklet. Print it and bubble your answers on it during a full mock, the way you will on Nov 17. <button class="btn" onclick="print()">🖨️ Print</button></p></div></div>' +
       '<div class="sheet"><div class="shead"><b>HSPT Quest practice answer sheet</b><span>Name: <u>' + nm + '</u></span><span>Date: ________</span><span>Use a #2 pencil. Fill each bubble completely.</span></div>' +
       S.sheetRanges().map(function (r) { var rows = ""; for (var i = r.from; i <= r.to; i++) rows += '<div class="srow"><b>' + i + "</b>" + "ABCD".split("").map(function (c) { return '<span class="bub">' + c + "</span>"; }).join("") + "</div>"; return '<section class="ssec"><h4>' + r.section + " (" + r.from + "–" + r.to + ", " + S.SEC[r.section].minutes + ' min)</h4><div class="scols">' + rows + "</div></section>"; }).join("") + "</div>");
   }

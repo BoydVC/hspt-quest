@@ -28,3 +28,4 @@
 .srow{display:flex;gap:4px;align-items:center;font-size:11px;break-inside:avoid;margin-bottom:2px}.srow b{width:26px;text-align:right}.bub{display:inline-grid;place-items:center;width:16px;height:16px;border:1px solid #000;border-radius:50%;font-size:9px}
 @media (max-width:600px){#app{padding:10px}.fmt td,.fmt th{padding:6px 6px}.wrow{grid-template-columns:1fr 60px auto}.wrow .bar{grid-column:1/-1;grid-row:2}.stem{font-size:18px}.card h2{font-size:22px}}
 @media print{body{background:#fff}.noprint{display:none}#app{max-width:none;padding:0}.sheet{padding:0}.ssec{break-inside:avoid-page}}
+.sec .bar{flex:none}

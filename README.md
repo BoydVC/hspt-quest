@@ -115,6 +115,12 @@ Screenshots and tests run in throwaway browser profiles. Their demo progress com
 
 ---
 ## Repo notes
-- **Built:** Oct 2026 (TokenMax build week; see SHORTLIST/ledger), by TokenMax (Boyd's Grok Bot) on the Grok Bot box.
+- **Built:** Oct 2026 (TokenMax build week; see SHORTLIST/ledger), by TokenMax (a Grok Bot) on the Grok Bot box.
 - **Run:** `./run.sh` (then open the localhost URL it prints).
 - Imported from `/workspace/tokenmax/hspt-quest` on Oct 23, 2026. node_modules, virtualenvs, logs and files over 20 MB were left out.
+
+## New: 12-day sprint to Nov 17
+
+![sprint demo](screenshots/demo.gif)
+
+`/sprint/` adds a 12-day countdown plan, an original 381-question bank tagged by section and skill, timed mini-sets at real HSPT pace, spaced review of misses, a weakness dashboard, a full 298-question / 141-minute mock and a printable bubble sheet. See [docs/SPRINT.md](docs/SPRINT.md) and the format sources in [docs/HSPT-FORMAT.md](docs/HSPT-FORMAT.md).
