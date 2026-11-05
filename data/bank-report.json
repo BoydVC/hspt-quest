@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-07T17:36:43-04:00",
+ "built_at": "2026-11-05T13:46:23-05:00",
  "source_root": "/workspace/hspt",
  "sheets": [
   {
@@ -122,20 +122,194 @@
    "date": "2026-10-07",
    "source": "hspt-day20.html",
    "questions": 12
+  },
+  {
+   "day": 21,
+   "date": "2026-10-08",
+   "source": "hspt-day21.html",
+   "questions": 12
+  },
+  {
+   "day": 22,
+   "date": "2026-10-09",
+   "source": "hspt-day22.html",
+   "questions": 12
+  },
+  {
+   "day": 23,
+   "date": "2026-10-10",
+   "source": "hspt-day23.html",
+   "questions": 12
+  },
+  {
+   "day": 24,
+   "date": "2026-10-11",
+   "source": "hspt-day24.html",
+   "questions": 12
+  },
+  {
+   "day": 25,
+   "date": "2026-10-12",
+   "source": "hspt-day25.html",
+   "questions": 12
+  },
+  {
+   "day": 26,
+   "date": "2026-10-13",
+   "source": "hspt-day26.html",
+   "questions": 12
+  },
+  {
+   "day": 27,
+   "date": "2026-10-14",
+   "source": "hspt-day27.html",
+   "questions": 12
+  },
+  {
+   "day": 28,
+   "date": "2026-10-15",
+   "source": "hspt-day28.html",
+   "questions": 9
+  },
+  {
+   "day": 29,
+   "date": "2026-10-16",
+   "source": "hspt-day29.html",
+   "questions": 10
+  },
+  {
+   "day": 30,
+   "date": "2026-10-17",
+   "source": "hspt-day30.html",
+   "questions": 9
+  },
+  {
+   "day": 31,
+   "date": "2026-10-18",
+   "source": "hspt-day31.html",
+   "questions": 9
+  },
+  {
+   "day": 32,
+   "date": "2026-10-19",
+   "source": "hspt-day32.html",
+   "questions": 10
+  },
+  {
+   "day": 33,
+   "date": "2026-10-20",
+   "source": "hspt-day33.html",
+   "questions": 12
+  },
+  {
+   "day": 34,
+   "date": "2026-10-21",
+   "source": "hspt-day34.html",
+   "questions": 11
+  },
+  {
+   "day": 35,
+   "date": "2026-10-22",
+   "source": "hspt-day35.html",
+   "questions": 10
+  },
+  {
+   "day": 36,
+   "date": "2026-10-23",
+   "source": "hspt-day36.html",
+   "questions": 9
+  },
+  {
+   "day": 37,
+   "date": "2026-10-24",
+   "source": "hspt-day37.html",
+   "questions": 11
+  },
+  {
+   "day": 38,
+   "date": "2026-10-25",
+   "source": "hspt-day38.html",
+   "questions": 10
+  },
+  {
+   "day": 39,
+   "date": "2026-10-26",
+   "source": "hspt-day39.html",
+   "questions": 11
+  },
+  {
+   "day": 40,
+   "date": "2026-10-27",
+   "source": "hspt-day40.html",
+   "questions": 11
+  },
+  {
+   "day": 41,
+   "date": "2026-10-28",
+   "source": "hspt-day41.html",
+   "questions": 11
+  },
+  {
+   "day": 42,
+   "date": "2026-10-29",
+   "source": "hspt-day42.html",
+   "questions": 11
+  },
+  {
+   "day": 43,
+   "date": "2026-10-30",
+   "source": "hspt-day43.html",
+   "questions": 11
+  },
+  {
+   "day": 44,
+   "date": "2026-10-31",
+   "source": "hspt-day44.html",
+   "questions": 11
+  },
+  {
+   "day": 45,
+   "date": "2026-11-01",
+   "source": "hspt-day45.html",
+   "questions": 11
+  },
+  {
+   "day": 46,
+   "date": "2026-11-02",
+   "source": "hspt-day46.html",
+   "questions": 10
+  },
+  {
+   "day": 47,
+   "date": "2026-11-03",
+   "source": "hspt-day47.html",
+   "questions": 12
+  },
+  {
+   "day": 48,
+   "date": "2026-11-04",
+   "source": "hspt-day48.html",
+   "questions": 0
+  },
+  {
+   "day": 49,
+   "date": "2026-11-05",
+   "source": "hspt-day49.html",
+   "questions": 0
   }
  ],
- "parsed_total": 221,
- "unique_total": 215,
+ "parsed_total": 514,
+ "unique_total": 495,
  "by_area": {
-  "Verbal": 40,
-  "Quantitative": 56,
-  "Reading": 39,
-  "Mathematics": 37,
-  "Language": 43
+  "Verbal": 116,
+  "Quantitative": 99,
+  "Reading": 86,
+  "Mathematics": 88,
+  "Language": 106
  },
  "by_type": {
-  "mc": 138,
-  "input": 76,
+  "mc": 390,
+  "input": 104,
   "self": 1
  },
  "duplicates": [
@@ -162,7 +336,598 @@
   {
    "id": "d17q03",
    "same_as": "d08q03"
+  },
+  {
+   "id": "d22q08",
+   "same_as": "d08q08"
+  },
+  {
+   "id": "d25q08",
+   "same_as": "d07q08"
+  },
+  {
+   "id": "d26q01",
+   "same_as": "d18q02"
+  },
+  {
+   "id": "d28q04",
+   "same_as": "d20q03"
+  },
+  {
+   "id": "d28q11",
+   "same_as": "d20q11"
+  },
+  {
+   "id": "d30q04",
+   "same_as": "d05q03"
+  },
+  {
+   "id": "d30q10",
+   "same_as": "d21q10"
+  },
+  {
+   "id": "d35q02",
+   "same_as": "d26q02"
+  },
+  {
+   "id": "d41q10",
+   "same_as": "d21q10"
+  },
+  {
+   "id": "d44q02",
+   "same_as": "d39q02"
+  },
+  {
+   "id": "d44q09",
+   "same_as": "d34q08"
+  },
+  {
+   "id": "d46q01",
+   "same_as": "d32q01"
+  },
+  {
+   "id": "d46q02",
+   "same_as": "d36q02"
   }
  ],
- "skipped": []
+ "skipped": [
+  {
+   "day": 28,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (A), (B), and (C) and choose the best answer.  (A) 25% of 80 (B) 1/3 of 60 (C) 0.5 × 40",
+   "source": "hspt-day28.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) all equal (25% of 80 = 20; 1/3 of 60 = 20; 0.5 × 40 = 20)",
+   "choice": "(A), (B), and (C) are equal"
+  },
+  {
+   "day": 28,
+   "num": 6,
+   "area": "Reading",
+   "stem": "Which statement can best be inferred from the passage?",
+   "source": "hspt-day28.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) she went back again and again to free others",
+   "choice": "Tubman cared deeply about freeing others, not just herself."
+  },
+  {
+   "day": 28,
+   "num": 10,
+   "area": "Language",
+   "stem": "Which sentence is capitalized correctly?",
+   "source": "hspt-day28.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "c) (Chesapeake Bay is a proper noun; months are capitalized)",
+   "choice": "We visited the Chesapeake Bay in July."
+  },
+  {
+   "day": 29,
+   "num": 6,
+   "area": "Reading",
+   "stem": "The passage is mainly about:",
+   "source": "hspt-day29.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) the passage lists his clock, astronomy, almanacs, and survey work",
+   "choice": "the accomplishments of a self-taught Maryland scientist"
+  },
+  {
+   "day": 29,
+   "num": 10,
+   "area": "Language",
+   "stem": "Which sentence is punctuated correctly?",
+   "source": "hspt-day29.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "a) (commas separate items in a series; no comma between the verb and its object)",
+   "choice": "Char packed her cleats, shin guards, and water bottle."
+  },
+  {
+   "day": 30,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (I), (II), and (III) and choose the best answer.  (I) 3² + 4² (II) 5² (III) (3 + 4)²",
+   "source": "hspt-day30.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "a) (I) = 9 + 16 = 25; (II) = 25; (III) = 7² = 49. Watch out: (3 + 4)² is not 3² + 4².",
+   "choice": "(I) and (II) are equal, and (III) is greater"
+  },
+  {
+   "day": 30,
+   "num": 6,
+   "area": "Reading",
+   "stem": "Why could Key not tell during the night whether the fort had held?",
+   "source": "hspt-day30.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) (inference from “long, rainy night” and “several miles away”)",
+   "choice": "It was dark and rainy, and he was miles away"
+  },
+  {
+   "day": 30,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence uses commas correctly?",
+   "source": "hspt-day30.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) (commas go after the day and the year in a date, and between the city and the state)",
+   "choice": "On October 17, 2026, Char played in Annapolis, Maryland."
+  },
+  {
+   "day": 31,
+   "num": 6,
+   "area": "Reading",
+   "stem": "The Donald Murray case was probably especially meaningful to Marshall because:",
+   "source": "hspt-day31.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) (inference: the passage says the same Maryland school had refused Marshall)",
+   "choice": "the same school had once turned Marshall away"
+  },
+  {
+   "day": 31,
+   "num": 7,
+   "area": "Reading",
+   "stem": "According to the passage, what happened in 1954?",
+   "source": "hspt-day31.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "c) (detail stated directly; watch the dates, since 1933, 1935, 1954, and 1967 are all in the passage)",
+   "choice": "Brown v. Board of Education ended legal school segregation"
+  },
+  {
+   "day": 31,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence is written correctly?",
+   "source": "hspt-day31.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "c) (a is a comma splice, b is a fragment, d is a run-on; “, so” correctly joins two sentences)",
+   "choice": "Char scored twice, so the team won."
+  },
+  {
+   "day": 32,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (A), (B), and (C) and choose the correct answer.  (A) 0.4 × 25 (B) 1/3 of 33 (C) 12",
+   "source": "hspt-day32.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) (A = 10, B = 11, C = 12, so C > B > A)",
+   "choice": "(C) > (B) > (A)"
+  },
+  {
+   "day": 32,
+   "num": 6,
+   "area": "Reading",
+   "stem": "The author suggests Washington’s resignation was important mainly because:",
+   "source": "hspt-day32.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) (inference from “the army would answer to leaders chosen by the people”; a is the trap, since the treaty ended the war)",
+   "choice": "it showed elected leaders, not generals, would hold power"
+  },
+  {
+   "day": 34,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (A), (B), and (C): (A) 20% of 50 (B) 1/4 of 44 (C) 3²",
+   "source": "hspt-day34.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) (A) = 10, (B) = 11, (C) = 9, so (B) > (A) > (C)",
+   "choice": "(B) > (A) > (C)"
+  },
+  {
+   "day": 35,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (A), (B), and (C): (A) 0.5 × 0.5 (B) 0.5 + 0.5 (C) ½ ÷ ½",
+   "source": "hspt-day35.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) (A) = 0.25, (B) = 1, (C) = 1, so (B) = (C)",
+   "choice": "(B) = (C)"
+  },
+  {
+   "day": 35,
+   "num": 10,
+   "area": "Language",
+   "stem": "Which sentence is capitalized correctly?",
+   "source": "hspt-day35.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "c) (cities and days of the week are capitalized; “Drove” is not)",
+   "choice": "We drove to Annapolis on Saturday."
+  },
+  {
+   "day": 36,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (A), (B), and (C): (A) 25% of 80 (B) 80% of 25 (C) ⅕ of 100",
+   "source": "hspt-day36.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) all equal 20 (0.25 × 80 = 20; 0.80 × 25 = 20; 100 ÷ 5 = 20; tip: x% of y = y% of x)",
+   "choice": "(A), (B), and (C) are equal"
+  },
+  {
+   "day": 36,
+   "num": 6,
+   "area": "Reading",
+   "stem": "Which sentence best states the main idea of the passage?",
+   "source": "hspt-day36.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "a) (b is too extreme: he built a clock, not the first clock; c and d are not what the passage is about)",
+   "choice": "Banneker was a self-taught man who made important contributions in science and math."
+  },
+  {
+   "day": 36,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence is punctuated correctly?",
+   "source": "hspt-day36.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "c) (commas separate items in a series; no comma after the verb or after “and”)",
+   "choice": "We packed sticks, goggles, and water."
+  },
+  {
+   "day": 37,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence is punctuated and capitalized correctly?",
+   "source": "hspt-day37.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "a) (comma goes inside the quotation marks; “Coach” is capitalized as a title before a name)",
+   "choice": "“Let’s go,” said Coach Shea."
+  },
+  {
+   "day": 38,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (I), (II), and (III): (I) 3² + 4² (II) 5² (III) (3 + 4)²",
+   "source": "hspt-day38.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "a) (I) 9 + 16 = 25, (II) 25, (III) 7² = 49. Trap: (3 + 4)² is not 3² + 4²",
+   "choice": "(I) = (II) and both are less than (III)"
+  },
+  {
+   "day": 38,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence uses apostrophes correctly?",
+   "source": "hspt-day38.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "a) (one team → team’s; plural girls → girls’)",
+   "choice": "The team’s coach praised the girls’ effort."
+  },
+  {
+   "day": 39,
+   "num": 10,
+   "area": "Language",
+   "stem": "Which sentence is punctuated correctly?",
+   "source": "hspt-day39.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) (a semicolon joins two complete sentences; a is a comma splice, c is a run-on)",
+   "choice": "We practiced in the rain; the field was muddy."
+  },
+  {
+   "day": 40,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence contains an error in usage?",
+   "source": "hspt-day40.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "c) (“effect” is usually a noun; the verb meaning “to influence” is “affect”)",
+   "choice": "The cold weather will effect our practice."
+  },
+  {
+   "day": 41,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence is written correctly?",
+   "source": "hspt-day41.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "c) (it’s = it is; the possessive “its” has no apostrophe)",
+   "choice": "It’s going to rain, so bring a jacket."
+  },
+  {
+   "day": 42,
+   "num": 10,
+   "area": "Language",
+   "stem": "Which sentence uses the correct verb?",
+   "source": "hspt-day42.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) (“each” is singular, so “has”; ignore “of the players”)",
+   "choice": "Each of the players has a water bottle."
+  },
+  {
+   "day": 43,
+   "num": 10,
+   "area": "Language",
+   "stem": "Which sentence is punctuated correctly?",
+   "source": "hspt-day43.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "c) (a colon follows a complete sentence; in a) “We packed” is not complete)",
+   "choice": "We packed three things: sticks, goggles, and cleats."
+  },
+  {
+   "day": 44,
+   "num": 10,
+   "area": "Language",
+   "stem": "Which sentence is capitalized correctly?",
+   "source": "hspt-day44.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "c) (Baltimore is a proper noun; seasons like “fall” stay lowercase)",
+   "choice": "We visited the Poe House in Baltimore last fall."
+  },
+  {
+   "day": 45,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (I) 0.5 of 30, (II) 30% of 50, and (III) 1/4 of 60. Which is true?",
+   "source": "hspt-day45.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "b) all equal (I = 15, II = 15, III = 15)",
+   "choice": "I, II, and III are equal"
+  },
+  {
+   "day": 46,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (I) 2³, (II) 3², and (III) 4 + 4. Which is true?",
+   "source": "hspt-day46.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "a) I = 8, II = 9, III = 8, so I and III are equal and both less than II",
+   "choice": "I and III are equal, and both are less than II"
+  },
+  {
+   "day": 46,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence is punctuated correctly?",
+   "source": "hspt-day46.html",
+   "reason": "key text doesn't match the lettered choice",
+   "key": "a) comma after the introductory phrase “After the game”",
+   "choice": "After the game, we got pizza."
+  },
+  {
+   "day": 48,
+   "num": 1,
+   "area": "Verbal",
+   "stem": "Which word means the opposite of reluctant?",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "What is the main idea of the passage?  a) Monarchs are the most beautiful butterflies in North America.  b) Monarchs make a long migration across several generations, and scientists still study how.  c) Milkweed is the only plant monarchs can eat.  d) Mexico’s forests are disappearing. Answer:"
+  },
+  {
+   "day": 48,
+   "num": 2,
+   "area": "Verbal",
+   "stem": "Chef is to kitchen as pilot is to:",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Where do the autumn monarchs spend the winter?  a) in Canada b) on milkweed fields c) in mountain forests in central Mexico d) along the coast of Texas Answer:"
+  },
+  {
+   "day": 48,
+   "num": 3,
+   "area": "Verbal",
+   "stem": "Mia is taller than Ana. Ana is taller than Lee. Lee is taller than Mia. If the first two statements are true, the third ",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Why is it important that the autumn generation lives so long?  a) It lets them survive the trip south and the winter. b) It makes them grow larger. c) It lets them lay more eggs in Canada. d) It helps them avoid the sun. Answer:"
+  },
+  {
+   "day": 48,
+   "num": 4,
+   "area": "Quantitative",
+   "stem": "What number comes next: 81, 27, 9, 3, ____ ?",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "As used in the passage, conserve most nearly means:  a) spend b) save c) create d) share Answer:"
+  },
+  {
+   "day": 48,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (I), (II), and (III). (I) 20% of 50 (II) 50% of 20 (III) 1/5 of 40",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "The last sentence of the passage mainly serves to:  a) prove the monarchs are lost b) offer a possible explanation c) disagree with scientists d) describe the milkweed plant Answer:"
+  },
+  {
+   "day": 48,
+   "num": 6,
+   "area": "Reading",
+   "stem": "Which title best fits the passage?",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Diligent most nearly means: a) lazy b) hardworking c) lucky d) careless Answer:"
+  },
+  {
+   "day": 48,
+   "num": 7,
+   "area": "Reading",
+   "stem": "As used in the passage, ingenuity most nearly means:",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "The opposite of abundant is: a) plentiful b) scarce c) heavy d) bright Answer:"
+  },
+  {
+   "day": 48,
+   "num": 8,
+   "area": "Mathematics",
+   "stem": "Solve for x: 5x − 7 = 2x + 8",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Author is to write as sculptor is to: a) paint b) museum c) carve d) clay Answer:"
+  },
+  {
+   "day": 48,
+   "num": 9,
+   "area": "Mathematics",
+   "stem": "A rectangle’s length is 3 times its width. Its perimeter is 48 cm. What is its area?",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Which sentence uses a semicolon correctly?  a) We practiced in the rain; the field was muddy. b) We practiced; in the rain. c) Because it rained; we practiced inside. d) We; practiced in the rain. Answer:"
+  },
+  {
+   "day": 48,
+   "num": 10,
+   "area": "Mathematics",
+   "stem": "−3 × (4 − 9) =",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Which book title is capitalized correctly?  a) The Secret Of The Old Clock b) The secret of the old clock c) The Secret of the Old Clock d) the Secret of the Old clock Answer:"
+  },
+  {
+   "day": 48,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence is capitalized correctly?",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Which word is spelled incorrectly? a) definately b) library c) February d) believe Answer:"
+  },
+  {
+   "day": 48,
+   "num": 12,
+   "area": "Language",
+   "stem": "Choose the correct verb: “Neither the players nor the coach ____ ready for the bus.”",
+   "source": "hspt-day48.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "“Each of the girls brought ____ own stick to practice.” a) their b) her c) they’re d) there Answer:"
+  },
+  {
+   "day": 48,
+   "num": null,
+   "reason": "answer key has 42 answers for 12 questions",
+   "source": "/workspace/hspt/hspt-day48.html"
+  },
+  {
+   "day": 49,
+   "num": 1,
+   "area": "Verbal",
+   "stem": "Which word means the same as vivid?",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "What is the main idea of the passage?  a) Octopuses live only in aquariums.  b) Octopuses have unusual bodies and surprising intelligence.  c) Octopuses are dangerous to divers.  d) Scientists have stopped studying octopuses. Answer:"
+  },
+  {
+   "day": 49,
+   "num": 2,
+   "area": "Verbal",
+   "stem": "Thermometer is to temperature as scale is to:",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "How many hearts does an octopus have?  a) one b) two c) three d) eight Answer:"
+  },
+  {
+   "day": 49,
+   "num": 3,
+   "area": "Verbal",
+   "stem": "All of the girls on the team wear cleats. Sara wears cleats. Sara is on the team. If the first two statements are true, ",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Why can an octopus fit through such small openings?  a) It can shrink its beak. b) It has no bones. c) It changes color. d) It has blue blood. Answer:"
+  },
+  {
+   "day": 49,
+   "num": 4,
+   "area": "Quantitative",
+   "stem": "What number comes next: 2, 5, 11, 23, 47, ____ ?",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "As used in the passage, remarkable most nearly means:  a) ordinary b) noisy c) amazing d) hidden Answer:"
+  },
+  {
+   "day": 49,
+   "num": 5,
+   "area": "Quantitative",
+   "stem": "Examine (I), (II), and (III). (I) 3² + 4² (II) (3 + 4)² (III) 5²",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "The author mentions jar lids and tank escapes mainly to:  a) warn aquarium owners b) give examples of octopus intelligence c) explain how octopuses eat d) describe octopus color changes Answer:"
+  },
+  {
+   "day": 49,
+   "num": 6,
+   "area": "Reading",
+   "stem": "Based on the passage, why were the lighthouse’s legs twisted into the bay floor instead of resting on rock?",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Tranquil most nearly means: a) calm b) loud c) angry d) quick Answer:"
+  },
+  {
+   "day": 49,
+   "num": 7,
+   "area": "Reading",
+   "stem": "As used in the passage, unaltered most nearly means:",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "The opposite of transparent is: a) clear b) opaque c) shiny d) thin Answer:"
+  },
+  {
+   "day": 49,
+   "num": 8,
+   "area": "Mathematics",
+   "stem": "After a 20% discount, a shirt costs $24. What was the original price?",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Hungry is to famished as tired is to: a) awake b) bed c) exhausted d) yawn Answer:"
+  },
+  {
+   "day": 49,
+   "num": 9,
+   "area": "Mathematics",
+   "stem": "A circle has a radius of 5 cm. What is its area?",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Which sentence is punctuated correctly?  a) I wanted to play, but my ankle was sore. b) I wanted, to play but my ankle was sore. c) I wanted to play but, my ankle was sore. d) I, wanted to play but my ankle was sore. Answer:"
+  },
+  {
+   "day": 49,
+   "num": 10,
+   "area": "Mathematics",
+   "stem": "3/4 + 2/3 =",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Which sentence is capitalized correctly?  a) We drove North to visit Grandma in maine. b) We drove north to visit Grandma in Maine. c) we drove north to visit grandma in Maine. d) We drove North to visit grandma in Maine. Answer:"
+  },
+  {
+   "day": 49,
+   "num": 11,
+   "area": "Language",
+   "stem": "Which sentence is punctuated correctly?",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "Which word is spelled incorrectly? a) necessary b) separate c) recieve d) calendar Answer:"
+  },
+  {
+   "day": 49,
+   "num": 12,
+   "area": "Language",
+   "stem": "Choose the correct word: “To ____ should I give this permission slip?”",
+   "source": "hspt-day49.html",
+   "reason": "multiple choice but the key has no letter",
+   "key": "“Keep this secret between you and ____.” a) I b) me c) myself d) mine Answer:"
+  },
+  {
+   "day": 49,
+   "num": null,
+   "reason": "answer key has 42 answers for 12 questions",
+   "source": "/workspace/hspt/hspt-day49.html"
+  }
+ ]
 }
