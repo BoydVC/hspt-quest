@@ -8,3 +8,10 @@ __pycache__/
 *.pid
 .DS_Store
 .cache/
+node_modules
+sprint/node_modules
+test-results/
+playwright-report/
+
+screenshots/sprint/frames/
+sprint/test-results/
