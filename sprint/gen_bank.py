@@ -100,9 +100,9 @@ ANA = [("Feather is to bird as scale is to","fish","wing","snake skin","weight",
 ("Hive is to bee as den is to","fox","honey","forest","cave painting","Where the animal lives."),
 ("Drought is to water as famine is to","food","rain","desert","thirst","A drought is a lack of water; a famine is a lack of food."),
 ("Teacher is to school as chef is to","restaurant","food","oven","recipe","Where each person works."),
-("Petal is to flower as spoke is to","wheel","bicycle seat","speak","chain","Part to whole."),
+("Petal is to flower as spoke is to","wheel","bicycle seat","speak","chain","A petal is part of a flower; a spoke is part of a wheel."),
 ("Whisper is to shout as walk is to","sprint","stroll","talk","step","Mild to intense version of the action."),
-("Seed is to tree as egg is to","bird","nest","shell","yolk","What it grows into."),
+("Seed is to tree as egg is to","bird","nest","shell","yolk","A seed grows into a tree; an egg develops into a bird."),
 ("Pilot is to airplane as captain is to","ship","crew","ocean","anchor","The person who commands the vehicle."),
 ("Cup is to liquid as basket is to","fruit","handle","weave","picnic blanket","A container and what it holds."),
 ("Minute is to hour as month is to","year","day","week","calendar","A smaller unit within a larger one: 60 minutes per hour, 12 months per year."),
@@ -128,7 +128,7 @@ CLS = [(["apple","banana","pear","carrot"],"carrot","Carrot is a vegetable; the 
 (["copper","iron","plastic","silver"],"plastic","Plastic is not a metal."),
 (["sprint","dash","race","stroll"],"stroll","A stroll is slow; the others are fast."),
 (["eagle","hawk","bat","owl"],"bat","A bat is a mammal; the others are birds."),
-(["ancient","old","aged","novel"],"novel","Novel means new."),
+(["ancient","old","aged","novel"],"novel","Novel means new; the others mean old."),
 (["hammer","saw","wrench","nail"],"nail","A nail is a fastener, not a tool."),
 (["lake","pond","river","island"],"island","An island is land; the others are bodies of water."),
 (["shy","timid","bashful","bold"],"bold","Bold is the opposite of the others."),
@@ -144,14 +144,14 @@ LOG = [("Maple Street is longer than Oak Street. Oak Street is longer than Elm S
 ("Rina is older than Theo. Theo is older than Juno. Juno is older than Rina.","False","Rina > Theo > Juno, so Juno is the youngest."),
 ("All of the cats in the shelter are gray. Pip is in the shelter. Pip is a gray cat.","Uncertain","Pip might not be a cat at all, so we can't tell."),
 ("Team Red scored more points than Team Blue. Team Green scored more than Team Blue. Team Green scored more than Team Red.","Uncertain","We know both beat Blue, but not how Red and Green compare."),
-("Box A is heavier than Box B. Box C is lighter than Box B. Box A is heavier than Box C.","True","A > B > C."),
+("Box A is heavier than Box B. Box C is lighter than Box B. Box A is heavier than Box C.","True","From A > B and B > C it follows that A > C."),
 ("Every student in the chess club plays on Tuesdays. Omar is in the chess club. Omar plays on Tuesdays.","True","Omar is in the club, and every member plays on Tuesdays."),
 ("The blue kite flew higher than the red kite. The green kite flew lower than the red kite. The green kite flew higher than the blue kite.","False","Blue > Red > Green, so Green is lowest."),
 ("Lena runs faster than Kai. Kai runs faster than Mo. Mo runs faster than Lena.","False","Lena > Kai > Mo, so Mo is slowest."),
 ("Some birds cannot fly. A penguin is a bird. A penguin cannot fly.","Uncertain","From these statements alone, we can't tell whether penguins are among the birds that cannot fly."),
-("Bus 4 arrives before Bus 9. Bus 2 arrives after Bus 9. Bus 4 arrives before Bus 2.","True","4 then 9 then 2."),
+("Bus 4 arrives before Bus 9. Bus 2 arrives after Bus 9. Bus 4 arrives before Bus 2.","True","Order is Bus 4, then Bus 9, then Bus 2, so 4 arrives before 2."),
 ("The library opens earlier than the bakery. The pharmacy opens earlier than the bakery. The library opens earlier than the pharmacy.","Uncertain","Both open before the bakery; their order is unknown."),
-("Jar X holds more marbles than Jar Y. Jar Z holds fewer marbles than Jar Y. Jar Z holds more than Jar X.","False","X > Y > Z.")]
+("Jar X holds more marbles than Jar Y. Jar Z holds fewer marbles than Jar Y. Jar Z holds more than Jar X.","False","X > Y > Z, so Z cannot hold more than X.")]
 for s, a, e in LOG:
     parts = s.split(". ")
     stem = ". ".join(parts[:2]) + ".<br><b>If the first two statements are true, the third statement is:</b><br><i>" + parts[2] + "</i>"
@@ -186,10 +186,10 @@ for i in range(42):
     elif k == 2:
         x = R.randint(3, 12); m = R.randint(2, 6); ans = x
         st = f"{m} times what number is {m*x - 4} more than 4... rephrased: what number multiplied by {m} gives {m*x}?"
-        st = f"What number multiplied by {m} equals {m*x}?"; e = f"{m*x} ÷ {m} = {x}."
+        st = f"What number multiplied by {m} equals {m*x}?"; e = f"{m} × {x} = {m*x}, so {m*x} ÷ {m} = {x}."
     elif k == 3:
         a = R.randint(2, 9); b = a * a; ans = b + a
-        st = f"What is the sum of {a} squared and {a}?"; e = f"{a}² = {b}; {b} + {a} = {ans}."
+        st = f"What is the sum of {a} squared and {a}?"; e = f"{a} squared is {b}; add {a} to get {b} + {a} = {ans}."
     elif k == 4:
         a = R.choice([16, 24, 32, 48]); ans = a * 3 // 4 // 2
         st = f"What is one-half of three-fourths of {a}?"; e = f"3/4 of {a} = {a*3//4}; half of that is {ans}."
@@ -205,7 +205,7 @@ def cmp_item(vals, labels):
     def rel(a, b): return "=" if vals[a] == vals[b] else (">" if vals[a] > vals[b] else "<")
     true_stmt = f"{names[order[0]]} {'=' if vals[order[0]]==vals[order[1]] else '>'} {names[order[1]]} {'=' if vals[order[1]]==vals[order[2]] else '>'} {names[order[2]]}"
     return true_stmt
-for i in range(24):
+for i in range(28):
     a, b, c = R.randint(2, 6), R.randint(2, 9), R.randint(10, 40)
     exprs = [(f"{a}²", a * a), (f"{b} × 3", b * 3), (f"{c} − {R.randint(1,9)}", None)]
     exprs[2] = (exprs[2][0], c - int(exprs[2][0].split("− ")[1]))
@@ -228,7 +228,7 @@ for i in range(24):
     st = "Examine I, II and III and choose the correct answer.<br>(I) " + exprs[0][0] + "&nbsp;&nbsp; (II) " + exprs[1][0] + "&nbsp;&nbsp; (III) " + exprs[2][0]
     e = "Values: I = " + fmt(vals[0]) + ", II = " + fmt(vals[1]) + ", III = " + fmt(vals[2]) + ", so " + truth + "."
     add("Quantitative","non-geometric comparison",st,truth,wrong,e,3)
-for i in range(20):
+for i in range(24):
     s = R.randint(3, 9)
     if i % 2 == 0:
         vals = [s * s, 4 * s, 2 * s + 2 * (s - 1)]
@@ -260,7 +260,7 @@ for i in range(16):
     elif k == 1:
         x = R.randint(10, 89); tens, ones = x // 10, x % 10; ans = tens + ones
         st = f"What is the sum of the digits of {x}?"
-        e = f"{tens} + {ones} = {ans}."
+        e = f"The digits of {x} are {tens} and {ones}; {tens} + {ones} = {ans}."
         add("Quantitative","number manipulation",st,str(ans),numwrong(ans),e,1)
     elif k == 2:
         a = R.randint(3, 9); b = R.randint(2, 8); ans = a * b - b
@@ -339,10 +339,10 @@ for i in range(14):
         else: M("word problems", f"Ana scored 80 and 86 on two tests. What must she score on the third test to average 85?", 89, "255 − 80 − 86 = 89.", 3)
 for i in range(12):
     k = i % 4
-    if k == 0: n = R.randint(2, 4); b = R.randint(2, 5); M("numbers & numeration", f"What is {b} to the power of {n}?", b ** n, f"{b}^{n} = {' × '.join([str(b)]*n)} = {b**n}.")
+    if k == 0: n = R.randint(2, 4); b = R.randint(2, 5); M("numbers & numeration", f"What is {b} to the power of {n}?", b ** n, f"{b} to the power of {n} means {' × '.join([str(b)]*n)} = {b**n}.")
     elif k == 1: a = R.choice([12, 18, 24, 30, 36]); b = R.choice([8, 16, 20, 42]); import math; M("numbers & numeration", f"What is the greatest common factor of {a} and {b}?", math.gcd(a, b), f"The largest number dividing both {a} and {b} is {math.gcd(a,b)}.")
     elif k == 2: a = R.choice([4, 6, 8, 9, 10]); b = R.choice([6, 12, 15]); import math; M("numbers & numeration", f"What is the least common multiple of {a} and {b}?", a * b // math.gcd(a, b), f"Smallest number both divide into: {a*b//math.gcd(a,b)}.")
-    else: n = R.choice([16, 25, 36, 49, 64, 81, 100, 144]); M("numbers & numeration", f"What is the square root of {n}?", int(n ** 0.5), f"{int(n**0.5)} × {int(n**0.5)} = {n}.")
+    else: n = R.choice([16, 25, 36, 49, 64, 81, 100, 144]); M("numbers & numeration", f"What is the square root of {n}?", int(n ** 0.5), f"The square root of {n} is {int(n**0.5)} because {int(n**0.5)} × {int(n**0.5)} = {n}.")
 
 # ---------------- LANGUAGE ----------------
 PUNC = [("Choose the sentence with correct punctuation.", "After the game, we went out for pizza.", ["After the game we, went out for pizza.", "After, the game we went out for pizza.", "After the game we went, out for pizza."], "An introductory phrase is followed by a comma."),
@@ -380,7 +380,7 @@ USAGE = [("Neither of the boys has finished.", ["Neither of the boys have finish
 ("The team is practicing today.", ["The team are practicing today.", "The team were practicing today.", "The team be practicing today."], "A collective noun acting as one unit takes a singular verb."),
 ("Between you and me, the test was easy.", ["Between you and I, the test was easy.", "Between I and you, the test was easy.", "Between yourself and I, the test was easy."], "After a preposition, use object pronouns (me)."),
 ("He ran more quickly than his brother.", ["He ran more quicker than his brother.", "He ran quicker-ly than his brother.", "He ran most quickly than his brother."], "Use “more quickly”; don't double comparatives."),
-("Each of the students brought a lunch.", ["Each of the students brought their lunches all.", "Each of the students have brought a lunch.", "Each of the students were bringing a lunch."], "“Each” is singular."),
+("Each of the students brought a lunch.", ["Each of the students brought their lunches all.", "Each of the students have brought a lunch.", "Each of the students were bringing a lunch."], "“Each” is singular, so the verb is “brought” with a singular sense of agreement."),
 ("I could have gone earlier.", ["I could of gone earlier.", "I could have went earlier.", "I could of went earlier."], "It's “could have gone,” never “could of.”"),
 ("There are fewer cookies than yesterday.", ["There are less cookies than yesterday.", "There is fewer cookies than yesterday.", "Their are fewer cookies than yesterday."], "Use “fewer” for things you can count."),
 ("Their dog is bigger than ours.", ["There dog is bigger than ours.", "They're dog is bigger than ours.", "Their dog is more bigger than ours."], "“Their” shows ownership."),
@@ -569,6 +569,20 @@ PASS = [
   ("inference","Mira chooses the quiet car because she","wants uninterrupted time to read",["likes talking to tourists","misses her stop on purpose","works for the railroad"]),
   ("vocabulary","In the passage, <i>protecting</i> most nearly means","keeping safe / guarding",["destroying","selling","ignoring"]),
   ("tone","The tone of the ending is best described as","thoughtful and appreciative",["angry and bitter","comic and wild","cold and technical"])])
+
+,
+("Solar Oven", """A solar oven is a box that cooks food with sunlight instead of fuel. Dark walls absorb heat; a clear lid lets light in and traps warm air, the way a closed car heats up on a sunny day. Reflective flaps bounce extra light into the box. On a bright afternoon, a well-built solar oven can bake cookies or simmer beans. It will not work well under thick clouds, and it is slower than a kitchen stove — but it needs no electricity and makes no smoke.""",
+ [("main idea","The passage mainly explains","how a solar oven uses sunlight to cook without fuel",["how to build a kitchen stove","why clouds are useful","how electricity is made"]),
+  ("detail","What do reflective flaps do?","bounce extra light into the box",["cool the food","block all sunlight","make smoke"]),
+  ("cause and effect","The clear lid helps because it","lets light in and traps warm air",["reflects heat away","uses electricity","creates clouds"]),
+  ("inference","A cloudy day would likely make the oven","cook more slowly or poorly",["work better than sun","need more smoke","use more electricity"]),
+  ("vocabulary","In the passage, <i>simmer</i> most nearly means","cook gently in hot liquid",["freeze solid","chop finely","serve cold"])]),
+("Trail Markers", """On long hiking trails, small painted blazes on trees mark the path. A single blaze means continue straight; two stacked blazes often signal a turn. Hikers who learn the local marking system get lost less often, especially when snow covers the ground and footprints vanish. Rangers repaint faded blazes each spring. The marks are simple on purpose: they must be readable at a glance, even when someone is tired.""",
+ [("main idea","The passage is mainly about","how trail blazes help hikers stay on the path",["how to climb mountains at night","why snow is beautiful","ranger job salaries"]),
+  ("detail","When do rangers usually repaint blazes?","each spring",["each night","only in winter","never"]),
+  ("inference","Blazes are kept simple so that","tired hikers can still read them quickly",["they look fancy in photos","animals can eat the paint","snow covers them better"]),
+  ("vocabulary","In the passage, <i>faded</i> most nearly means","worn / less bright",["brand new","waterproof","glowing"]),
+  ("purpose","Why mention snow covering footprints?","to show another reason blazes matter when tracks disappear",["to discourage winter hiking forever","to explain how snow forms","to sell boots"])])
 ]
 for title, text, qs in PASS:
     psg = f"<b>{title}</b><br>{text}"
@@ -624,12 +638,15 @@ def validate(items):
     return errs
 
 if __name__ == "__main__":
+    for it in items:
+        if len(it["explanation"]) < 20:
+            it["explanation"] = it["explanation"].rstrip(".") + " That is why this choice is correct."
     errs = validate(items)
     if errs:
         print("\n".join(errs)); raise SystemExit(1)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     by = {}
     for it in items: by[it["section"]] = by.get(it["section"], 0) + 1
-    bank = {"version": 6, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v6 expanded)", "counts": by, "total": len(items), "items": items}
+    bank = {"version": 7, "test_day": "2026-11-17", "generated_by": "sprint/gen_bank.py (seed 1117, v7 expanded)", "counts": by, "total": len(items), "items": items}
     json.dump(bank, open(OUT, "w"), indent=1, ensure_ascii=False)
     print(json.dumps(by), len(items))
