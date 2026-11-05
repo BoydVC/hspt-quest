@@ -123,4 +123,4 @@ Screenshots and tests run in throwaway browser profiles. Their demo progress com
 
 ![sprint demo](screenshots/demo.gif)
 
-`/sprint/` adds a 12-day countdown plan, an original 609-question bank tagged by section and skill, timed mini-sets at real HSPT pace, spaced review of misses, a weakness dashboard, a full 298-question / 141-minute mock and a printable bubble sheet. See [docs/SPRINT.md](docs/SPRINT.md) and the format sources in [docs/HSPT-FORMAT.md](docs/HSPT-FORMAT.md).
+`/sprint/` adds a 12-day countdown plan, an original 627-question bank tagged by section and skill, timed mini-sets at real HSPT pace, spaced review of misses, a weakness dashboard, a full 298-question / 141-minute mock and a printable bubble sheet. See [docs/SPRINT.md](docs/SPRINT.md) and the format sources in [docs/HSPT-FORMAT.md](docs/HSPT-FORMAT.md).
